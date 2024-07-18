@@ -22,12 +22,12 @@ footer {
 
 .order-item-content-img {
     position: relative;
-    width: 120px;
-    height: 120px;
+    width: 50px;
+    height: 50px;
     
     
     border-radius: 5px;
-    object-fit:cover;
+    object-fit:fill;
     
 }
 
@@ -44,19 +44,22 @@ footer {
 
 }
 
-.order-tracking-process {
+.logistic-info--track--WBcFzsd {
+    display: block;
     font-size: 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 10px;
     background: rgba(255, 255, 255, 0.25);
     box-shadow: 0 4px 8px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
-    border-radius: 10px;
+    
 
-    margin: 0 10px;
+    margin: 0 10px;    
+    /* add scroll */
+    overflow-y: auto;
+    height: 100px;
+    
+
 }
 
 /* #order-list {
@@ -81,11 +84,11 @@ footer {
 
     margin: 10px;
 
-    max-width: 350px;
-    min-width: 350px;
+    max-width: 400px;
+    min-width: 400px;
 
-    max-height: 420px;
-    min-height: 420px;
+    max-height: 300px;
+    min-height: 300px;
 
     border-radius: 5px;
 }
@@ -95,6 +98,7 @@ footer {
     flex-direction: row;
     border-bottom: 1px solid #ccc;
     padding: 10px;
+    height: 150px;
 }
 
 .order-item .order-info {
@@ -102,6 +106,7 @@ footer {
     display: flex;
     flex-direction: column;
     font-size: 10px;
+    margin: 0 10px;
 
 }
 
@@ -111,6 +116,7 @@ footer {
     flex-direction: column;
     flex-wrap: wrap;
     font-size: 10px;
+    margin: 0 10px;
 
 
 
@@ -123,7 +129,7 @@ footer {
     align-items: center;
     justify-content: center;
     padding: 10px;
-    font-size: 10px;
+    font-size: 8px;
 
 }
 

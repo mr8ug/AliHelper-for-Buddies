@@ -280,8 +280,10 @@ class AliHelper:
             print("No orders to export")
             return False
         
+        
         with open(filename, "w") as file:
             json.dump(self.orders, file, indent=4)
+            print(f"Orders exported to {filename}")
             return True
         
         
