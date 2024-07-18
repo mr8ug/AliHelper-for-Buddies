@@ -182,9 +182,11 @@ class AliHelper:
                         orden["product_sku"] = str(order_product_sku.text).strip()
                         
                     nombre_producto = orden["product_name"] + " - "  + orden["product_sku"]
-                        
+                    orden["product_name"] = nombre_producto
                 except:
-                    nombre_producto = orden["product_name"]
+                    
+                    pass
+                    
                 
                 order_product_price = order_item.find_element(By.CSS_SELECTOR, "div[class='es--wrap--2p8eS4Q notranslate']")
                 if order_product_price != None:
@@ -195,6 +197,7 @@ class AliHelper:
                     orden["product_quantity"] = str(order_product_quantity.text).replace("x", "").strip()
             else:
                 orden["product_name"] = "Multiple Products"
+                orden["product_quantity"] = str(len(orden["image_references"]))
             
             #get the tracking link
             order_buttons = order_item.find_elements(By.CLASS_NAME, "order-item-btns")
@@ -285,12 +288,76 @@ class AliHelper:
             json.dump(self.orders, file, indent=4)
             print(f"Orders exported to {filename}")
             return True
+    
+    def printTrackByOrderList(self,orderList:list=[], fromFile:bool=False, filePath:str="orders.json"):
+        print("Printing tracking numbers")
+        if len(orderList) == 0:
+            print("No orders to print")
+            return False
         
+        data = []
+        if fromFile:
+            if filePath != "":
+                with open(filePath, "r") as file:
+                    data = json.load(file)
+                
+        else:
+            data = self.orders
+            if len(data) == 0:
+                print("No orders to print")
+                return False
+            
+            
+        if len(data) == 0:
+            print("No orders to print")
+            return False
         
+        for o in orderList:
+            for d in data:
+                if d["order_id"] == str(o):
+                    print(f"{d['tracking_number']}")
+                    break
+                
+        print("----------------------")
+    
+    def printTrackingStatusByOrderList(self,orderList:list=[], fromFile:bool=False, filePath:str="orders.json"):
+        print("Printing tracking status...")
+        if len(orderList) == 0:
+            print("No orders to print")
+            return False
+        
+        data = []
+        if fromFile:
+            if filePath != "":
+                with open(filePath, "r") as file:
+                    data = json.load(file)
+                
+        else:
+            data = self.orders
+            if len(data) == 0:
+                print("No orders to print")
+                return False
+            
+            
+        if len(data) == 0:
+            print("No orders to print")
+            return False
+        
+        for o in orderList:
+            for d in data:
+                if d["order_id"] == str(o):
+                    print(f"{d['tracking_status']}")
+                    break
+        
+        print("----------------------")
 
 ali = AliHelper()
+#PARA ACTUALIZAR INFO
 ali.setEnviroment()
 ali.getOrders(max_orders=39)
 ali.exportOrders("orders.json")
-
+ali.printTrackByOrderList(orderList=[8190564821197491,8190564821727491,8190564821867491,8190564821867491,8190564821327491,8190564821537491,8190564821537491,8190564821657491,8190564821807491,8190564821767491,8190564821497491,8190564821377491,8190564821377491,8190564821497491,8190564821917491,8190564821917491,8190564821677491,8190564821677491,8190564821947491,8190564822027491,8190564821517491,8190564821447491,8190564821597491,8190564821897491,8190564821567491,8190564821567491,8190564821617491,8190564822057491,8190564821827491,8190564821307491,8190564822007491,8190564821747491,8190564821427491,8190564821257491,8190564821987491,8190564821197491,8190564821407491,8190564821257491,8190564821427491,8190564821227491,8190564821227491,8190564821287491,8190564821467491,8190564821467491,8190564821347491,8190564822027491,8190564821347491,8190564821787491,8190564821637491,8190564821327491,8190564822077491,8190564821707491,8190564821967491,8190564821847491])
+ali.printTrackingStatusByOrderList(orderList=[8190564821197491,8190564821727491,8190564821867491,8190564821867491,8190564821327491,8190564821537491,8190564821537491,8190564821657491,8190564821807491,8190564821767491,8190564821497491,8190564821377491,8190564821377491,8190564821497491,8190564821917491,8190564821917491,8190564821677491,8190564821677491,8190564821947491,8190564822027491,8190564821517491,8190564821447491,8190564821597491,8190564821897491,8190564821567491,8190564821567491,8190564821617491,8190564822057491,8190564821827491,8190564821307491,8190564822007491,8190564821747491,8190564821427491,8190564821257491,8190564821987491,8190564821197491,8190564821407491,8190564821257491,8190564821427491,8190564821227491,8190564821227491,8190564821287491,8190564821467491,8190564821467491,8190564821347491,8190564822027491,8190564821347491,8190564821787491,8190564821637491,8190564821327491,8190564822077491,8190564821707491,8190564821967491,8190564821847491])
+# #PARA IMPRIMIR TRACKING
+# ali.printTrackByOrderList(orderList=[8190564821197491,8190564821727491,8190564821867491,8190564821867491,8190564821327491,8190564821537491,8190564821537491,8190564821657491,8190564821807491,8190564821767491,8190564821497491,8190564821377491,8190564821377491,8190564821497491,8190564821917491,8190564821917491,8190564821677491,8190564821677491,8190564821947491,8190564822027491,8190564821517491,8190564821447491,8190564821597491,8190564821897491,8190564821567491,8190564821567491,8190564821617491,8190564822057491,8190564821827491,8190564821307491,8190564822007491,8190564821747491,8190564821427491,8190564821257491,8190564821987491,8190564821197491,8190564821407491,8190564821257491,8190564821427491,8190564821227491,8190564821227491,8190564821287491,8190564821467491,8190564821467491,8190564821347491,8190564822027491,8190564821347491,8190564821787491,8190564821637491,8190564821327491,8190564822077491,8190564821707491,8190564821967491,8190564821847491], fromFile=True)
 # # input("Press Enter to continue...")
