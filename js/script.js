@@ -18,7 +18,8 @@ function loadLocal() {
 
                 let image_html = '';
                 for (let j = 0; j < images.length; j++) {
-                    image_html += `<img src="${images[j]}" alt="product image ${order_id +"-"+ j}" class="product-image">`;
+                    console.log(images[j]);
+                    image_html += `<div class="order-item-content-img" style="background-image: url(&quot;${String(images[j])}&quot;);" alt="product image ${order_id +"-"+ j}" ></div>`;
 
                 }
 
