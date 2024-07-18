@@ -1,0 +1,26 @@
+{
+    "en":{
+        "category":[
+            "View all",
+            "To ship",
+            "Shipped",
+            "Processed"
+        ],
+        "button":[
+            "Confirm received",
+            "Track order"            
+        ]
+    },
+    "es":{
+        "category":[
+            "Ver todos",
+            "Por enviar",
+            "Enviado",
+            "Procesado"
+        ],
+        "button":[
+            "Confirmar recibido",
+            "Rastrear pedido"
+        ]
+    }
+}
