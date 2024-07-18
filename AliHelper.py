@@ -116,7 +116,9 @@ class AliHelper:
                 "tracking_link": "",
                 "tracking_number": "",
                 "tracking_status": "",
+                "tracking_process": "",
                 "image_references": [] #almacenara urls de imagenes
+                
             }   
             
             #informacion de fecha y id de orden
@@ -151,8 +153,21 @@ class AliHelper:
             #url se encuentra dentro del style
             for img in order_item_images:
                 style = img.get_attribute("style")
-                url = style.split("(")[1].split(")")[0]
-                orden["image_references"].append(url.replace("\"", ""))
+                url = style.split("(")[1].split(")")[0].replace("\"", "")
+                
+                # orden["image_references"].append(url.replace("\"", ""))
+                
+                img_save_path = f"./img/{orden['order_id']}/"
+                if not os.path.exists(img_save_path):
+                    os.makedirs(img_save_path)
+                
+                index_img = order_item_images.index(img)
+                img_path = img_save_path + f"img_{index_img}.png"
+    
+                
+                orden["image_references"].append(self.downloadImage(url, img_path))
+                    
+            
             
             if len(orden["image_references"]) == 1:
                 #obtener el nombre ya que si aparece
@@ -190,9 +205,11 @@ class AliHelper:
                 
             #get trackin link info
             if orden["tracking_link"] != "":
-                orden["tracking_number"] = self.getTrackingNumber(orden["tracking_link"])["tracking_number"]
-                orden["tracking_status"] = self.getTrackingNumber(orden["tracking_link"])["tracking_status"]    
-            
+                tracking_info = self.getTrackingNumber(orden["tracking_link"])
+                orden["tracking_number"] = tracking_info["tracking_number"]
+                orden["tracking_status"] = tracking_info["tracking_status"]    
+                orden["tracking_process"] = tracking_info["tracking_process"]
+
                 self.orders.append(orden)
         
         if asJson:
@@ -203,7 +220,8 @@ class AliHelper:
     def getTrackingNumber(self, tracking_link:str)->dict:
         tracker_info = {
             "tracking_number": "",
-            "tracking_status": ""
+            "tracking_status": "",
+            "tracking_date": ""
         }
         #abrir nueva pestaña
         if self.driver.window_handles:
@@ -226,12 +244,36 @@ class AliHelper:
             lambda d: d.find_element(By.CLASS_NAME, "logistic-info--nodeDesc--Pa3Wnop")
         )
         tracker_info["tracking_status"] = str(status.text).strip()
+        
+        process = WebDriverWait(self.driver, timeout=10, poll_frequency=1).until(
+            lambda d: d.find_element(By.CLASS_NAME, "logistic-info--track--WBcFzsd")
+        )
+        #save html
+        tracker_info["tracking_process"] = process.get_attribute("outerHTML")
     
         self.driver.switch_to.window(self.driver.window_handles[0])
-        
 
-        
         return tracker_info
+    
+    def downloadImage(self, url:str, save_path:str):
+         #abrir nueva pestaña
+        if self.driver.window_handles:
+            if len(self.driver.window_handles) > 1:
+                self.driver.switch_to.window(self.driver.window_handles[1])
+                self.driver.close()
+                self.driver.switch_to.window(self.driver.window_handles[0])
+                
+        self.driver.execute_script("window.open('');")
+        self.driver.switch_to.window(self.driver.window_handles[1])
+        self.driver.get(url)
+        
+        #take screenshot of body
+        body = self.driver.find_element(By.TAG_NAME, "img")
+        body.screenshot(save_path)
+        
+        self.driver.switch_to.window(self.driver.window_handles[0])
+        
+        return save_path
     
     def exportOrders(self, filename:str="orders.json"):
         if len(self.orders) == 0:
@@ -246,7 +288,7 @@ class AliHelper:
 
 ali = AliHelper()
 ali.setEnviroment()
-ali.getOrders(max_orders=55, asJson=True)
+ali.getOrders(max_orders=39)
 ali.exportOrders("orders.json")
 
 # # input("Press Enter to continue...")

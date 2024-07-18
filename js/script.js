@@ -3,45 +3,114 @@ function loadLocal() {
     fetch('orders.json')
         .then(response => response.json())
         .then(data => {
-            console.log(data); // Aquí puedes trabajar con los datos cargados
-            let order_lenght = data.length;
-            for (let i = 0; i < order_lenght; i++) {
-                let order = data[i];
-                let order_id = order.order_id;
-                let order_date = order.order_date;
-                let order_product = order.product_name;
-                let order_ali_status = order.status;
-                let order_status = order.status;
-                let order_tracking = order.tracking_number;
-                let order_tracking_status = order.tracking_status;
-                let order_tracking_url = order.tracking_link;
-                let images = order.image_references;
-
-                let image_html = '';
-                for (let j = 0; j < images.length; j++) {
-                    image_html += `<div class="order-item-content-img" style="background-image: url(&quot;${String(images[j])}&quot;);" alt="product image ${order_id +"-"+ j}" ></div>`;
+            data.sort((a, b) => {
+                if (a.tracking_number < b.tracking_number) {
+                    return -1;
                 }
+                if (a.tracking_number > b.tracking_number) {
+                    return 1;
+                }
+                return 0;
+            });
+
+            // data.map((order) => {
+            //     // console.log(order);
+
+            //     let order_html = `
+            //     <div class="order-item order-${order.order_id}">
+            //         <div class="order-base order-${order.order_id}">
+            //             <div class="order-info order-${order.order_id}">
+            //                 <div class="order-id order-${order.order_id}">Order ID: ${order.order_id}</div>
+            //                 <div class="order-date order-${order.order_id}">Order Date: ${order.order_date}</div>
+            //             </div>
+
+            //             <div class="order-product order-${order.order_id}">
+            //                 <div class="order-product-name order-${order.order_id}">Product: ${order.product_name}</div>
+            //                 <div class="order-ali-status order-${order.order_id}">Total: ${order.total_price}</div>
+            //             </div>
+            //         </div>
+
+            //         <div class="order-images order-${order.order_id}">
+            //             ${order.image_references.map((image, index) => {
+            //         return `<img class="order-item-content-img" src="${image}" alt="product image ${order.order_id + "-" + index}"></img>`
+            //     }).join('')}
+            //         </div>
+
+            //         <div class="order-track order-${order.order_id}">
+            //             <div class="order-status order-${order.order_id}">AliExpress Status: ${order.status}</div>
+            //             <div class="order-tracking order-${order.order_id}"><strong>Tracking: <a href="https://t.17track.net/es#nums=${order.tracking_number}">${order.tracking_number}</a></strong></div>
+            //             <div class="order-tracking-status order-${order.order_id}">Tracking Status: ${order.tracking_status}</div>
+            //         </div>
+            //     </div>
+            //     `;
+            //     document.getElementById('order-list').innerHTML += order_html;
+            // });
 
 
-                let order_html = `
-                <div class="order-item order-${order_id}">
-                    <div class="order-id">Order ID: ${order_id}</div>
-                    <div class="order-date">Order Date: ${order_date}</div>
-                    <div class="order-product-name">Customer: ${order_product}</div>
-                    <div class="order-ali-status">Total: ${order_ali_status}</div>
-                    <div class="order-status">AliStatus: ${order_status}</div>
-                    <div class="order-tracking">Tracking: <a href="https://t.17track.net/es#nums=${order_tracking}">${order_tracking}</a></div>
-                    <div class="order-tracking-status">Tracking Status: ${order_tracking_status}</div>
-                    <div class="order-images">${image_html}</div>
-                    
-                </div>
-                `;
-                document.getElementById('order-list').innerHTML += order_html;
-            }
+
+
+            let groupedOrders = data.reduce((groups, order) => {
+                const key = order.tracking_number;
+                if (!groups[key]) {
+                    groups[key] = [];
+                }
+                groups[key].push(order);
+                return groups;
+            }, {});
+
+
+            let orderListElement = document.getElementById('order-list');
+            orderListElement.innerHTML = '';
+
+            Object.keys(groupedOrders).forEach(tracking_number => {
+                const orders = groupedOrders[tracking_number];
+
+                let group_html = `<div class="order-group tracking-${tracking_number}">
+                     <h5><a href="https://t.17track.net/es#nums=${tracking_number}">${tracking_number}</a></h5>`;
+
+                orders.forEach(order => {
+                    group_html += `
+                        <div class="order-item order-${order.order_id}">
+                            <div class="order-base order-${order.order_id}">
+                                <div class="order-info order-${order.order_id}">
+                                    <div class="order-id order-${order.order_id}">Order ID: ${order.order_id}</div>
+                                    <div class="order-date order-${order.order_id}">Order Date: ${order.order_date}</div>
+                                    
+                                </div>
+                                
+                                <div class="order-product order-${order.order_id}">
+                                    <div class="order-product-name order-${order.order_id}">Product: ${order.product_name}</div>
+                                    <div class="order-ali-status order-${order.order_id}"><strong>Total: ${order.total_price}</strong></div>
+                                </div>
+                            </div>
+
+                            <div class="order-images order-${order.order_id}">
+                                ${order.image_references.map((image, index) => {
+                                        return `<img class="order-item-content-img" src="${image}" alt="product image ${order.order_id + "-" + index}"></img>`;
+                                    }).join('')}
+                            </div>
+
+                            <div class="order-track order-${order.order_id}">
+                                <div class="order-status order-${order.order_id}">AliExpress Status: ${order.status}</div>
+                                <div class="order-tracking order-${order.order_id}"><strong>Tracking: <a href="https://t.17track.net/es#nums=${order.tracking_number}">${order.tracking_number}</a></strong></div>
+                                <div class="order-tracking-status order-${order.order_id}">Tracking Status: ${order.tracking_status}</div>
+                                
+                            </div>
+                            <div class="order-tracking-process"> ${order.tracking_process}</div>
+                            
+                        </div>
+        `;
+                });
+
+                group_html += `</div>`;
+                orderListElement.innerHTML += group_html;
+            });
+
+
+
         }
         )
         .catch(error => {
             console.error('Error al cargar el archivo JSON:', error);
         });
 }
- 
