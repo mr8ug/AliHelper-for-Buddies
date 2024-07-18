@@ -30,7 +30,7 @@ function loadLocal() {
                     <div class="order-product-name">Customer: ${order_product}</div>
                     <div class="order-ali-status">Total: ${order_ali_status}</div>
                     <div class="order-status">AliStatus: ${order_status}</div>
-                    <div class="order-tracking"> <a href="${order_tracking_url}">Tracking: ${order_tracking}</a></div>
+                    <div class="order-tracking">Tracking: <a href="https://t.17track.net/es#nums=${order_tracking}">${order_tracking}</a></div>
                     <div class="order-tracking-status">Tracking Status: ${order_tracking_status}</div>
                     <div class="order-images">${image_html}</div>
                     
