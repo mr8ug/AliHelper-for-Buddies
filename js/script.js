@@ -18,7 +18,7 @@ function loadLocal() {
 
                 let image_html = '';
                 for (let j = 0; j < images.length; j++) {
-                    image_html += `<img src="${images[j]}" alt="product image" class="product-image">`;
+                    image_html += `<img src="${images[j]}" alt="product image ${order_id +"-"+ j}" class="product-image">`;
 
                 }
 
