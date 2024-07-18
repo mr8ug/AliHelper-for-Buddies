@@ -14,13 +14,12 @@ function loadLocal() {
                 let order_status = order.status;
                 let order_tracking = order.tracking_number;
                 let order_tracking_status = order.tracking_status;
+                let order_tracking_url = order.tracking_link;
                 let images = order.image_references;
 
                 let image_html = '';
                 for (let j = 0; j < images.length; j++) {
-                    console.log(images[j]);
                     image_html += `<div class="order-item-content-img" style="background-image: url(&quot;${String(images[j])}&quot;);" alt="product image ${order_id +"-"+ j}" ></div>`;
-
                 }
 
 
@@ -31,7 +30,7 @@ function loadLocal() {
                     <div class="order-product-name">Customer: ${order_product}</div>
                     <div class="order-ali-status">Total: ${order_ali_status}</div>
                     <div class="order-status">AliStatus: ${order_status}</div>
-                    <div class="order-tracking">Tracking: ${order_tracking}</div>
+                    <div class="order-tracking"> <a href="${order_tracking_url}">Tracking: ${order_tracking}</a></div>
                     <div class="order-tracking-status">Tracking Status: ${order_tracking_status}</div>
                     <div class="order-images">${image_html}</div>
                     
