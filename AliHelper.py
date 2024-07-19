@@ -290,8 +290,9 @@ class AliHelper:
             print(f"Orders exported to {filename}")
             return True
     
-    def printTrackByOrderList(self,orderList:list=[], fromFile:bool=False, filePath:str="orders.json"):
+    def printTrackByOrderList(self,orderList:list=[], fromFile:bool=False, filePath:str="orders.json", export:bool=True):
         print("Printing tracking numbers")
+        fileData = []
         if len(orderList) == 0:
             print("No orders to print")
             return False
@@ -317,17 +318,22 @@ class AliHelper:
             for d in data:
                 if d["order_id"] == str(o):
                     print(f"{d['tracking_number']}")
+                    fileData.append(d['tracking_number'])
                     break
+        if export:
+            with open("tracking_numbers.json", "w") as file:
+                json.dump(fileData, file, indent=4)
                 
         print("----------------------")
     
-    def printTrackingStatusByOrderList(self,orderList:list=[], fromFile:bool=False, filePath:str="orders.json"):
+    def printTrackingStatusByOrderList(self,orderList:list=[], fromFile:bool=False, filePath:str="orders.json", export:bool=True):
         print("Printing tracking status...")
         if len(orderList) == 0:
             print("No orders to print")
             return False
         
         data = []
+        fileData = []
         if fromFile:
             if filePath != "":
                 with open(filePath, "r") as file:
@@ -348,8 +354,11 @@ class AliHelper:
             for d in data:
                 if d["order_id"] == str(o):
                     print(f"{d['tracking_status']}")
+                    fileData.append(d['tracking_status'])
                     break
-        
+        if export:
+            with open("tracking_status.json", "w") as file:
+                json.dump(fileData, file, indent=4)
         print("----------------------")
 
 ali = AliHelper()
