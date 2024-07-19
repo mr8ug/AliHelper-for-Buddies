@@ -27,13 +27,22 @@ function loadLocal() {
             let trackingNumbers = Object.keys(groupedOrders).join(',');
 
             let orderListElement = document.getElementById('order-list');
+            
             orderListElement.innerHTML =  '<hr>'+ `<a href="https://t.17track.net/es#nums=${trackingNumbers}" target="_blank" id="allTracks">Rastrear todos</a><br>`;
 
             Object.keys(groupedOrders).forEach(tracking_number => {
-                const orders = groupedOrders[tracking_number];
-
+                const orders = groupedOrders[tracking_number].sort((a, b) => {
+                    if (a.order_id < b.order_id) {
+                        return -1;
+                    }
+                    if (a.order_id > b.order_id) {
+                        return 1;
+                    }
+                    return 0;
+                });
+                
                 let group_html = `<div class="order-group tracking-${tracking_number}">
-                     <h5><a href="https://t.17track.net/es#nums=${tracking_number}" target="_blank">${tracking_number}</a></h5>`;
+                     <h5><a href="https://t.17track.net/es#nums=${tracking_number}" target="_blank">${tracking_number} (${orders.length})</a></h5>`;
 
                 orders.forEach(order => {
                     group_html += `
@@ -49,6 +58,8 @@ function loadLocal() {
                                     <div class="order-product-name order-${order.order_id}">Product: ${order.product_name}</div>
                                     
                                     <div class="order-ali-status order-${order.order_id}"><strong>Total: ${order.total_price}</strong></div>
+                                    <div class="order-ali-status order-${order.order_id}"><strong>Items: ${order.product_quantity}</strong></div>
+
                                 </div>
 
                                 
@@ -61,11 +72,6 @@ function loadLocal() {
                                     }).join('')}
                             </div>
                             
-
-                             
-
-                           
-
                             <div class="order-track order-${order.order_id}">
                                 <div class="order-status order-${order.order_id}">AliExpress Status: ${order.status}</div>
                                 <div class="order-tracking order-${order.order_id}"><strong>Tracking: ${order.tracking_number}</strong></div>
