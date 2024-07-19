@@ -164,10 +164,12 @@ class AliHelper:
                 
                 index_img = order_item_images.index(img)
                 img_path = img_save_path + f"img_{index_img}.png"
-    
-                
-                orden["image_references"].append(self.downloadImage(url, img_path))
-                    
+
+                #check if exists
+                if not os.path.exists(img_path):
+                    orden["image_references"].append(self.downloadImage(url, img_path))
+                else:
+                    orden["image_references"].append(img_path)
             
             
             if len(orden["image_references"]) == 1:
