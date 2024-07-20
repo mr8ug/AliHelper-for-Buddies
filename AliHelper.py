@@ -7,16 +7,18 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.chrome.service import Service
 
 from time import sleep
+from datetime import datetime
 
 import os
 import json
 
 class AliHelper:
-    def __init__(self, localUser:str="", user_data_dir:str=""):
+    def __init__(self, localUser:str="", user_data_dir:str="", useChrome:bool=False, useEdge:bool=True):
         self.url_orders = "https://www.aliexpress.com/p/order/index.html"
         self.driver = None
         self.chrome_options = None
         self.service = None
+        self.driverType = ""
         if localUser == "":
             self.localUser = os.getlogin()
         else:
@@ -24,7 +26,14 @@ class AliHelper:
             
         if user_data_dir == "":
             print("User data dir not provided, using default")
-            self.user_data_dir = "C:/Users/"+self.localUser+"/AppData/Local/Google/Chrome/User Data"
+            if useChrome:
+                self.user_data_dir = "C:/Users/"+self.localUser+"/AppData/Local/Google/Chrome/User Data"
+                self.driverType = "chrome"
+            #edge
+            if useEdge:
+                self.user_data_dir = "C:/Users/"+self.localUser+"/AppData/Local/Microsoft/Edge/User Data"
+                self.driverType = "edge"
+            
         else:
             self.user_data_dir = user_data_dir
             
@@ -36,28 +45,47 @@ class AliHelper:
         self.orders = []
         
         
-    def setEnviroment(self):
+    def setEnviroment(self, headless:bool=False):
         
         #close all instance
-        os.system("taskkill /f /im chrome.exe")
+        self.driver_options = None
+        self.service = None
+        if self.driverType == "chrome":
+            os.system("taskkill /f /im chrome.exe")
+            self.driver_options = webdriver.ChromeOptions()        
+            self.service = Service("./chromedriver.exe")
+            
+        elif self.driverType == "edge":
+            os.system("taskkill /f /im msedge.exe")
+            self.driver_options = webdriver.EdgeOptions()
         
-        self.chrome_options = webdriver.ChromeOptions()        
-        self.chrome_options.add_argument("--user-data-dir="+self.user_data_dir)
-        self.chrome_options.add_argument("--disable-blink-features=AutomationControlled")
-        self.chrome_options.add_experimental_option("useAutomationExtension", False)
-        self.chrome_options.add_experimental_option("excludeSwitches",["enable-automation"])
-        self.chrome_options.add_experimental_option("excludeSwitches",["enable-logging"])
+    
+        self.driver_options.add_argument("--user-data-dir="+self.user_data_dir)
+        self.driver_options.add_argument("--disable-blink-features=AutomationControlled")
+        self.driver_options.add_experimental_option("useAutomationExtension", False)
+        self.driver_options.add_experimental_option("excludeSwitches",["enable-automation"])
+        self.driver_options.add_experimental_option("excludeSwitches",["enable-logging"])
         #add headless
-        self.chrome_options.add_argument("--headless")
-        self.service = Service("./chromedriver.exe")
+        if headless:
+            self.driver_options.add_argument("--headless")
         
-        self.driver = webdriver.Chrome(
-            service=self.service,
-            options=self.chrome_options
-        )
         
-    def getOrders(self, category:str="Shipped", max_orders:int=10, asJson:bool=False)->list:
+        if self.driverType == "chrome":
+            self.driver = webdriver.Chrome(
+                service=self.service,
+                options=self.driver_options
+            )
         
+        elif self.driverType == "edge":
+            self.driver = webdriver.Edge(
+                options=self.driver_options
+            )
+        
+    def getOrders(self, category:str="Shipped", max_orders:int=10, asJson:bool=False, requireToLogin:bool=False)->list:
+        if requireToLogin:
+            print("Please login to Aliexpress and press Enter to continue...")
+            input()
+            
         self.driver.get(self.url_orders)
         
         #categorias (View All, To Pay, Shipped, Processed)
@@ -323,8 +351,13 @@ class AliHelper:
                     fileData.append(d['tracking_number'])
                     break
         if export:
-            with open("tracking_numbers.json", "w") as file:
-                json.dump(fileData, file, indent=4)
+            with open("tracking_numbers.txt", "w") as file:
+                date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                file.write(f"Generated on: {date}\n")
+                for d in fileData:
+                    file.write(f"{d}\n")
+                # json.dump(fileData, file, indent=4)
+                file.write("----------------------")
                 
         print("----------------------")
     
@@ -359,13 +392,18 @@ class AliHelper:
                     fileData.append(d['tracking_status'])
                     break
         if export:
-            with open("tracking_status.json", "w") as file:
-                json.dump(fileData, file, indent=4)
+            with open("tracking_status.txt", "w") as file:
+                date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                file.write(f"Generated on: {date}\n")
+                for d in fileData:
+                    file.write(f"{d}\n")
+                # json.dump(fileData, file, indent=4)
+                file.write("----------------------")
         print("----------------------")
 
 ali = AliHelper()
 #PARA ACTUALIZAR INFO
-ali.setEnviroment()
+ali.setEnviroment(headless=True)
 ali.getOrders(max_orders=39)
 ali.exportOrders("orders.json")
 ali.printTrackByOrderList(orderList=[8190564821197491,8190564821727491,8190564821867491,8190564821867491,8190564821327491,8190564821537491,8190564821537491,8190564821657491,8190564821807491,8190564821767491,8190564821497491,8190564821377491,8190564821377491,8190564821497491,8190564821917491,8190564821917491,8190564821677491,8190564821677491,8190564821947491,8190564822027491,8190564821517491,8190564821447491,8190564821597491,8190564821897491,8190564821567491,8190564821567491,8190564821617491,8190564822057491,8190564821827491,8190564821307491,8190564822007491,8190564821747491,8190564821427491,8190564821257491,8190564821987491,8190564821197491,8190564821407491,8190564821257491,8190564821427491,8190564821227491,8190564821227491,8190564821287491,8190564821467491,8190564821467491,8190564821347491,8190564822027491,8190564821347491,8190564821787491,8190564821637491,8190564821327491,8190564822077491,8190564821707491,8190564821967491,8190564821847491])
