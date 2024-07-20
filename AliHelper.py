@@ -48,7 +48,7 @@ class AliHelper:
         self.chrome_options.add_experimental_option("excludeSwitches",["enable-automation"])
         self.chrome_options.add_experimental_option("excludeSwitches",["enable-logging"])
         #add headless
-        # self.chrome_options.add_argument("--headless")
+        self.chrome_options.add_argument("--headless")
         self.service = Service("./chromedriver.exe")
         
         self.driver = webdriver.Chrome(
