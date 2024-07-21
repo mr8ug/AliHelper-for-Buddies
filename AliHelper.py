@@ -12,13 +12,17 @@ from datetime import datetime
 import os
 import json
 
+from tkinter import messagebox
+
+
 class AliHelper:
-    def __init__(self, localUser:str="", user_data_dir:str="", useChrome:bool=False, useEdge:bool=True):
+    def __init__(self, localUser:str="", user_data_dir:str="", useChrome:bool=False, useEdge:bool=True, showAlerts:bool=True):
         self.url_orders = "https://www.aliexpress.com/p/order/index.html"
         self.driver = None
         self.chrome_options = None
         self.service = None
         self.driverType = ""
+        self.showAlerts = showAlerts
         if localUser == "":
             self.localUser = os.getlogin()
         else:
@@ -26,7 +30,9 @@ class AliHelper:
             
         if user_data_dir == "":
             print("User data dir not provided, using default")
+
             if useChrome:
+                useEdge = False
                 self.user_data_dir = "C:/Users/"+self.localUser+"/AppData/Local/Google/Chrome/User Data"
                 self.driverType = "chrome"
             #edge
@@ -50,12 +56,23 @@ class AliHelper:
         #close all instance
         self.driver_options = None
         self.service = None
+        selected = None
         if self.driverType == "chrome":
+            if self.showAlerts:
+               selected = messagebox.askokcancel("Warning", "I need to close all Chrome instances, please save your work...")
+               
+            if selected == False:
+                exit()
+            
             os.system("taskkill /f /im chrome.exe")
             self.driver_options = webdriver.ChromeOptions()        
             self.service = Service("./chromedriver.exe")
             
         elif self.driverType == "edge":
+            if self.showAlerts:
+                selected = messagebox.askokcancel("Warning", "I need to close all Microsoft Edge instances, please save your work...")
+            if selected == False:
+                exit()
             os.system("taskkill /f /im msedge.exe")
             self.driver_options = webdriver.EdgeOptions()
         
