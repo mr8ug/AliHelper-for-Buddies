@@ -2,13 +2,13 @@ function loadLocal() {
     //load json from root folder
     //fetch from "http://mr8ugger.pythonanywhere.com/aliOrdersGet"
 
-    fetch("http://mr8ugger.pythonanywhere.com/aliOrdersGet")
+    fetch("https://mr8ugger.pythonanywhere.com/aliOrdersGet")
         .then(response => response.json())
         .then(data => {
             
             let orders = data.orders; //dictionary with orders
             //get all keys from dictionary
-            let keys = Object.keys(orders);
+            
             //get all values from dictionary
             let values = Object.values(orders);
             //get all entries from dictionary
@@ -27,9 +27,6 @@ function loadLocal() {
                     tracking_process: order.tracking_process
                 };
             });
-
-
-            console.log(orders);
             ordersList.sort((a, b) => {
                 if (a.tracking_number < b.tracking_number) {
                     return -1;
