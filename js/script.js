@@ -1,9 +1,36 @@
 function loadLocal() {
     //load json from root folder
-    fetch('orders.json')
+    //fetch from "http://mr8ugger.pythonanywhere.com/aliOrdersGet"
+
+    fetch("http://mr8ugger.pythonanywhere.com/aliOrdersGet")
         .then(response => response.json())
         .then(data => {
-            data.sort((a, b) => {
+            
+            let orders = data.orders; //dictionary with orders
+            //get all keys from dictionary
+            let keys = Object.keys(orders);
+            //get all values from dictionary
+            let values = Object.values(orders);
+            //get all entries from dictionary
+
+            ordersList = values.map((order, index) => {
+                return {
+                    order_id: order.order_id,
+                    order_date: order.order_date,
+                    product_name: order.product_name,
+                    total_price: order.total_price,
+                    product_quantity: order.product_quantity,
+                    image_references: order.image_references,
+                    status: order.status,
+                    tracking_number: order.tracking_number,
+                    tracking_status: order.tracking_status,
+                    tracking_process: order.tracking_process
+                };
+            });
+
+
+            console.log(orders);
+            ordersList.sort((a, b) => {
                 if (a.tracking_number < b.tracking_number) {
                     return -1;
                 }
@@ -14,7 +41,7 @@ function loadLocal() {
             });
 
 
-            let groupedOrders = data.reduce((groups, order) => {
+            let groupedOrders = ordersList.reduce((groups, order) => {
                 const key = order.tracking_number;
                 if (!groups[key]) {
                     groups[key] = [];
@@ -42,7 +69,7 @@ function loadLocal() {
                 });
                 
                 let group_html = `<div class="order-group tracking-${tracking_number}">
-                     <h5><a href="https://t.17track.net/es#nums=${tracking_number}" target="_blank">${tracking_number} (${orders.length})</a></h5>`;
+                     <h5 class="text"><a href="https://t.17track.net/es#nums=${tracking_number}" target="_blank">${tracking_number} (${orders.length})</a></h5>`;
 
                 orders.forEach(order => {
                     group_html += `
