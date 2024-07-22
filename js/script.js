@@ -47,12 +47,23 @@ function loadLocal() {
                 return groups;
             }, {});
 
+            let button = document.getElementById('loadLocal');
+            // button.style.display = 'none';
+
             //concat groups as group;group;group
             let trackingNumbers = Object.keys(groupedOrders).join(',');
 
+            let orderListMenu = document.getElementById('order-list-menu');
+            
+            /*for each grouped Orders append into orderListMenu html an href to direct element*/
+            orderListMenu.innerHTML = '';
+            Object.keys(groupedOrders).forEach(tracking_number => {
+                orderListMenu.innerHTML += `<li><a href="#${tracking_number}" class="order-list-menu-item">${tracking_number} (${groupedOrders[tracking_number].length})</a></li>`;
+            });
+
             let orderListElement = document.getElementById('order-list');
             
-            orderListElement.innerHTML =  '<hr>'+ `<a href="https://t.17track.net/es#nums=${trackingNumbers}" target="_blank" id="allTracks">Rastrear todos</a><br>`;
+            orderListMenu.innerHTML +=  '<li>'+ `<a href="https://t.17track.net/es#nums=${trackingNumbers}" target="_blank" id="allTracks">Rastrear todos</a><br>`;
 
             Object.keys(groupedOrders).forEach(tracking_number => {
                 const orders = groupedOrders[tracking_number].sort((a, b) => {
@@ -65,9 +76,9 @@ function loadLocal() {
                     return 0;
                 });
                 
-                let group_html = `<div class="order-group tracking-${tracking_number}">
-                     <h5 class="text"><a href="https://t.17track.net/es#nums=${tracking_number}" target="_blank">${tracking_number} (${orders.length})</a></h5>`;
-
+                let group_html = `<div class="accordion-item order-group tracking-${tracking_number}" id="${tracking_number}">
+                     <h5  class=" accordion-header text"><a href="https://t.17track.net/es#nums=${tracking_number}" target="_blank">${tracking_number} (${orders.length})</a></h5>`;
+                    
                 orders.forEach(order => {
                     group_html += `
                         <div class="order-item order-${order.order_id}">
