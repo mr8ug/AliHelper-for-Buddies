@@ -90,7 +90,9 @@ class AliHelper:
         #add headless
         if headless:
             self.driver_options.add_argument("--headless")
-        
+        else:
+            #maximize driver
+            self.driver_options.add_argument("--start-maximized")
         
         if self.driverType == "chrome":
             self.driver = webdriver.Chrome(
@@ -222,6 +224,20 @@ class AliHelper:
                     orden["image_references"].append(img_path)
             
             
+            #find order detail link
+            order_detail = order_item.find_element(By.CSS_SELECTOR, "a[data-pl='order_item_header_detail'")
+            order_url = order_detail.get_attribute("href")
+            
+            
+            #save order detail screenshot
+            order_detail_save_path = f"./detail/"
+            if not os.path.exists(order_detail_save_path):
+                os.makedirs(order_detail_save_path)
+                
+            detail_path = order_detail_save_path + str(orden['order_id'])+"_detail.png"
+            # if not os.path.exists(detail_path):
+            self.saveOrderScreenshot(url=order_url, save_path=detail_path)
+            
             if len(orden["image_references"]) == 1:
                 #obtener el nombre ya que si aparece
                 nombre_producto = ""
@@ -330,6 +346,53 @@ class AliHelper:
         self.driver.switch_to.window(self.driver.window_handles[0])
         
         return save_path
+    
+    def saveOrderScreenshot(self, url:str, save_path:str):
+        #abrir nueva pestaña
+        if self.driver.window_handles:
+            if len(self.driver.window_handles) > 1:
+                self.driver.switch_to.window(self.driver.window_handles[1])
+                self.driver.close()
+                self.driver.switch_to.window(self.driver.window_handles[0])
+        
+        self.driver.execute_script("window.open('');")
+        self.driver.switch_to.window(self.driver.window_handles[1])
+        self.driver.get(url)
+        self.driver.execute_script("document.body.style.zoom = '65%'")
+        
+        #find expand details button
+    # try:
+    
+        order_price_div = WebDriverWait(self.driver, timeout=10, poll_frequency=1).until(
+            lambda d: d.find_element(By.CSS_SELECTOR, "div[class='order-price']")
+        )
+        expand = order_price_div.find_element(By.CSS_SELECTOR, "span[class='comet-icon comet-icon-arrowdown switch-icon']")
+            
+        
+        self.driver.execute_script("arguments[0].style.border = '3px solid red';", expand)
+        self.driver.execute_script("arguments[0].scrollIntoView();", expand)
+        self.driver.execute_script("arguments[0].click();", expand)
+        # expand.click()
+        # self.driver.execute_script("arguments[0].click();", expand)
+        sleep(1)
+        #save screenshot on url
+        
+        order_detail_info_item = WebDriverWait(self.driver, timeout=10, poll_frequency=1).until(
+            lambda d: d.find_element(By.CSS_SELECTOR, "div[class='order-detail-info-item']")
+        )
+        
+        self.driver.execute_script("arguments[0].scrollIntoView();", order_detail_info_item)
+        order = self.driver.find_element(By.TAG_NAME, "body")
+        #save screenshot
+        order.screenshot(save_path)
+        
+        self.driver.switch_to.window(self.driver.window_handles[0])
+        return save_path
+        
+    # except:
+    #     self.driver.switch_to.window(self.driver.window_handles[0])
+    #     return "error_saving_order"
+        
     
     def exportOrders(self, filename:str="orders.json"):
         if len(self.orders) == 0:
@@ -444,17 +507,21 @@ class AliHelper:
         #make the post request
         print("Pushing orders to server...")
         url = os.getenv("ALI_ORDERS_UPDATE")
-        post_response = requests.post(url, json={"ali_orders":data, "date":datetime.now().strftime("%Y-%m-%d %H:%M:%S")})
+        try:
+            post_response = requests.post(url, json={"ali_orders":data, "date":datetime.now().strftime("%Y-%m-%d %H:%M:%S")})
+        except:
+            print("Error pushing orders")
+            return False
         print(post_response.status_code)
         return True
             
-        pass
-ali = AliHelper(showAlerts=False)
+        
+ali = AliHelper(showAlerts=False, useChrome=True)
 #PARA ACTUALIZAR INFO
-ali.setEnviroment(headless=True)
+ali.setEnviroment(headless=False)
 ali.getOrders(max_orders=39)
 ali.exportOrders("orders.json")
-# ali.printTrackByOrderList(orderList=[8190564821197491,8190564821727491,8190564821867491,8190564821867491,8190564821327491,8190564821537491,8190564821537491,8190564821657491,8190564821807491,8190564821767491,8190564821497491,8190564821377491,8190564821377491,8190564821497491,8190564821917491,8190564821917491,8190564821677491,8190564821677491,8190564821947491,8190564822027491,8190564821517491,8190564821447491,8190564821597491,8190564821897491,8190564821567491,8190564821567491,8190564821617491,8190564822057491,8190564821827491,8190564821307491,8190564822007491,8190564821747491,8190564821427491,8190564821257491,8190564821987491,8190564821197491,8190564821407491,8190564821257491,8190564821427491,8190564821227491,8190564821227491,8190564821287491,8190564821467491,8190564821467491,8190564821347491,8190564822027491,8190564821347491,8190564821787491,8190564821637491,8190564821327491,8190564822077491,8190564821707491,8190564821967491,8190564821847491])
+ali.printTrackByOrderList(orderList=[8190564821197491,8190564821727491,8190564821867491,8190564821867491,8190564821327491,8190564821537491,8190564821537491,8190564821657491,8190564821807491,8190564821767491,8190564821497491,8190564821377491,8190564821377491,8190564821497491,8190564821917491,8190564821917491,8190564821677491,8190564821677491,8190564821947491,8190564822027491,8190564821517491,8190564821447491,8190564821597491,8190564821897491,8190564821567491,8190564821567491,8190564821617491,8190564822057491,8190564821827491,8190564821307491,8190564822007491,8190564821747491,8190564821427491,8190564821257491,8190564821987491,8190564821197491,8190564821407491,8190564821257491,8190564821427491,8190564821227491,8190564821227491,8190564821287491,8190564821467491,8190564821467491,8190564821347491,8190564822027491,8190564821347491,8190564821787491,8190564821637491,8190564821327491,8190564822077491,8190564821707491,8190564821967491,8190564821847491])
 ali.printTrackingStatusByOrderList(orderList=[8190564821197491,8190564821727491,8190564821867491,8190564821867491,8190564821327491,8190564821537491,8190564821537491,8190564821657491,8190564821807491,8190564821767491,8190564821497491,8190564821377491,8190564821377491,8190564821497491,8190564821917491,8190564821917491,8190564821677491,8190564821677491,8190564821947491,8190564822027491,8190564821517491,8190564821447491,8190564821597491,8190564821897491,8190564821567491,8190564821567491,8190564821617491,8190564822057491,8190564821827491,8190564821307491,8190564822007491,8190564821747491,8190564821427491,8190564821257491,8190564821987491,8190564821197491,8190564821407491,8190564821257491,8190564821427491,8190564821227491,8190564821227491,8190564821287491,8190564821467491,8190564821467491,8190564821347491,8190564822027491,8190564821347491,8190564821787491,8190564821637491,8190564821327491,8190564822077491,8190564821707491,8190564821967491,8190564821847491])
 ali.pushOrdersToServer(fromFile=True, filePath="orders.json")
 
