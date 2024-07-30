@@ -105,7 +105,7 @@ class AliHelper:
                 options=self.driver_options
             )
         
-    def getOrders(self, category:str="Shipped", max_orders:int=10, asJson:bool=False, requireToLogin:bool=False)->list:
+    def getOrders(self, category:str="Shipped", max_orders:int=-1, asJson:bool=False, requireToLogin:bool=False)->list:
         if requireToLogin:
             print("Please login to Aliexpress and press Enter to continue...")
             input()
@@ -128,7 +128,7 @@ class AliHelper:
         while True:
             items_loaded = self.driver.find_elements(By.CLASS_NAME, "order-item")
             element_count = len(items_loaded)
-            if element_count >= max_orders:
+            if element_count >= max_orders and max_orders != -1:
                 break
             
             div_more = None
@@ -137,9 +137,11 @@ class AliHelper:
                     lambda d: d.find_element(By.CLASS_NAME, "order-more")
                 )
             except:
+                print("No more orders to load")
                 break
             
             if div_more == None:
+                print("No more orders to load")
                 break
             
             button_viewOrders = div_more.find_element(By.CLASS_NAME, "comet-btn")
@@ -170,8 +172,8 @@ class AliHelper:
                 "tracking_number": "",
                 "tracking_status": "",
                 "tracking_process": "",
-                "image_references": [] #almacenara urls de imagenes
-                
+                "image_references": [], #almacenara urls de imagenes
+                "property":""
             }   
             
             #informacion de fecha y id de orden
@@ -283,6 +285,8 @@ class AliHelper:
                 orden["tracking_process"] = tracking_info["tracking_process"]
 
                 self.orders.append(orden)
+                
+            orden["property"] = str(self.localUser)
         
         if asJson:
             return json.dumps(self.orders, indent=4)    
@@ -321,7 +325,7 @@ class AliHelper:
             lambda d: d.find_element(By.CLASS_NAME, "logistic-info--track--WBcFzsd")
         )
         #save html
-        tracker_info["tracking_process"] = process.get_attribute("outerHTML")
+        tracker_info["tracking_process"] = str(process.text)
     
         self.driver.switch_to.window(self.driver.window_handles[0])
 
@@ -358,7 +362,7 @@ class AliHelper:
         self.driver.execute_script("window.open('');")
         self.driver.switch_to.window(self.driver.window_handles[1])
         self.driver.get(url)
-        self.driver.execute_script("document.body.style.zoom = '65%'")
+        self.driver.execute_script("document.body.style.zoom = '75%'")
         
         #find expand details button
     # try:
@@ -516,10 +520,10 @@ class AliHelper:
         return True
             
         
-ali = AliHelper(showAlerts=False, useChrome=True)
+ali = AliHelper(showAlerts=False)
 #PARA ACTUALIZAR INFO
 ali.setEnviroment(headless=False)
-ali.getOrders(max_orders=39)
+ali.getOrders(category="View All")
 ali.exportOrders("orders.json")
 ali.printTrackByOrderList(orderList=[8190564821197491,8190564821727491,8190564821867491,8190564821867491,8190564821327491,8190564821537491,8190564821537491,8190564821657491,8190564821807491,8190564821767491,8190564821497491,8190564821377491,8190564821377491,8190564821497491,8190564821917491,8190564821917491,8190564821677491,8190564821677491,8190564821947491,8190564822027491,8190564821517491,8190564821447491,8190564821597491,8190564821897491,8190564821567491,8190564821567491,8190564821617491,8190564822057491,8190564821827491,8190564821307491,8190564822007491,8190564821747491,8190564821427491,8190564821257491,8190564821987491,8190564821197491,8190564821407491,8190564821257491,8190564821427491,8190564821227491,8190564821227491,8190564821287491,8190564821467491,8190564821467491,8190564821347491,8190564822027491,8190564821347491,8190564821787491,8190564821637491,8190564821327491,8190564822077491,8190564821707491,8190564821967491,8190564821847491])
 ali.printTrackingStatusByOrderList(orderList=[8190564821197491,8190564821727491,8190564821867491,8190564821867491,8190564821327491,8190564821537491,8190564821537491,8190564821657491,8190564821807491,8190564821767491,8190564821497491,8190564821377491,8190564821377491,8190564821497491,8190564821917491,8190564821917491,8190564821677491,8190564821677491,8190564821947491,8190564822027491,8190564821517491,8190564821447491,8190564821597491,8190564821897491,8190564821567491,8190564821567491,8190564821617491,8190564822057491,8190564821827491,8190564821307491,8190564822007491,8190564821747491,8190564821427491,8190564821257491,8190564821987491,8190564821197491,8190564821407491,8190564821257491,8190564821427491,8190564821227491,8190564821227491,8190564821287491,8190564821467491,8190564821467491,8190564821347491,8190564822027491,8190564821347491,8190564821787491,8190564821637491,8190564821327491,8190564822077491,8190564821707491,8190564821967491,8190564821847491])
