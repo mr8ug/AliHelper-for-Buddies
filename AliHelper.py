@@ -332,9 +332,9 @@ class AliHelper:
         process_txt = str(process.text).split("\n")
         
         #pass to an html tags
-        process_html = "<div>"
+        process_html = "<div class=\"tracking-process\">"
         for p in process_txt:
-            process_html += f"<p class=\"tracking-line\">{p}</li>"
+            process_html += f"<p class=\"tracking-line\">{p}</p>"
         process_html += "</div>"
         
         
@@ -534,12 +534,12 @@ class AliHelper:
             
         
 ali = AliHelper(showAlerts=False)
-#PARA ACTUALIZAR INFO
-ali.setEnviroment(headless=False)
-ali.getOrders(category="Shipped", max_orders=7)
-ali.exportOrders("orders.json")
-ali.printTrackByOrderList(orderList=[8191545881577491,8191545881597491,8191545881637491,8191545881617491,8191545881677491,8191545881697491,8191545881657491])
-ali.printTrackingStatusByOrderList(orderList=[8191545881577491,8191545881597491,8191545881637491,8191545881617491,8191545881677491,8191545881697491,8191545881657491])
+# #PARA ACTUALIZAR INFO
+# ali.setEnviroment(headless=False)
+# ali.getOrders(category="Shipped", max_orders=10)
+# ali.exportOrders("orders.json")
+# ali.printTrackByOrderList(orderList=[8191545881577491,8191545881597491,8191545881637491,8191545881617491,8191545881677491,8191545881697491,8191545881657491])
+# ali.printTrackingStatusByOrderList(orderList=[8191545881577491,8191545881597491,8191545881637491,8191545881617491,8191545881677491,8191545881697491,8191545881657491])
 ali.pushOrdersToServer(fromFile=True, filePath="orders.json")
 
 # #PARA IMPRIMIR TRACKING

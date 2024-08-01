@@ -100,7 +100,7 @@ function loadLocal() {
                                 
                             </div>
 
-                            
+                            <div class="order-resume">
                             <div class="order-images order-${order.order_id}">
                                 ${order.image_references.map((image, index) => {
                                         return `<img class="order-item-content-img" src="${image}" alt="product image ${order.order_id + "-" + index}"></img>`;
@@ -115,7 +115,7 @@ function loadLocal() {
                             
                             
                             </div>
-
+                            </div>      
                             ${order.tracking_process}
                             
                             
