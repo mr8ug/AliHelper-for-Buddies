@@ -196,3 +196,15 @@ footer {
   .list ul li:hover:before {
     transform: scaleX(1);
   }
+
+  .tracking-line{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+  }
