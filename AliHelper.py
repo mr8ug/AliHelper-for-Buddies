@@ -20,6 +20,31 @@ from dotenv import load_dotenv, dotenv_values
 
 class AliHelper:
     def __init__(self, localUser:str="", user_data_dir:str="", useChrome:bool=False, useEdge:bool=True, showAlerts:bool=True):
+        """Initialize the AliHelper class, this class will help you to get orders from Aliexpress and store them in a list of dictionaries with the following structure:
+        {
+            "order_id": "",
+            "order_date": "",
+            "shop_name": "",
+            "product_name": "",
+            "product_price": "",
+            "product_quantity": "",
+            "total_price": "",
+            "status": "",
+            "tracking_link": "",
+            "tracking_number": "",
+            "tracking_status": "",
+            "tracking_process": "",
+            "image_references": [],
+            "property":""
+        }
+
+        Args:
+            localUser (str, optional): In case no localUser name be provided will use localmachine as property value to orders. Defaults to "".
+            user_data_dir (str, optional): In case no user data path is provided, will use defaults path for User Data Path for chrome or edge. Defaults to "".
+            useChrome (bool, optional): By default Edge is used, but if ChromeFlag is on, the precedence will be Chrome->Edge. Defaults to False.
+            useEdge (bool, optional): In case useChrome flag is not True, will be used Edge. Defaults to True.
+            showAlerts (bool, optional): Some alerts will display, but you can turn of this when you know what this do. Defaults to True.
+        """
         self.url_orders = "https://www.aliexpress.com/p/order/index.html"
         self.driver = None
         self.chrome_options = None
@@ -57,6 +82,11 @@ class AliHelper:
         
         
     def setEnviroment(self, headless:bool=False):
+        """Run program on headlessmode
+
+        Args:
+            headless (bool, optional): You can try to load this scrapper on headless mode, this will run in background. Defaults to False.
+        """
         
         #close all instance
         self.driver_options = None
@@ -106,6 +136,18 @@ class AliHelper:
             )
         
     def getOrders(self, category:str="Shipped", max_orders:int=-1, asJson:bool=False, requireToLogin:bool=False)->list:
+        """Get orders from Aliexpress and store them in a list based on the category provided (Shipped, To Pay, Processed, View All) and the max_orders to get
+        In case of requireToLogin, the user will need to login to Aliexpress and press Enter to continue
+
+        Args:
+            category (str, optional): On english can be (Shipped, To Pay, Processed, View All). Defaults to "Shipped".
+            max_orders (int, optional): Define the number of orders to bring back or load. Defaults to -1.
+            asJson (bool, optional): In case json structure needed to be returned. Defaults to False.
+            requireToLogin (bool, optional): In case no userdata where loaded you will need to login first. Defaults to False.
+
+        Returns:
+            list: return a list of orders
+        """
         if requireToLogin:
             print("Please login to Aliexpress and press Enter to continue...")
             input()
@@ -298,6 +340,14 @@ class AliHelper:
         return self.orders
     
     def getTrackingNumber(self, tracking_link:str)->dict:
+        """Receive a tracking link and return the tracking number, status and process
+
+        Args:
+            tracking_link (str): tracking link/url
+
+        Returns:
+            dict: returns a dictionary with the tracking number, status and process
+        """
         tracker_info = {
             "tracking_number": "",
             "tracking_status": "",
@@ -344,7 +394,16 @@ class AliHelper:
 
         return tracker_info
     
-    def downloadImage(self, url:str, save_path:str):
+    def downloadImage(self, url:str, save_path:str)->str:
+        """Download an image from a url and save it on the save_path
+
+        Args:
+            url (str): url of the image
+            save_path (str): where should be saved the image
+            
+        Returns:
+            str: return the save_path
+        """
          #abrir nueva pestaña
         if self.driver.window_handles:
             if len(self.driver.window_handles) > 1:
@@ -364,7 +423,17 @@ class AliHelper:
         
         return save_path
     
-    def saveOrderScreenshot(self, url:str, save_path:str):
+    def saveOrderScreenshot(self, url:str, save_path:str, zoom:int=75)->str:
+        """Take a screenshot of the order detail for a specific order provided by the url
+
+        Args:
+            url (str): url of order detail
+            save_path (str): where should be saved the screenshot
+            zoom (int, optional): If order details doesnt display properly, page will need an adjust, with a 1920x1080 display 75% works fine. Defaults to 75.
+            
+        Returns:
+            str: return the save_path
+        """
         #abrir nueva pestaña
         if self.driver.window_handles:
             if len(self.driver.window_handles) > 1:
@@ -375,7 +444,7 @@ class AliHelper:
         self.driver.execute_script("window.open('');")
         self.driver.switch_to.window(self.driver.window_handles[1])
         self.driver.get(url)
-        self.driver.execute_script("document.body.style.zoom = '75%'")
+        self.driver.execute_script(f"document.body.style.zoom = '{zoom}%'")
         
         #find expand details button
     # try:
@@ -412,6 +481,14 @@ class AliHelper:
         
     
     def exportOrders(self, filename:str="orders.json"):
+        """In case needed as to export data to server or other utilities, you can export the orders to a json file
+
+        Args:
+            filename (str, optional): Path where file should be saved. Defaults to "orders.json".
+
+        Returns:
+            self: return True if file was saved
+        """
         if len(self.orders) == 0:
             print("No orders to export")
             return False
@@ -423,6 +500,17 @@ class AliHelper:
             return True
     
     def printTrackByOrderList(self,orderList:list=[], fromFile:bool=False, filePath:str="orders.json", export:bool=True):
+        """Print the tracking numbers of the orders in the orderList provided, the tracking numbers will be printed and saved in a txt file if export is True
+
+        Args:
+            orderList (list, optional): Order string lists. Defaults to [].
+            fromFile (bool, optional): In case you need to use a file instead self program. Defaults to False.
+            filePath (str, optional): In case you use fromFile a filePath will be required by default it uses sames as last generated. Defaults to "orders.json".
+            export (bool, optional): In cases export needed, will be saved on root directory. Defaults to True.
+
+        Returns:
+            _type_: _description_
+        """
         print("Printing tracking numbers")
         fileData = []
         if len(orderList) == 0:
@@ -463,7 +551,18 @@ class AliHelper:
                 
         print("----------------------")
     
-    def printTrackingStatusByOrderList(self,orderList:list=[], fromFile:bool=False, filePath:str="orders.json", export:bool=True):
+    def printTrackingStatusByOrderList(self,orderList:list=[], fromFile:bool=False, filePath:str="orders.json", export:bool=True)->bool:
+        """Return the tracking status of the orders in the orderList provided, the status will be printed and saved in a txt file if export is True
+
+        Args:
+            orderList (list, optional): Order string lists. Defaults to [].
+            fromFile (bool, optional): In case you need to use a file instead self program. Defaults to False.
+            filePath (str, optional): In case you use fromFile a filePath will be required by default it uses sames as last generated. Defaults to "orders.json".
+            export (bool, optional): In cases export needed, will be saved on root directory. Defaults to True.
+
+        Returns:
+            bool: _description_
+        """
         print("Printing tracking status...")
         if len(orderList) == 0:
             print("No orders to print")
@@ -504,6 +603,15 @@ class AliHelper:
         print("----------------------")
         
     def pushOrdersToServer(self, fromFile:bool=False, filePath:str="orders.json"):
+        """If you need to push orders to a server, you can use this method to push the orders to a server, modify the url from .env file on root directory
+
+        Args:
+            fromFile (bool, optional): In case you need to push data from a file. Defaults to False.
+            filePath (str, optional): If fromFile flag is True, you need to provide the filePath. Defaults to "orders.json".
+
+        Returns:
+            _type_: _description_
+        """
         #make a post request to mr8ugger.pythonanywhere.com/aliOrdersUpdate
         data = []
         if fromFile:
@@ -535,9 +643,9 @@ class AliHelper:
         
 ali = AliHelper(showAlerts=False)
 # #PARA ACTUALIZAR INFO
-# ali.setEnviroment(headless=False)
-# ali.getOrders(category="Shipped", max_orders=10)
-# ali.exportOrders("orders.json")
+ali.setEnviroment(headless=False)
+ali.getOrders(category="Shipped", max_orders=25)
+ali.exportOrders("orders.json")
 ali.printTrackByOrderList(orderList=[8191545881577491,8191545881597491,8191545881637491,8191545881617491,8191545881677491,8191545881697491,8191545881657491], fromFile=True, filePath="orders.json")
 ali.printTrackingStatusByOrderList(orderList=[8191545881577491,8191545881597491,8191545881637491,8191545881617491,8191545881677491,8191545881697491,8191545881657491],fromFile=True, filePath="orders.json")
 # ali.pushOrdersToServer(fromFile=True, filePath="orders.json")

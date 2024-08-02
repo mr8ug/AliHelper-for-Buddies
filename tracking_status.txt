@@ -1,9 +1,9 @@
-Generated on: 2024-08-01 21:04:54
-Processing at departure country/region sorting center
+Generated on: 2024-08-02 10:29:12
+Handed over to line-haul
 Left from departure country/region sorting center
 Left from departure country/region sorting center
 Left from departure country/region sorting center
-Processing at departure country/region sorting center
-Processing at departure country/region sorting center
-Processing at departure country/region sorting center
+Handed over to line-haul
+Handed over to line-haul
+Handed over to line-haul
 ----------------------
