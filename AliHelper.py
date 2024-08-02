@@ -245,14 +245,14 @@ class AliHelper:
                 nombre_producto = ""
                 order_product_name = order_item.find_element(By.CSS_SELECTOR, "div[class='order-item-content-info-name']")
                 if order_product_name != None:
-                    orden["product_name"] = str(order_product_name.text).strip()[0:30]
+                    orden["product_name"] = str(order_product_name.text).strip()[0:50]
                 
                 try:
                     order_product_sku = order_item.find_element(By.CSS_SELECTOR, "div[class='order-item-content-info-sku']")
                     if order_product_sku != None:
                         orden["product_sku"] = str(order_product_sku.text).strip()
                         
-                    nombre_producto = str(orden["product_name"])[0:30] + " - "  + orden["product_sku"]
+                    nombre_producto = str(orden["product_name"])[0:50] + " - "  + orden["product_sku"]
                     orden["product_name"] = nombre_producto
                 except:
                     
@@ -535,13 +535,12 @@ class AliHelper:
         
 ali = AliHelper(showAlerts=False)
 # #PARA ACTUALIZAR INFO
-ali.setEnviroment(headless=False)
-ali.getOrders(category="Shipped", max_orders=10)
-ali.exportOrders("orders.json")
-ali.printTrackByOrderList(orderList=[8191545881577491,8191545881597491,8191545881637491,8191545881617491,8191545881677491,8191545881697491,8191545881657491])
-ali.printTrackingStatusByOrderList(orderList=[8191545881577491,8191545881597491,8191545881637491,8191545881617491,8191545881677491,8191545881697491,8191545881657491])
-ali.pushOrdersToServer(fromFile=True, filePath="orders.json")
+# ali.setEnviroment(headless=False)
+# ali.getOrders(category="Shipped", max_orders=10)
+# ali.exportOrders("orders.json")
+ali.printTrackByOrderList(orderList=[8191545881577491,8191545881597491,8191545881637491,8191545881617491,8191545881677491,8191545881697491,8191545881657491], fromFile=True, filePath="orders.json")
+ali.printTrackingStatusByOrderList(orderList=[8191545881577491,8191545881597491,8191545881637491,8191545881617491,8191545881677491,8191545881697491,8191545881657491],fromFile=True, filePath="orders.json")
+# ali.pushOrdersToServer(fromFile=True, filePath="orders.json")
 
 # #PARA IMPRIMIR TRACKING
-ali.printTrackByOrderList(orderList=[8190564821197491,8190564821727491,8190564821867491,8190564821867491,8190564821327491,8190564821537491,8190564821537491,8190564821657491,8190564821807491,8190564821767491,8190564821497491,8190564821377491,8190564821377491,8190564821497491,8190564821917491,8190564821917491,8190564821677491,8190564821677491,8190564821947491,8190564822027491,8190564821517491,8190564821447491,8190564821597491,8190564821897491,8190564821567491,8190564821567491,8190564821617491,8190564822057491,8190564821827491,8190564821307491,8190564822007491,8190564821747491,8190564821427491,8190564821257491,8190564821987491,8190564821197491,8190564821407491,8190564821257491,8190564821427491,8190564821227491,8190564821227491,8190564821287491,8190564821467491,8190564821467491,8190564821347491,8190564822027491,8190564821347491,8190564821787491,8190564821637491,8190564821327491,8190564822077491,8190564821707491,8190564821967491,8190564821847491], fromFile=True)
 # # input("Press Enter to continue...")
