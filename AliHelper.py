@@ -480,14 +480,13 @@ class AliHelper:
     #     return "error_saving_order"
         
     
-    def exportOrders(self, filename:str="orders.json"):
+    def exportOrders(self, filename:str="orders.json")->bool:
         """In case needed as to export data to server or other utilities, you can export the orders to a json file
 
         Args:
             filename (str, optional): Path where file should be saved. Defaults to "orders.json".
 
-        Returns:
-            self: return True if file was saved
+        Returns: True if file was saved
         """
         if len(self.orders) == 0:
             print("No orders to export")
@@ -499,7 +498,7 @@ class AliHelper:
             print(f"Orders exported to {filename}")
             return True
     
-    def printTrackByOrderList(self,orderList:list=[], fromFile:bool=False, filePath:str="orders.json", export:bool=True):
+    def printTrackByOrderList(self,orderList:list=[], fromFile:bool=False, filePath:str="orders.json", export:bool=True)->bool:
         """Print the tracking numbers of the orders in the orderList provided, the tracking numbers will be printed and saved in a txt file if export is True
 
         Args:
@@ -508,8 +507,8 @@ class AliHelper:
             filePath (str, optional): In case you use fromFile a filePath will be required by default it uses sames as last generated. Defaults to "orders.json".
             export (bool, optional): In cases export needed, will be saved on root directory. Defaults to True.
 
-        Returns:
-            _type_: _description_
+        Returns: True if tracking numbers were printed
+            
         """
         print("Printing tracking numbers")
         fileData = []
@@ -550,6 +549,7 @@ class AliHelper:
                 file.write("----------------------")
                 
         print("----------------------")
+        return True
     
     def printTrackingStatusByOrderList(self,orderList:list=[], fromFile:bool=False, filePath:str="orders.json", export:bool=True)->bool:
         """Return the tracking status of the orders in the orderList provided, the status will be printed and saved in a txt file if export is True
@@ -560,8 +560,7 @@ class AliHelper:
             filePath (str, optional): In case you use fromFile a filePath will be required by default it uses sames as last generated. Defaults to "orders.json".
             export (bool, optional): In cases export needed, will be saved on root directory. Defaults to True.
 
-        Returns:
-            bool: _description_
+        Returns: True if tracking status were printed
         """
         print("Printing tracking status...")
         if len(orderList) == 0:
@@ -602,15 +601,16 @@ class AliHelper:
                 file.write("----------------------")
         print("----------------------")
         
-    def pushOrdersToServer(self, fromFile:bool=False, filePath:str="orders.json"):
+        return True
+        
+    def pushOrdersToServer(self, fromFile:bool=False, filePath:str="orders.json")->bool:
         """If you need to push orders to a server, you can use this method to push the orders to a server, modify the url from .env file on root directory
 
         Args:
             fromFile (bool, optional): In case you need to push data from a file. Defaults to False.
             filePath (str, optional): If fromFile flag is True, you need to provide the filePath. Defaults to "orders.json".
 
-        Returns:
-            _type_: _description_
+        Returns: True if orders were pushed 
         """
         #make a post request to mr8ugger.pythonanywhere.com/aliOrdersUpdate
         data = []
@@ -637,7 +637,7 @@ class AliHelper:
         except:
             print("Error pushing orders")
             return False
-        print(post_response.status_code)
+        print("Status: "+post_response.status_code)
         return True
             
         
