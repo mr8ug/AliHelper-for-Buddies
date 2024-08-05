@@ -673,16 +673,20 @@ class AliHelper:
             for d in data:
                 if d["order_id"] == str(o):
                     if str(d["tracking_number"]) not in groups:
-                        groups[str(d["tracking_number"])] = []
+                        groups[str(d["tracking_number"])] = {
+                            "captures":[],
+                            "last_status":d["tracking_status"]
+                        }
                         
-                    groups[str(d["tracking_number"])].append(str(o)+"_detail.png")        
-                    print(f"{d['tracking_status']}")
+                    groups[str(d["tracking_number"])]["captures"].append(str(o)+"_detail.png")        
+                    groups[str(d["tracking_number"])]["last_status"] = d["tracking_status"]
+                    
                     fileData.append(d['tracking_status'])
                     break
     
         #generate pdfs
         for key in groups:
-            print(f"Generating PDF for {key}")
+            print(f"Generating PDF order detail for {key}")
             
             pdf = FPDF()
             pdf.set_auto_page_break(auto=True,margin=15)
@@ -695,8 +699,10 @@ class AliHelper:
             pdf.set_font("Arial", "B", 12)
             pdf.cell(0, 10, f"Tracking: {key}", 0, 1, "C")
             pdf.set_font("Arial", "B", 10)
-            pdf.cell(70, 10, f"Items: {len(groups[key])}", 1, 0, "C",1)
+            pdf.cell(50, 10, f"Orders: {len(groups[key]["captures"])}", 1, 0, "C",1)
             pdf.cell(70, 10, f"Generated on: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}", 1, 1, "C")
+            pdf.set_font("Arial", "", 8)
+            pdf.cell(70, 10, f"Last Status: {groups[key]['last_status']}", 0, 1, "T")
             pdf.ln(10)
             pdf.set_font("Arial", "B", 10)
             pdf.set_fill_color(200, 220, 255)
@@ -704,8 +710,8 @@ class AliHelper:
             # pdf.cell(50, 10, "Detail", 1, 1, "C", 1)
             pdf.set_fill_color(255, 255, 255)
             pdf.set_font("Arial", "", 10)
-            for img in groups[key]:
-                if groups[key].index(img) % 2 == 0 and groups[key].index(img) != 0:
+            for img in groups[key]["captures"]:
+                if groups[key]["captures"].index(img) % 2 == 0 and groups[key]["captures"].index(img) != 0:
                     pdf.add_page()
                 #two per page
                 pdf.cell(40, 10, img.split("_")[0], 1, 0, "C")
@@ -724,13 +730,13 @@ class AliHelper:
         
 ali = AliHelper(showAlerts=False)
 # # #PARA ACTUALIZAR INFO
-ali.setEnviroment(headless=False)
-ali.getOrders(category="Shipped", max_orders=9,page_zoom=85)
-ali.exportOrders("orders.json")
-ali.printTrackByOrderList(orderList=[8191545881577491,8191545881597491,8191545881637491,8191545881617491,8191545881677491,8191545881697491,8191545881657491], fromFile=True, filePath="orders.json")
-ali.printTrackingStatusByOrderList(orderList=[8191545881577491,8191545881597491,8191545881637491,8191545881617491,8191545881677491,8191545881697491,8191545881657491],fromFile=True, filePath="orders.json")
+# ali.setEnviroment(headless=False)
+# ali.getOrders(category="Shipped", max_orders=9,page_zoom=85)
+# ali.exportOrders("orders.json")
+# ali.printTrackByOrderList(orderList=[8191545881577491,8191545881597491,8191545881637491,8191545881617491,8191545881677491,8191545881697491,8191545881657491], fromFile=True, filePath="orders.json")
+# ali.printTrackingStatusByOrderList(orderList=[8191545881577491,8191545881597491,8191545881637491,8191545881617491,8191545881677491,8191545881697491,8191545881657491],fromFile=True, filePath="orders.json")
 ali.generateOrderDetailPDF(orderList=[8191545881577491,8191545881597491,8191545881637491,8191545881617491,8191545881677491,8191545881697491,8191545881657491], fromFile=True, filePath="orders.json")
-ali.pushOrdersToServer(fromFile=True, filePath="orders.json")
+# ali.pushOrdersToServer(fromFile=True, filePath="orders.json")
 
 # #PARA IMPRIMIR TRACKING
 # # input("Press Enter to continue...")

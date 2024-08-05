@@ -1,8 +1,8 @@
-Generated on: 2024-08-05 11:48:08
+Generated on: 2024-08-05 16:15:28
 Arrived at line-haul office
-Received by local delivery company
-Received by local delivery company
-Received by local delivery company
+Delivery failed. Unable to deliver outside business hours.
+Delivery failed. Unable to deliver outside business hours.
+Delivery failed. Unable to deliver outside business hours.
 Arrived at line-haul office
 Arrived at line-haul office
 Arrived at line-haul office
