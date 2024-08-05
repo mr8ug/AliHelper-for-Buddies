@@ -17,7 +17,7 @@ from tkinter import messagebox
 import requests
 from dotenv import load_dotenv, dotenv_values
 
-
+from fpdf import FPDF
 class AliHelper:
     def __init__(self, localUser:str="", user_data_dir:str="", useChrome:bool=False, useEdge:bool=True, showAlerts:bool=True):
         """Initialize the AliHelper class, this class will help you to get orders from Aliexpress and store them in a list of dictionaries with the following structure:
@@ -135,7 +135,7 @@ class AliHelper:
                 options=self.driver_options
             )
         
-    def getOrders(self, category:str="Shipped", max_orders:int=-1, asJson:bool=False, requireToLogin:bool=False)->list:
+    def getOrders(self, category:str="Shipped", max_orders:int=-1, asJson:bool=False, requireToLogin:bool=False, page_zoom:int=75)->list:
         """Get orders from Aliexpress and store them in a list based on the category provided (Shipped, To Pay, Processed, View All) and the max_orders to get
         In case of requireToLogin, the user will need to login to Aliexpress and press Enter to continue
 
@@ -280,7 +280,7 @@ class AliHelper:
                 
             detail_path = order_detail_save_path + str(orden['order_id'])+"_detail.png"
             # if not os.path.exists(detail_path):
-            self.saveOrderScreenshot(url=order_url, save_path=detail_path)
+            self.saveOrderScreenshot(url=order_url, save_path=detail_path,zoom=page_zoom)
             
             if len(orden["image_references"]) == 1:
                 #obtener el nombre ya que si aparece
@@ -637,18 +637,100 @@ class AliHelper:
         except:
             print("Error pushing orders")
             return False
-        print("Status: "+post_response.status_code)
+        print("Status: "+str(post_response.status_code))
         return True
+    
+    def generateOrderDetailPDF(self, orderList:list=[], fromFile:bool=False, filePath:str="orders.json")->bool:
+        #will group orders by tracking number and generate a pdf for each tracking number with png images
+        if len(orderList) == 0:
+            print("No orders to print")
+            return False
+        
+        data = []
+        fileData = []
+        groups = {}
+        
+        if fromFile:
+            if filePath != "":
+                with open(filePath, "r") as file:
+                    data = json.load(file)
+                
+        else:
+            data = self.orders
+            if len(data) == 0:
+                print("No orders to print")
+                return False
+            
+            
+        if len(data) == 0:
+            print("No orders to print")
+            return False
+        
+        for o in orderList:
+            
+            
+            
+            for d in data:
+                if d["order_id"] == str(o):
+                    if str(d["tracking_number"]) not in groups:
+                        groups[str(d["tracking_number"])] = []
+                        
+                    groups[str(d["tracking_number"])].append(str(o)+"_detail.png")        
+                    print(f"{d['tracking_status']}")
+                    fileData.append(d['tracking_status'])
+                    break
+    
+        #generate pdfs
+        for key in groups:
+            print(f"Generating PDF for {key}")
+            
+            pdf = FPDF()
+            pdf.set_auto_page_break(auto=True,margin=15)
+            pdf.set_font("Arial", size=11)
+            pdf.add_page()
+            pdf.set_fill_color(200, 220, 255)
+            pdf.set_text_color(0)
+            pdf.set_draw_color(0)
+            pdf.set_line_width(0.3)
+            pdf.set_font("Arial", "B", 12)
+            pdf.cell(0, 10, f"Tracking: {key}", 0, 1, "C")
+            pdf.set_font("Arial", "B", 10)
+            pdf.cell(70, 10, f"Items: {len(groups[key])}", 1, 0, "C",1)
+            pdf.cell(70, 10, f"Generated on: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}", 1, 1, "C")
+            pdf.ln(10)
+            pdf.set_font("Arial", "B", 10)
+            pdf.set_fill_color(200, 220, 255)
+            # pdf.cell(50, 10, "Order", 1, 0, "C", 1)
+            # pdf.cell(50, 10, "Detail", 1, 1, "C", 1)
+            pdf.set_fill_color(255, 255, 255)
+            pdf.set_font("Arial", "", 10)
+            for img in groups[key]:
+                if groups[key].index(img) % 2 == 0 and groups[key].index(img) != 0:
+                    pdf.add_page()
+                #two per page
+                pdf.cell(40, 10, img.split("_")[0], 1, 0, "C")
+                # pdf.cell(40, 10, img, 1, 1, "C")
+                pdf.ln(10)
+                pdf.image(f"./detail/{img}", x=10, w=190)
+                pdf.ln(10)
+                
+            
+            pdf.output(f"./pdf/{key}.pdf")
+        print("----------------------")
+        
+        return True
+        
             
         
 ali = AliHelper(showAlerts=False)
-# #PARA ACTUALIZAR INFO
+# # #PARA ACTUALIZAR INFO
 ali.setEnviroment(headless=False)
-ali.getOrders(category="Shipped", max_orders=25)
+ali.getOrders(category="Shipped", max_orders=9,page_zoom=85)
 ali.exportOrders("orders.json")
 ali.printTrackByOrderList(orderList=[8191545881577491,8191545881597491,8191545881637491,8191545881617491,8191545881677491,8191545881697491,8191545881657491], fromFile=True, filePath="orders.json")
 ali.printTrackingStatusByOrderList(orderList=[8191545881577491,8191545881597491,8191545881637491,8191545881617491,8191545881677491,8191545881697491,8191545881657491],fromFile=True, filePath="orders.json")
-# ali.pushOrdersToServer(fromFile=True, filePath="orders.json")
+ali.generateOrderDetailPDF(orderList=[8191545881577491,8191545881597491,8191545881637491,8191545881617491,8191545881677491,8191545881697491,8191545881657491], fromFile=True, filePath="orders.json")
+ali.pushOrdersToServer(fromFile=True, filePath="orders.json")
 
 # #PARA IMPRIMIR TRACKING
 # # input("Press Enter to continue...")
