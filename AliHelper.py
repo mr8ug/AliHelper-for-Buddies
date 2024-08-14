@@ -642,9 +642,6 @@ class AliHelper:
     
     def generateOrderDetailPDF(self, orderList:list=[], fromFile:bool=False, filePath:str="orders.json")->bool:
         #will group orders by tracking number and generate a pdf for each tracking number with png images
-        if len(orderList) == 0:
-            print("No orders to print")
-            return False
         
         data = []
         fileData = []
@@ -666,6 +663,14 @@ class AliHelper:
             print("No orders to print")
             return False
         
+        #fill orderList with orders from file
+        orderList = []
+        for d in data:
+            orderList.append(d["order_id"])
+            
+        if len(orderList) == 0:
+            print("No orders number received, please provide a list of orders")
+            
         for o in orderList:
             
             
@@ -731,13 +736,17 @@ class AliHelper:
         
 ali = AliHelper(showAlerts=False)
 # # #PARA ACTUALIZAR INFO
-# ali.setEnviroment(headless=False)
-# ali.getOrders(category="To ship", max_orders=80,page_zoom=85)
-# ali.exportOrders("orders.json")
-# ali.printTrackByOrderList(orderList=[], fromFile=True, filePath="orders.json")
-# ali.printTrackingStatusByOrderList(orderList=[],fromFile=True, filePath="orders.json")
-# ali.generateOrderDetailPDF(orderList=[], fromFile=True, filePath="orders.json")
-ali.pushOrdersToServer(fromFile=True, filePath="orders.json")
+ali.setEnviroment(headless=False)
+ali.getOrders(category="To ship", max_orders=80,page_zoom=85)
+ali.exportOrders("orders.json")
+
+#pedido 4
+orderList =[8191641045457491,8191641046297491,8191641046057491,8191641045477491,8191641046457491,8191641045977491,8191641045977491,8191641045977491,8191641045857491,8191641045707491,8191641045957491,8191641046137491,8191641045527491,8191641045607491,8191641045897491,8191641045627491,8191641046357491,8191641045667491,8191641046397491,8191641046197491,8191641045877491,8191641046277491,8191641045937491,8191641046257491,8191641046097491,8191641046117491,8191641045727491,8191641045497491,8191641045497491,8191641046237491,8191641046337491,8191641046477491,8191641046377491,8191641046177491,8191641045647491,8191641046217491,8191641045837491,8191641046497491,8191641046437491,8191641045587491,8191641045817491,8191641046157491]
+
+ali.printTrackByOrderList(orderList=orderList, fromFile=True, filePath="orders.json")
+ali.printTrackingStatusByOrderList(orderList=orderList,fromFile=True, filePath="orders.json")
+# ali.generateOrderDetailPDF(orderList=orderList, fromFile=True, filePath="orders.json")
+# ali.pushOrdersToServer(fromFile=True, filePath="orders.json")
 
 # #PARA IMPRIMIR TRACKING
 # # input("Press Enter to continue...")
