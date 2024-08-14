@@ -326,13 +326,13 @@ class AliHelper:
                 orden["tracking_status"] = tracking_info["tracking_status"]    
                 orden["tracking_process"] = tracking_info["tracking_process"]
 
-                self.orders.append(orden)
+                
             else:
                 orden["tracking_number"] = "No tracking number"
                 orden["tracking_status"] = "No tracking status"
                 orden["tracking_process"] = "No tracking process"
                 
-            orden["property"] = str(self.localUser)
+            self.orders.append(orden)
         
         if asJson:
             return json.dumps(self.orders, indent=4)    
@@ -683,9 +683,10 @@ class AliHelper:
                     
                     fileData.append(d['tracking_status'])
                     break
-    
+        print("----------------------")
         #generate pdfs
         for key in groups:
+            
             print(f"Generating PDF order detail for {key}")
             
             pdf = FPDF()
@@ -731,12 +732,12 @@ class AliHelper:
 ali = AliHelper(showAlerts=False)
 # # #PARA ACTUALIZAR INFO
 # ali.setEnviroment(headless=False)
-# ali.getOrders(category="Shipped", max_orders=9,page_zoom=85)
+# ali.getOrders(category="To ship", max_orders=80,page_zoom=85)
 # ali.exportOrders("orders.json")
-# ali.printTrackByOrderList(orderList=[8191545881577491,8191545881597491,8191545881637491,8191545881617491,8191545881677491,8191545881697491,8191545881657491], fromFile=True, filePath="orders.json")
-# ali.printTrackingStatusByOrderList(orderList=[8191545881577491,8191545881597491,8191545881637491,8191545881617491,8191545881677491,8191545881697491,8191545881657491],fromFile=True, filePath="orders.json")
-ali.generateOrderDetailPDF(orderList=[8191545881577491,8191545881597491,8191545881637491,8191545881617491,8191545881677491,8191545881697491,8191545881657491], fromFile=True, filePath="orders.json")
-# ali.pushOrdersToServer(fromFile=True, filePath="orders.json")
+# ali.printTrackByOrderList(orderList=[], fromFile=True, filePath="orders.json")
+# ali.printTrackingStatusByOrderList(orderList=[],fromFile=True, filePath="orders.json")
+# ali.generateOrderDetailPDF(orderList=[], fromFile=True, filePath="orders.json")
+ali.pushOrdersToServer(fromFile=True, filePath="orders.json")
 
 # #PARA IMPRIMIR TRACKING
 # # input("Press Enter to continue...")
