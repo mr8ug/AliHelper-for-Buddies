@@ -152,9 +152,11 @@ footer {
   margin: 10px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  /* flex-wrap: wrap; */
+  /* justify-content: center; */
   font-size: 10px;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 
 .order-resume{

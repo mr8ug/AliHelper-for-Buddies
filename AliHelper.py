@@ -18,6 +18,8 @@ import requests
 from dotenv import load_dotenv, dotenv_values
 
 from fpdf import FPDF
+import pandas as pd
+
 class AliHelper:
     def __init__(self, localUser:str="", user_data_dir:str="", useChrome:bool=False, useEdge:bool=True, showAlerts:bool=True):
         """Initialize the AliHelper class, this class will help you to get orders from Aliexpress and store them in a list of dictionaries with the following structure:
@@ -279,8 +281,8 @@ class AliHelper:
                 os.makedirs(order_detail_save_path)
                 
             detail_path = order_detail_save_path + str(orden['order_id'])+"_detail.png"
-            # if not os.path.exists(detail_path):
-            self.saveOrderScreenshot(url=order_url, save_path=detail_path,zoom=page_zoom)
+            if not os.path.exists(detail_path):
+                self.saveOrderScreenshot(url=order_url, save_path=detail_path,zoom=page_zoom)
             
             if len(orden["image_references"]) == 1:
                 #obtener el nombre ya que si aparece
@@ -536,6 +538,7 @@ class AliHelper:
         for o in orderList:
             for d in data:
                 if d["order_id"] == str(o):
+                    # data.remove(d)
                     print(f"{d['tracking_number']}")
                     fileData.append(d['tracking_number'])
                     break
@@ -585,9 +588,12 @@ class AliHelper:
             print("No orders to print")
             return False
         
+        counter = -1
         for o in orderList:
+            counter += 1
             for d in data:
                 if d["order_id"] == str(o):
+                    # data.remove(d)
                     print(f"{d['tracking_status']}")
                     fileData.append(d['tracking_status'])
                     break
@@ -672,9 +678,6 @@ class AliHelper:
             print("No orders number received, please provide a list of orders")
             
         for o in orderList:
-            
-            
-            
             for d in data:
                 if d["order_id"] == str(o):
                     if str(d["tracking_number"]) not in groups:
@@ -731,22 +734,73 @@ class AliHelper:
         print("----------------------")
         
         return True
+    
+    def generateExcelData(self, fromFile:bool=False, filePath:str="orders.json")->bool:
+        #will pass the data to an excel file, using attributes as columns with pandas
+        if fromFile:
+            if filePath != "":
+                with open(filePath, "r") as file:
+                    data = json.load(file)
+                    
+        else:
+            data = self.orders
+            if len(data) == 0:
+                print("No orders to print")
+                return False
+            
+        #generate excel file
         
+        df = pd.DataFrame(data)
+        df.to_excel("orders.xlsx", index=False)
+        if os.path.exists("orders.xlsx"):
+            print("Excel Orders file generated")
+        return True
+    
+    def generateExcelByOrder(self, orderList:list=[], fromFile:bool=False, filePath:str="orders.json")->bool:
+        #will pass the data to an excel file, using attributes as columns with pandas
+        if fromFile:
+            if filePath != "":
+                with open(filePath, "r") as file:
+                    data = json.load(file)
+                    
+        else:
+            data = self.orders
+            if len(data) == 0:
+                print("No orders to print")
+                return False
+            
+        #generate excel file
+        data_set = []
+        for o in orderList:
+            for d in data:
+                if d["order_id"] == str(o):
+                    # data.remove(d)
+                    data_set.append({"tracking_number":d["tracking_number"],"order_id":d["order_id"], "tracking_status":d["tracking_status"]})
+                    break
+                
+        df = pd.DataFrame(data_set)
+        df.to_excel("orders_status.xlsx", index=True)
+        if os.path.exists("orders_status.xlsx"):
+            print("Excel Order Status file generated")
+        return True
+    
             
         
 ali = AliHelper(showAlerts=False)
-# # #PARA ACTUALIZAR INFO
-ali.setEnviroment(headless=False)
-ali.getOrders(category="To ship", max_orders=80,page_zoom=85)
-ali.exportOrders("orders.json")
+# #PARA ACTUALIZAR INFO
+# ali.setEnviroment(headless=False)
+# ali.getOrders(category="To ship", max_orders=1, page_zoom=85)
+# ali.getOrders(category="Shipped", max_orders=49, page_zoom=85)
+# ali.exportOrders("orders.json")
 
 #pedido 4
-orderList =[8191641045457491,8191641046297491,8191641046057491,8191641045477491,8191641046457491,8191641045977491,8191641045977491,8191641045977491,8191641045857491,8191641045707491,8191641045957491,8191641046137491,8191641045527491,8191641045607491,8191641045897491,8191641045627491,8191641046357491,8191641045667491,8191641046397491,8191641046197491,8191641045877491,8191641046277491,8191641045937491,8191641046257491,8191641046097491,8191641046117491,8191641045727491,8191641045497491,8191641045497491,8191641046237491,8191641046337491,8191641046477491,8191641046377491,8191641046177491,8191641045647491,8191641046217491,8191641045837491,8191641046497491,8191641046437491,8191641045587491,8191641045817491,8191641046157491]
+orderList =[8191641045457491,8191641046297491,8191641046057491,8191641045477491,8191641046457491,8191641045977491,8191641045977491,8191641045977491,8191641045857491,8191641045707491,8191641045957491,8191641046137491,8191641045527491,8191641045607491,8191641045897491,8191641045627491,8191641046357491,8191641045667491,8191641046397491,8191641046197491,8191641045877491,8191641046277491,8191641045937491,8191641046257491,8191641046117491,8191641045727491,8191641045497491,8191641045497491,8191641046237491,8191641046337491,8191641046477491,8191641046377491,8191641046177491,8191641045647491,8191641046217491,8191641045837491,8191641046497491,8191641046437491,8191641045587491,8191641045817491,8191641046157491,8191641045547491,8191641046077491,8191641046317491,8191641045917491,8191641045767491,8191641045567491,8191641045787491,8191641045747491,8191641045607491,8191641045687491,8191641046017491,8191641046017491,8191641046017491,8191641046417491,8191641045787491,8191641045787491,8191641045787491]
 
-ali.printTrackByOrderList(orderList=orderList, fromFile=True, filePath="orders.json")
-ali.printTrackingStatusByOrderList(orderList=orderList,fromFile=True, filePath="orders.json")
-# ali.generateOrderDetailPDF(orderList=orderList, fromFile=True, filePath="orders.json")
-# ali.pushOrdersToServer(fromFile=True, filePath="orders.json")
-
+ali.printTrackByOrderList(orderList=orderList, fromFile=True)
+ali.printTrackingStatusByOrderList(orderList=orderList, fromFile=True)
+ali.generateOrderDetailPDF(orderList=orderList, fromFile=True, filePath="orders.json")
+# ali.pushOrdersToServer(fromFile=True)
+ali.generateExcelData(fromFile=True)
+ali.generateExcelByOrder(orderList=orderList, fromFile=True)
 # #PARA IMPRIMIR TRACKING
 # # input("Press Enter to continue...")
