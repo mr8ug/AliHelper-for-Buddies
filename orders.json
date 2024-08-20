@@ -10,8 +10,8 @@
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641046497491",
         "tracking_number": "LQ835416399CN",
-        "tracking_status": "Left from departure country/region sorting center",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 20:54 (GMT-6)</p><p class=\"tracking-line\">Processing at departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 01:30 (GMT-6)</p><p class=\"tracking-line\">Left consolodation warehouse</p><p class=\"tracking-line\">Aug 18, 01:30 (GMT-6)</p></div>",
+        "tracking_status": "Accepted for transportation by postal service",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Accepted for transportation by postal service</p><p class=\"tracking-line\">Aug 19, 23:48 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 23:48 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 20:54 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641046497491/img_0.png"
         ],
@@ -29,8 +29,8 @@
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641046477491",
         "tracking_number": "LQ835416399CN",
-        "tracking_status": "Left from departure country/region sorting center",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 20:54 (GMT-6)</p><p class=\"tracking-line\">Processing at departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 01:30 (GMT-6)</p><p class=\"tracking-line\">Left consolodation warehouse</p><p class=\"tracking-line\">Aug 18, 01:30 (GMT-6)</p></div>",
+        "tracking_status": "Accepted for transportation by postal service",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Accepted for transportation by postal service</p><p class=\"tracking-line\">Aug 19, 23:48 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 23:48 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 20:54 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641046477491/img_0.png"
         ],
@@ -48,8 +48,8 @@
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641046457491",
         "tracking_number": "LR152035762CN",
-        "tracking_status": "Left from departure country/region sorting center",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 00:56 (GMT-6)</p><p class=\"tracking-line\">Processing at departure country/region sorting center</p><p class=\"tracking-line\">Aug 17, 17:16 (GMT-6)</p><p class=\"tracking-line\">Left consolodation warehouse</p><p class=\"tracking-line\">Aug 17, 17:16 (GMT-6)</p></div>",
+        "tracking_status": "Accepted for transportation by postal service",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Accepted for transportation by postal service</p><p class=\"tracking-line\">Aug 19, 20:16 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 19:46 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 00:56 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641046457491/img_0.png"
         ],
@@ -67,8 +67,8 @@
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641046437491",
         "tracking_number": "420331729212490362719153543181",
-        "tracking_status": "Customs clearance complete",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Customs update</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 19, 07:00 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 19, 06:49 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 01:45 (GMT-6)</p></div>",
+        "tracking_status": "Leaving from departure country/region",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 19, 20:29 (GMT-6)</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 19, 07:00 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 19, 06:49 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641046437491/img_0.png"
         ],
@@ -86,8 +86,8 @@
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641046417491",
         "tracking_number": "420331729212490362719153543181",
-        "tracking_status": "Customs clearance complete",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Customs update</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 19, 07:00 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 19, 06:49 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 01:45 (GMT-6)</p></div>",
+        "tracking_status": "Leaving from departure country/region",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 19, 20:29 (GMT-6)</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 19, 07:00 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 19, 06:49 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641046417491/img_0.png"
         ],
@@ -105,8 +105,8 @@
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641046397491",
         "tracking_number": "LQ835416399CN",
-        "tracking_status": "Left from departure country/region sorting center",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 20:54 (GMT-6)</p><p class=\"tracking-line\">Processing at departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 01:30 (GMT-6)</p><p class=\"tracking-line\">Left consolodation warehouse</p><p class=\"tracking-line\">Aug 18, 01:30 (GMT-6)</p></div>",
+        "tracking_status": "Accepted for transportation by postal service",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Accepted for transportation by postal service</p><p class=\"tracking-line\">Aug 19, 23:48 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 23:48 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 20:54 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641046397491/img_0.png"
         ],
@@ -124,8 +124,8 @@
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641046377491",
         "tracking_number": "420331729212490362719153543181",
-        "tracking_status": "Customs clearance complete",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Customs update</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 19, 07:00 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 19, 06:49 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 01:45 (GMT-6)</p></div>",
+        "tracking_status": "Leaving from departure country/region",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 19, 20:29 (GMT-6)</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 19, 07:00 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 19, 06:49 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641046377491/img_0.png"
         ],
@@ -143,8 +143,8 @@
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641046357491",
         "tracking_number": "LQ835416399CN",
-        "tracking_status": "Left from departure country/region sorting center",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 20:54 (GMT-6)</p><p class=\"tracking-line\">Processing at departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 01:30 (GMT-6)</p><p class=\"tracking-line\">Left consolodation warehouse</p><p class=\"tracking-line\">Aug 18, 01:30 (GMT-6)</p></div>",
+        "tracking_status": "Accepted for transportation by postal service",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Accepted for transportation by postal service</p><p class=\"tracking-line\">Aug 19, 23:48 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 23:48 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 20:54 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641046357491/img_0.png"
         ],
@@ -162,8 +162,8 @@
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641046337491",
         "tracking_number": "LP00671472073489",
-        "tracking_status": "Handed over to line-haul",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 18, 14:09 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 17, 00:36 (GMT-6)</p><p class=\"tracking-line\">Processing at departure country/region sorting center</p><p class=\"tracking-line\">Aug 16, 18:21 (GMT-6)</p></div>",
+        "tracking_status": "Leaving from departure country/region",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 20, 08:44 (GMT-6)</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 20, 06:14 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 20, 02:35 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641046337491/img_0.png"
         ],
@@ -181,8 +181,8 @@
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641046317491",
         "tracking_number": "LQ835416399CN",
-        "tracking_status": "Left from departure country/region sorting center",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 20:54 (GMT-6)</p><p class=\"tracking-line\">Processing at departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 01:30 (GMT-6)</p><p class=\"tracking-line\">Left consolodation warehouse</p><p class=\"tracking-line\">Aug 18, 01:30 (GMT-6)</p></div>",
+        "tracking_status": "Accepted for transportation by postal service",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Accepted for transportation by postal service</p><p class=\"tracking-line\">Aug 19, 23:48 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 23:48 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 20:54 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641046317491/img_0.png"
         ],
@@ -200,8 +200,8 @@
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641046297491",
         "tracking_number": "LQ835416399CN",
-        "tracking_status": "Left from departure country/region sorting center",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 20:54 (GMT-6)</p><p class=\"tracking-line\">Processing at departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 01:30 (GMT-6)</p><p class=\"tracking-line\">Left consolodation warehouse</p><p class=\"tracking-line\">Aug 18, 01:30 (GMT-6)</p></div>",
+        "tracking_status": "Accepted for transportation by postal service",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Accepted for transportation by postal service</p><p class=\"tracking-line\">Aug 19, 23:48 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 23:48 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 20:54 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641046297491/img_0.png"
         ],
@@ -219,8 +219,8 @@
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641046277491",
         "tracking_number": "LQ835416399CN",
-        "tracking_status": "Left from departure country/region sorting center",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 20:54 (GMT-6)</p><p class=\"tracking-line\">Processing at departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 01:30 (GMT-6)</p><p class=\"tracking-line\">Left consolodation warehouse</p><p class=\"tracking-line\">Aug 18, 01:30 (GMT-6)</p></div>",
+        "tracking_status": "Accepted for transportation by postal service",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Accepted for transportation by postal service</p><p class=\"tracking-line\">Aug 19, 23:48 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 23:48 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 20:54 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641046277491/img_0.png"
         ],
@@ -238,8 +238,8 @@
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641046257491",
         "tracking_number": "LQ835416399CN",
-        "tracking_status": "Left from departure country/region sorting center",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 20:54 (GMT-6)</p><p class=\"tracking-line\">Processing at departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 01:30 (GMT-6)</p><p class=\"tracking-line\">Left consolodation warehouse</p><p class=\"tracking-line\">Aug 18, 01:30 (GMT-6)</p></div>",
+        "tracking_status": "Accepted for transportation by postal service",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Accepted for transportation by postal service</p><p class=\"tracking-line\">Aug 19, 23:48 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 23:48 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 20:54 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641046257491/img_0.png"
         ],
@@ -257,8 +257,8 @@
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641046237491",
         "tracking_number": "LP00671472073489",
-        "tracking_status": "Handed over to line-haul",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 18, 14:09 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 17, 00:36 (GMT-6)</p><p class=\"tracking-line\">Processing at departure country/region sorting center</p><p class=\"tracking-line\">Aug 16, 18:21 (GMT-6)</p></div>",
+        "tracking_status": "Leaving from departure country/region",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 20, 08:44 (GMT-6)</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 20, 06:14 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 20, 02:35 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641046237491/img_0.png"
         ],
@@ -276,8 +276,8 @@
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641046217491",
         "tracking_number": "LQ835416399CN",
-        "tracking_status": "Left from departure country/region sorting center",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 20:54 (GMT-6)</p><p class=\"tracking-line\">Processing at departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 01:30 (GMT-6)</p><p class=\"tracking-line\">Left consolodation warehouse</p><p class=\"tracking-line\">Aug 18, 01:30 (GMT-6)</p></div>",
+        "tracking_status": "Accepted for transportation by postal service",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Accepted for transportation by postal service</p><p class=\"tracking-line\">Aug 19, 23:48 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 23:48 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 20:54 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641046217491/img_0.png"
         ],
@@ -295,8 +295,8 @@
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641046197491",
         "tracking_number": "420331729212490362719153543181",
-        "tracking_status": "Customs clearance complete",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Customs update</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 19, 07:00 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 19, 06:49 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 01:45 (GMT-6)</p></div>",
+        "tracking_status": "Leaving from departure country/region",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 19, 20:29 (GMT-6)</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 19, 07:00 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 19, 06:49 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641046197491/img_0.png"
         ],
@@ -314,8 +314,8 @@
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641046177491",
         "tracking_number": "LP00671472073489",
-        "tracking_status": "Handed over to line-haul",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 18, 14:09 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 17, 00:36 (GMT-6)</p><p class=\"tracking-line\">Processing at departure country/region sorting center</p><p class=\"tracking-line\">Aug 16, 18:21 (GMT-6)</p></div>",
+        "tracking_status": "Leaving from departure country/region",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 20, 08:44 (GMT-6)</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 20, 06:14 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 20, 02:35 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641046177491/img_0.png"
         ],
@@ -333,8 +333,8 @@
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641046157491",
         "tracking_number": "LP00671472073489",
-        "tracking_status": "Handed over to line-haul",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 18, 14:09 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 17, 00:36 (GMT-6)</p><p class=\"tracking-line\">Processing at departure country/region sorting center</p><p class=\"tracking-line\">Aug 16, 18:21 (GMT-6)</p></div>",
+        "tracking_status": "Leaving from departure country/region",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 20, 08:44 (GMT-6)</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 20, 06:14 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 20, 02:35 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641046157491/img_0.png"
         ],
@@ -352,8 +352,8 @@
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641046137491",
         "tracking_number": "420331729212490362719153543181",
-        "tracking_status": "Customs clearance complete",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Customs update</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 19, 07:00 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 19, 06:49 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 01:45 (GMT-6)</p></div>",
+        "tracking_status": "Leaving from departure country/region",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 19, 20:29 (GMT-6)</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 19, 07:00 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 19, 06:49 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641046137491/img_0.png"
         ],
@@ -371,8 +371,8 @@
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641046117491",
         "tracking_number": "LR152035762CN",
-        "tracking_status": "Left from departure country/region sorting center",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 00:56 (GMT-6)</p><p class=\"tracking-line\">Processing at departure country/region sorting center</p><p class=\"tracking-line\">Aug 17, 17:16 (GMT-6)</p><p class=\"tracking-line\">Left consolodation warehouse</p><p class=\"tracking-line\">Aug 17, 17:16 (GMT-6)</p></div>",
+        "tracking_status": "Accepted for transportation by postal service",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Accepted for transportation by postal service</p><p class=\"tracking-line\">Aug 19, 20:16 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 19:46 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 00:56 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641046117491/img_0.png"
         ],
@@ -390,8 +390,8 @@
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641046077491",
         "tracking_number": "LP00671472073489",
-        "tracking_status": "Handed over to line-haul",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 18, 14:09 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 17, 00:36 (GMT-6)</p><p class=\"tracking-line\">Processing at departure country/region sorting center</p><p class=\"tracking-line\">Aug 16, 18:21 (GMT-6)</p></div>",
+        "tracking_status": "Leaving from departure country/region",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 20, 08:44 (GMT-6)</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 20, 06:14 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 20, 02:35 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641046077491/img_0.png"
         ],
@@ -409,8 +409,8 @@
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641046057491",
         "tracking_number": "LR152035762CN",
-        "tracking_status": "Left from departure country/region sorting center",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 00:56 (GMT-6)</p><p class=\"tracking-line\">Processing at departure country/region sorting center</p><p class=\"tracking-line\">Aug 17, 17:16 (GMT-6)</p><p class=\"tracking-line\">Left consolodation warehouse</p><p class=\"tracking-line\">Aug 17, 17:16 (GMT-6)</p></div>",
+        "tracking_status": "Accepted for transportation by postal service",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Accepted for transportation by postal service</p><p class=\"tracking-line\">Aug 19, 20:16 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 19:46 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 00:56 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641046057491/img_0.png"
         ],
@@ -428,8 +428,8 @@
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641046017491",
         "tracking_number": "420331729212490362719153543181",
-        "tracking_status": "Customs clearance complete",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Customs update</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 19, 07:00 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 19, 06:49 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 01:45 (GMT-6)</p></div>",
+        "tracking_status": "Leaving from departure country/region",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 19, 20:29 (GMT-6)</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 19, 07:00 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 19, 06:49 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641046017491/img_0.png",
             "./img/8191641046017491/img_1.png",
@@ -448,8 +448,8 @@
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641045977491",
         "tracking_number": "LR152035762CN",
-        "tracking_status": "Left from departure country/region sorting center",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 00:56 (GMT-6)</p><p class=\"tracking-line\">Processing at departure country/region sorting center</p><p class=\"tracking-line\">Aug 17, 17:16 (GMT-6)</p><p class=\"tracking-line\">Left consolodation warehouse</p><p class=\"tracking-line\">Aug 17, 17:16 (GMT-6)</p></div>",
+        "tracking_status": "Accepted for transportation by postal service",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Accepted for transportation by postal service</p><p class=\"tracking-line\">Aug 19, 20:16 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 19:46 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 00:56 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641045977491/img_0.png",
             "./img/8191641045977491/img_1.png",
@@ -468,8 +468,8 @@
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641045957491",
         "tracking_number": "420331729212490362719153543181",
-        "tracking_status": "Customs clearance complete",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Customs update</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 19, 07:00 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 19, 06:49 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 01:45 (GMT-6)</p></div>",
+        "tracking_status": "Leaving from departure country/region",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 19, 20:29 (GMT-6)</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 19, 07:00 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 19, 06:49 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641045957491/img_0.png"
         ],
@@ -487,8 +487,8 @@
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641045937491",
         "tracking_number": "420331729212490362719153543181",
-        "tracking_status": "Customs clearance complete",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Customs update</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 19, 07:00 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 19, 06:49 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 01:45 (GMT-6)</p></div>",
+        "tracking_status": "Leaving from departure country/region",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 19, 20:29 (GMT-6)</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 19, 07:00 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 19, 06:49 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641045937491/img_0.png"
         ],
@@ -506,8 +506,8 @@
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641045917491",
         "tracking_number": "LR152035762CN",
-        "tracking_status": "Left from departure country/region sorting center",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 00:56 (GMT-6)</p><p class=\"tracking-line\">Processing at departure country/region sorting center</p><p class=\"tracking-line\">Aug 17, 17:16 (GMT-6)</p><p class=\"tracking-line\">Left consolodation warehouse</p><p class=\"tracking-line\">Aug 17, 17:16 (GMT-6)</p></div>",
+        "tracking_status": "Accepted for transportation by postal service",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Accepted for transportation by postal service</p><p class=\"tracking-line\">Aug 19, 20:16 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 19:46 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 00:56 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641045917491/img_0.png"
         ],
@@ -525,8 +525,8 @@
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641045897491",
         "tracking_number": "420331729212490362719153543181",
-        "tracking_status": "Customs clearance complete",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Customs update</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 19, 07:00 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 19, 06:49 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 01:45 (GMT-6)</p></div>",
+        "tracking_status": "Leaving from departure country/region",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 19, 20:29 (GMT-6)</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 19, 07:00 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 19, 06:49 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641045897491/img_0.png"
         ],
@@ -544,8 +544,8 @@
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641045877491",
         "tracking_number": "420331729212490362719153543181",
-        "tracking_status": "Customs clearance complete",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Customs update</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 19, 07:00 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 19, 06:49 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 01:45 (GMT-6)</p></div>",
+        "tracking_status": "Leaving from departure country/region",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 19, 20:29 (GMT-6)</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 19, 07:00 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 19, 06:49 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641045877491/img_0.png"
         ],
@@ -563,8 +563,8 @@
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641045857491",
         "tracking_number": "LP00671472073489",
-        "tracking_status": "Handed over to line-haul",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 18, 14:09 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 17, 00:36 (GMT-6)</p><p class=\"tracking-line\">Processing at departure country/region sorting center</p><p class=\"tracking-line\">Aug 16, 18:21 (GMT-6)</p></div>",
+        "tracking_status": "Leaving from departure country/region",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 20, 08:44 (GMT-6)</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 20, 06:14 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 20, 02:35 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641045857491/img_0.png"
         ],
@@ -582,8 +582,8 @@
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641045837491",
         "tracking_number": "420331729212490362719153543181",
-        "tracking_status": "Customs clearance complete",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Customs update</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 19, 07:00 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 19, 06:49 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 01:45 (GMT-6)</p></div>",
+        "tracking_status": "Leaving from departure country/region",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 19, 20:29 (GMT-6)</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 19, 07:00 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 19, 06:49 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641045837491/img_0.png"
         ],
@@ -601,8 +601,8 @@
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641045817491",
         "tracking_number": "LP00671472073489",
-        "tracking_status": "Handed over to line-haul",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 18, 14:09 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 17, 00:36 (GMT-6)</p><p class=\"tracking-line\">Processing at departure country/region sorting center</p><p class=\"tracking-line\">Aug 16, 18:21 (GMT-6)</p></div>",
+        "tracking_status": "Leaving from departure country/region",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 20, 08:44 (GMT-6)</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 20, 06:14 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 20, 02:35 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641045817491/img_0.png"
         ],
@@ -620,8 +620,8 @@
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641045787491",
         "tracking_number": "420331729212490362719153543181",
-        "tracking_status": "Customs clearance complete",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Customs update</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 19, 07:00 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 19, 06:49 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 01:45 (GMT-6)</p></div>",
+        "tracking_status": "Leaving from departure country/region",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 19, 20:29 (GMT-6)</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 19, 07:00 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 19, 06:49 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641045787491/img_0.png",
             "./img/8191641045787491/img_1.png"
@@ -639,8 +639,8 @@
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641045767491",
         "tracking_number": "420331729212490362719153543181",
-        "tracking_status": "Customs clearance complete",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Customs update</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 19, 07:00 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 19, 06:49 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 01:45 (GMT-6)</p></div>",
+        "tracking_status": "Leaving from departure country/region",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 19, 20:29 (GMT-6)</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 19, 07:00 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 19, 06:49 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641045767491/img_0.png"
         ],
@@ -658,8 +658,8 @@
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641045747491",
         "tracking_number": "LP00671472073489",
-        "tracking_status": "Handed over to line-haul",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 18, 14:09 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 17, 00:36 (GMT-6)</p><p class=\"tracking-line\">Processing at departure country/region sorting center</p><p class=\"tracking-line\">Aug 16, 18:21 (GMT-6)</p></div>",
+        "tracking_status": "Leaving from departure country/region",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 20, 08:44 (GMT-6)</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 20, 06:14 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 20, 02:35 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641045747491/img_0.png"
         ],
@@ -677,8 +677,8 @@
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641045727491",
         "tracking_number": "420331729212490362719153543181",
-        "tracking_status": "Customs clearance complete",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Customs update</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 19, 07:00 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 19, 06:49 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 01:45 (GMT-6)</p></div>",
+        "tracking_status": "Leaving from departure country/region",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 19, 20:29 (GMT-6)</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 19, 07:00 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 19, 06:49 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641045727491/img_0.png"
         ],
@@ -696,8 +696,8 @@
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641045707491",
         "tracking_number": "LQ835416399CN",
-        "tracking_status": "Left from departure country/region sorting center",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 20:54 (GMT-6)</p><p class=\"tracking-line\">Processing at departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 01:30 (GMT-6)</p><p class=\"tracking-line\">Left consolodation warehouse</p><p class=\"tracking-line\">Aug 18, 01:30 (GMT-6)</p></div>",
+        "tracking_status": "Accepted for transportation by postal service",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Accepted for transportation by postal service</p><p class=\"tracking-line\">Aug 19, 23:48 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 23:48 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 20:54 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641045707491/img_0.png"
         ],
@@ -715,8 +715,8 @@
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641045687491",
         "tracking_number": "LP00671472073489",
-        "tracking_status": "Handed over to line-haul",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 18, 14:09 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 17, 00:36 (GMT-6)</p><p class=\"tracking-line\">Processing at departure country/region sorting center</p><p class=\"tracking-line\">Aug 16, 18:21 (GMT-6)</p></div>",
+        "tracking_status": "Leaving from departure country/region",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 20, 08:44 (GMT-6)</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 20, 06:14 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 20, 02:35 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641045687491/img_0.png"
         ],
@@ -734,8 +734,8 @@
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641045667491",
         "tracking_number": "LR152035762CN",
-        "tracking_status": "Left from departure country/region sorting center",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 00:56 (GMT-6)</p><p class=\"tracking-line\">Processing at departure country/region sorting center</p><p class=\"tracking-line\">Aug 17, 17:16 (GMT-6)</p><p class=\"tracking-line\">Left consolodation warehouse</p><p class=\"tracking-line\">Aug 17, 17:16 (GMT-6)</p></div>",
+        "tracking_status": "Accepted for transportation by postal service",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Accepted for transportation by postal service</p><p class=\"tracking-line\">Aug 19, 20:16 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 19:46 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 00:56 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641045667491/img_0.png"
         ],
@@ -752,8 +752,8 @@
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641045647491",
         "tracking_number": "LR152035762CN",
-        "tracking_status": "Left from departure country/region sorting center",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 00:56 (GMT-6)</p><p class=\"tracking-line\">Processing at departure country/region sorting center</p><p class=\"tracking-line\">Aug 17, 17:16 (GMT-6)</p><p class=\"tracking-line\">Left consolodation warehouse</p><p class=\"tracking-line\">Aug 17, 17:16 (GMT-6)</p></div>",
+        "tracking_status": "Accepted for transportation by postal service",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Accepted for transportation by postal service</p><p class=\"tracking-line\">Aug 19, 20:16 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 19:46 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 00:56 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641045647491/img_0.png"
         ],
@@ -771,8 +771,8 @@
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641045627491",
         "tracking_number": "LP00671472073489",
-        "tracking_status": "Handed over to line-haul",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 18, 14:09 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 17, 00:36 (GMT-6)</p><p class=\"tracking-line\">Processing at departure country/region sorting center</p><p class=\"tracking-line\">Aug 16, 18:21 (GMT-6)</p></div>",
+        "tracking_status": "Leaving from departure country/region",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 20, 08:44 (GMT-6)</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 20, 06:14 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 20, 02:35 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641045627491/img_0.png"
         ],
@@ -790,8 +790,8 @@
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641045607491",
         "tracking_number": "LR152035762CN",
-        "tracking_status": "Left from departure country/region sorting center",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 00:56 (GMT-6)</p><p class=\"tracking-line\">Processing at departure country/region sorting center</p><p class=\"tracking-line\">Aug 17, 17:16 (GMT-6)</p><p class=\"tracking-line\">Left consolodation warehouse</p><p class=\"tracking-line\">Aug 17, 17:16 (GMT-6)</p></div>",
+        "tracking_status": "Accepted for transportation by postal service",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Accepted for transportation by postal service</p><p class=\"tracking-line\">Aug 19, 20:16 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 19:46 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 00:56 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641045607491/img_0.png"
         ],
@@ -809,8 +809,8 @@
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641045587491",
         "tracking_number": "LP00671472073489",
-        "tracking_status": "Handed over to line-haul",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 18, 14:09 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 17, 00:36 (GMT-6)</p><p class=\"tracking-line\">Processing at departure country/region sorting center</p><p class=\"tracking-line\">Aug 16, 18:21 (GMT-6)</p></div>",
+        "tracking_status": "Leaving from departure country/region",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 20, 08:44 (GMT-6)</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 20, 06:14 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 20, 02:35 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641045587491/img_0.png"
         ],
@@ -828,8 +828,8 @@
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641045567491",
         "tracking_number": "LR152035762CN",
-        "tracking_status": "Left from departure country/region sorting center",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 00:56 (GMT-6)</p><p class=\"tracking-line\">Processing at departure country/region sorting center</p><p class=\"tracking-line\">Aug 17, 17:16 (GMT-6)</p><p class=\"tracking-line\">Left consolodation warehouse</p><p class=\"tracking-line\">Aug 17, 17:16 (GMT-6)</p></div>",
+        "tracking_status": "Accepted for transportation by postal service",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Accepted for transportation by postal service</p><p class=\"tracking-line\">Aug 19, 20:16 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 19:46 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 00:56 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641045567491/img_0.png"
         ],
@@ -847,8 +847,8 @@
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641045547491",
         "tracking_number": "LP00671472073489",
-        "tracking_status": "Handed over to line-haul",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 18, 14:09 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 17, 00:36 (GMT-6)</p><p class=\"tracking-line\">Processing at departure country/region sorting center</p><p class=\"tracking-line\">Aug 16, 18:21 (GMT-6)</p></div>",
+        "tracking_status": "Leaving from departure country/region",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 20, 08:44 (GMT-6)</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 20, 06:14 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 20, 02:35 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641045547491/img_0.png"
         ],
@@ -866,8 +866,8 @@
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641045527491",
         "tracking_number": "LR152035762CN",
-        "tracking_status": "Left from departure country/region sorting center",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 00:56 (GMT-6)</p><p class=\"tracking-line\">Processing at departure country/region sorting center</p><p class=\"tracking-line\">Aug 17, 17:16 (GMT-6)</p><p class=\"tracking-line\">Left consolodation warehouse</p><p class=\"tracking-line\">Aug 17, 17:16 (GMT-6)</p></div>",
+        "tracking_status": "Accepted for transportation by postal service",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Accepted for transportation by postal service</p><p class=\"tracking-line\">Aug 19, 20:16 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 19:46 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 00:56 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641045527491/img_0.png"
         ],
@@ -885,8 +885,8 @@
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641045497491",
         "tracking_number": "LR152035762CN",
-        "tracking_status": "Left from departure country/region sorting center",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 00:56 (GMT-6)</p><p class=\"tracking-line\">Processing at departure country/region sorting center</p><p class=\"tracking-line\">Aug 17, 17:16 (GMT-6)</p><p class=\"tracking-line\">Left consolodation warehouse</p><p class=\"tracking-line\">Aug 17, 17:16 (GMT-6)</p></div>",
+        "tracking_status": "Accepted for transportation by postal service",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Accepted for transportation by postal service</p><p class=\"tracking-line\">Aug 19, 20:16 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 19:46 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 00:56 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641045497491/img_0.png",
             "./img/8191641045497491/img_1.png"
@@ -904,8 +904,8 @@
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641045477491",
         "tracking_number": "LR152035762CN",
-        "tracking_status": "Left from departure country/region sorting center",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 00:56 (GMT-6)</p><p class=\"tracking-line\">Processing at departure country/region sorting center</p><p class=\"tracking-line\">Aug 17, 17:16 (GMT-6)</p><p class=\"tracking-line\">Left consolodation warehouse</p><p class=\"tracking-line\">Aug 17, 17:16 (GMT-6)</p></div>",
+        "tracking_status": "Accepted for transportation by postal service",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Accepted for transportation by postal service</p><p class=\"tracking-line\">Aug 19, 20:16 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 19:46 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 00:56 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641045477491/img_0.png"
         ],
@@ -923,8 +923,8 @@
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641045457491",
         "tracking_number": "420331729212490362719153543181",
-        "tracking_status": "Customs clearance complete",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Customs update</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 19, 07:00 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 19, 06:49 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 01:45 (GMT-6)</p></div>",
+        "tracking_status": "Leaving from departure country/region",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 19, 20:29 (GMT-6)</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 19, 07:00 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 19, 06:49 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641045457491/img_0.png"
         ],
