@@ -1,17 +1,226 @@
 [
     {
+        "order_id": "8192146329897491",
+        "order_date": "Aug 27, 2024",
+        "shop_name": "Jimi Shoes Store",
+        "product_name": "2Pair Silicone Metatarsal Pads for Shoes Non-Slip  - 2Pairs-Beige, CHINA",
+        "product_price": "US $1.99",
+        "product_quantity": "1",
+        "total_price": "US $2.04",
+        "status": "Awaiting delivery",
+        "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8192146329897491",
+        "tracking_number": "CNUSUP00003994120",
+        "tracking_status": "Arrived at line-haul office",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Delivery update</p><p class=\"tracking-line\">Arrived at line-haul office</p><p class=\"tracking-line\">Sep 1, 14:16 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region</p><p class=\"tracking-line\">Aug 31, 18:33 (GMT-6)</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 31, 03:24 (GMT-6)</p></div>",
+        "image_references": [
+            "./img/8192146329897491/img_0.png"
+        ],
+        "property": "",
+        "product_sku": "2Pairs-Beige, CHINA"
+    },
+    {
+        "order_id": "8192146329877491",
+        "order_date": "Aug 27, 2024",
+        "shop_name": "Naisii Store",
+        "product_name": "High Heels Non-slip Front Sole Pads Women's Sponge - 4pcs-skin tone",
+        "product_price": "US $2.23",
+        "product_quantity": "1",
+        "total_price": "US $2.32",
+        "status": "Awaiting delivery",
+        "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8192146329877491",
+        "tracking_number": "CNUSUP00003994120",
+        "tracking_status": "Arrived at line-haul office",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Delivery update</p><p class=\"tracking-line\">Arrived at line-haul office</p><p class=\"tracking-line\">Sep 1, 14:16 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region</p><p class=\"tracking-line\">Aug 31, 18:33 (GMT-6)</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 31, 03:24 (GMT-6)</p></div>",
+        "image_references": [
+            "./img/8192146329877491/img_0.png"
+        ],
+        "property": "",
+        "product_sku": "4pcs-skin tone"
+    },
+    {
+        "order_id": "8192146329857491",
+        "order_date": "Aug 27, 2024",
+        "shop_name": "Pyke Tamia Store",
+        "product_name": "4pcs Sandals Anti-slip Stickers Leather Forefoot P - Apricot-3mm-2 pairs, CHINA",
+        "product_price": "US $2.23",
+        "product_quantity": "1",
+        "total_price": "US $2.22",
+        "status": "Awaiting delivery",
+        "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8192146329857491",
+        "tracking_number": "CNUSUP00003994120",
+        "tracking_status": "Arrived at line-haul office",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Delivery update</p><p class=\"tracking-line\">Arrived at line-haul office</p><p class=\"tracking-line\">Sep 1, 14:16 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region</p><p class=\"tracking-line\">Aug 31, 18:33 (GMT-6)</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 31, 03:24 (GMT-6)</p></div>",
+        "image_references": [
+            "./img/8192146329857491/img_0.png"
+        ],
+        "property": "",
+        "product_sku": "Apricot-3mm-2 pairs, CHINA"
+    },
+    {
+        "order_id": "8192146329837491",
+        "order_date": "Aug 27, 2024",
+        "shop_name": "EYUD Official Store Store",
+        "product_name": "Half Insoles for Shoes Inserts Forefoot Insert Non - Women Beige Round, CHINA",
+        "product_price": "US $1.58",
+        "product_quantity": "1",
+        "total_price": "US $1.65",
+        "status": "Awaiting delivery",
+        "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8192146329837491",
+        "tracking_number": "CNUSUP00004010899",
+        "tracking_status": "Customs clearance complete",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Customs update</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Sep 2, 02:50 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Sep 2, 02:27 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 31, 02:19 (GMT-6)</p></div>",
+        "image_references": [
+            "./img/8192146329837491/img_0.png"
+        ],
+        "property": "",
+        "product_sku": "Women Beige Round, CHINA"
+    },
+    {
+        "order_id": "8192146329817491",
+        "order_date": "Aug 27, 2024",
+        "shop_name": "Worldmuma Store",
+        "product_name": "NEW Car Repair Tool Kit 46/53 Piece/Set 1/4-Inch S - 46 PCS Black",
+        "product_price": "US $7.77",
+        "product_quantity": "1",
+        "total_price": "US $8.04",
+        "status": "Awaiting delivery",
+        "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8192146329817491",
+        "tracking_number": "CNUSUP00004010899",
+        "tracking_status": "Customs clearance complete",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Customs update</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Sep 2, 02:50 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Sep 2, 02:27 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 31, 02:19 (GMT-6)</p></div>",
+        "image_references": [
+            "./img/8192146329817491/img_0.png"
+        ],
+        "property": "",
+        "product_sku": "46 PCS Black"
+    },
+    {
+        "order_id": "8192146329797491",
+        "order_date": "Aug 27, 2024",
+        "shop_name": "Global Tool Wholesale Store",
+        "product_name": "Magnetic Screwdriver Set 63 In 1 Kit Bits Precisio - 25-1",
+        "product_price": "US $1.79",
+        "product_quantity": "1",
+        "total_price": "US $1.86",
+        "status": "Awaiting delivery",
+        "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8192146329797491",
+        "tracking_number": "CNUSUP00004010899",
+        "tracking_status": "Customs clearance complete",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Customs update</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Sep 2, 02:50 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Sep 2, 02:27 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 31, 02:19 (GMT-6)</p></div>",
+        "image_references": [
+            "./img/8192146329797491/img_0.png"
+        ],
+        "property": "",
+        "product_sku": "25-1"
+    },
+    {
+        "order_id": "8192146329777491",
+        "order_date": "Aug 27, 2024",
+        "shop_name": "ZIShan Store",
+        "product_name": "11/18/26/36/41PCS Car Terminal Removal Connector E - 41pcs",
+        "product_price": "US $3.21",
+        "product_quantity": "1",
+        "total_price": "US $3.29",
+        "status": "Awaiting delivery",
+        "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8192146329777491",
+        "tracking_number": "CNUSUP00004010899",
+        "tracking_status": "Customs clearance complete",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Customs update</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Sep 2, 02:50 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Sep 2, 02:27 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 31, 02:19 (GMT-6)</p></div>",
+        "image_references": [
+            "./img/8192146329777491/img_0.png"
+        ],
+        "property": "",
+        "product_sku": "41pcs"
+    },
+    {
+        "order_id": "8192146329757491",
+        "order_date": "Aug 27, 2024",
+        "shop_name": "Dvieuhfgwnvov Store",
+        "product_name": "10Pairs Sports Men Socks Printed Maple Leaf Colorf - 10 pairs",
+        "product_price": "US $4.62",
+        "product_quantity": "1",
+        "total_price": "US $4.78",
+        "status": "Awaiting delivery",
+        "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8192146329757491",
+        "tracking_number": "CNUSUP00003994120",
+        "tracking_status": "Arrived at line-haul office",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Delivery update</p><p class=\"tracking-line\">Arrived at line-haul office</p><p class=\"tracking-line\">Sep 1, 14:16 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region</p><p class=\"tracking-line\">Aug 31, 18:33 (GMT-6)</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 31, 03:24 (GMT-6)</p></div>",
+        "image_references": [
+            "./img/8192146329757491/img_0.png"
+        ],
+        "property": "",
+        "product_sku": "10 pairs"
+    },
+    {
+        "order_id": "8192146329737491",
+        "order_date": "Aug 27, 2024",
+        "shop_name": "1768 Store",
+        "product_name": "Bamboo Slub Couple Bracelet for Lover Women Men Ha - 2Pcs Couple Bracelet",
+        "product_price": "US $2.71",
+        "product_quantity": "1",
+        "total_price": "US $2.83",
+        "status": "Awaiting delivery",
+        "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8192146329737491",
+        "tracking_number": "CNUSUP00003994120",
+        "tracking_status": "Arrived at line-haul office",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Delivery update</p><p class=\"tracking-line\">Arrived at line-haul office</p><p class=\"tracking-line\">Sep 1, 14:16 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region</p><p class=\"tracking-line\">Aug 31, 18:33 (GMT-6)</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 31, 03:24 (GMT-6)</p></div>",
+        "image_references": [
+            "./img/8192146329737491/img_0.png"
+        ],
+        "property": "",
+        "product_sku": "2Pcs Couple Bracelet"
+    },
+    {
+        "order_id": "8192146329717491",
+        "order_date": "Aug 27, 2024",
+        "shop_name": "AOTOLK Factory Store",
+        "product_name": "5 Pairs Women Socks Cartoon Cat Cute Funny Persona - 5 Pairs B-Christmas, EUR35-40(US 5-8)",
+        "product_price": "US $5.25",
+        "product_quantity": "1",
+        "total_price": "US $5.49",
+        "status": "Awaiting delivery",
+        "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8192146329717491",
+        "tracking_number": "CNUSUP00003994120",
+        "tracking_status": "Arrived at line-haul office",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Delivery update</p><p class=\"tracking-line\">Arrived at line-haul office</p><p class=\"tracking-line\">Sep 1, 14:16 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region</p><p class=\"tracking-line\">Aug 31, 18:33 (GMT-6)</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 31, 03:24 (GMT-6)</p></div>",
+        "image_references": [
+            "./img/8192146329717491/img_0.png"
+        ],
+        "property": "",
+        "product_sku": "5 Pairs B-Christmas, EUR35-40(US 5-8)"
+    },
+    {
+        "order_id": "8192146329697491",
+        "order_date": "Aug 27, 2024",
+        "shop_name": "Trend Sportwear Store",
+        "product_name": "Camo Running Shorts Men Gym Sports Shorts 2 In 1 Q - style1 All Black, XXXL(195cm 90kg)",
+        "product_price": "US $7.38",
+        "product_quantity": "1",
+        "total_price": "US $7.64",
+        "status": "Awaiting delivery",
+        "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8192146329697491",
+        "tracking_number": "CNUSUP00004010899",
+        "tracking_status": "Customs clearance complete",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Customs update</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Sep 2, 02:50 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Sep 2, 02:27 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 31, 02:19 (GMT-6)</p></div>",
+        "image_references": [
+            "./img/8192146329697491/img_0.png"
+        ],
+        "property": "",
+        "product_sku": "style1 All Black, XXXL(195cm 90kg)"
+    },
+    {
         "order_id": "8191641046497491",
         "order_date": "Aug 14, 2024",
         "shop_name": "DearBeauty Exclusive Store",
         "product_name": "3 Layers Soft Brace Neck Massager Air Inflatable C - Blue",
-        "product_price": "$4.62",
+        "product_price": "US $4.62",
         "product_quantity": "1",
-        "total_price": "$4.88",
+        "total_price": "US $4.88",
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641046497491",
         "tracking_number": "LQ835416399CN",
-        "tracking_status": "Accepted for transportation by postal service",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Accepted for transportation by postal service</p><p class=\"tracking-line\">Aug 19, 23:48 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 23:48 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 20:54 (GMT-6)</p></div>",
+        "tracking_status": "Arrived at line-haul office",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Delivery update</p><p class=\"tracking-line\">Arrived at line-haul office</p><p class=\"tracking-line\">Aug 29, 06:00 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region</p><p class=\"tracking-line\">Aug 23, 01:25 (GMT-6)</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 23, 01:25 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641046497491/img_0.png"
         ],
@@ -23,14 +232,14 @@
         "order_date": "Aug 14, 2024",
         "shop_name": "Lowball Lover Store",
         "product_name": "4PCS Butterfly Screen Protectors for Samsung Galax - Galaxy S21 Ultra, 4PCS",
-        "product_price": "$4.25",
+        "product_price": "US $4.25",
         "product_quantity": "1",
-        "total_price": "$4.50",
+        "total_price": "US $4.50",
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641046477491",
         "tracking_number": "LQ835416399CN",
-        "tracking_status": "Accepted for transportation by postal service",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Accepted for transportation by postal service</p><p class=\"tracking-line\">Aug 19, 23:48 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 23:48 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 20:54 (GMT-6)</p></div>",
+        "tracking_status": "Arrived at line-haul office",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Delivery update</p><p class=\"tracking-line\">Arrived at line-haul office</p><p class=\"tracking-line\">Aug 29, 06:00 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region</p><p class=\"tracking-line\">Aug 23, 01:25 (GMT-6)</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 23, 01:25 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641046477491/img_0.png"
         ],
@@ -42,14 +251,14 @@
         "order_date": "Aug 14, 2024",
         "shop_name": "Freemoto Store",
         "product_name": "MOTOWOLF Universal Motorcycle Full Face Helmet Shi - MDL1912B",
-        "product_price": "$6.08",
+        "product_price": "US $6.08",
         "product_quantity": "1",
-        "total_price": "$6.42",
+        "total_price": "US $6.42",
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641046457491",
         "tracking_number": "LR152035762CN",
-        "tracking_status": "Accepted for transportation by postal service",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Accepted for transportation by postal service</p><p class=\"tracking-line\">Aug 19, 20:16 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 19:46 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 00:56 (GMT-6)</p></div>",
+        "tracking_status": "Leaving from departure country/region",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 31, 02:30 (GMT-6)</p><p class=\"tracking-line\">Accepted for transportation by postal service</p><p class=\"tracking-line\">Aug 19, 20:16 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 19:46 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641046457491/img_0.png"
         ],
@@ -57,56 +266,18 @@
         "product_sku": "MDL1912B"
     },
     {
-        "order_id": "8191641046437491",
-        "order_date": "Aug 14, 2024",
-        "shop_name": "Shop1103414099 Store",
-        "product_name": "USB Mini Massage Gun Fascia Machine Muscle Relaxat - GRAY, Type C Charge",
-        "product_price": "$4.22",
-        "product_quantity": "1",
-        "total_price": "$4.46",
-        "status": "Awaiting delivery",
-        "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641046437491",
-        "tracking_number": "420331729212490362719153543181",
-        "tracking_status": "Leaving from departure country/region",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 19, 20:29 (GMT-6)</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 19, 07:00 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 19, 06:49 (GMT-6)</p></div>",
-        "image_references": [
-            "./img/8191641046437491/img_0.png"
-        ],
-        "property": "",
-        "product_sku": "GRAY, Type C Charge"
-    },
-    {
-        "order_id": "8191641046417491",
-        "order_date": "Aug 14, 2024",
-        "shop_name": "Shop626 Store",
-        "product_name": "Headphone Stand Rack Non-Slip Headset Holder for A - black",
-        "product_price": "$3.03",
-        "product_quantity": "1",
-        "total_price": "$3.23",
-        "status": "Awaiting delivery",
-        "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641046417491",
-        "tracking_number": "420331729212490362719153543181",
-        "tracking_status": "Leaving from departure country/region",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 19, 20:29 (GMT-6)</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 19, 07:00 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 19, 06:49 (GMT-6)</p></div>",
-        "image_references": [
-            "./img/8191641046417491/img_0.png"
-        ],
-        "property": "",
-        "product_sku": "black"
-    },
-    {
         "order_id": "8191641046397491",
         "order_date": "Aug 14, 2024",
         "shop_name": "Super Factory Digitaling Store",
         "product_name": "8 in 2 USB C Hub USB Splitter USB Extender with 4  - 8 IN 2",
-        "product_price": "$8.65",
+        "product_price": "US $8.65",
         "product_quantity": "1",
-        "total_price": "$8.77",
+        "total_price": "US $8.77",
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641046397491",
         "tracking_number": "LQ835416399CN",
-        "tracking_status": "Accepted for transportation by postal service",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Accepted for transportation by postal service</p><p class=\"tracking-line\">Aug 19, 23:48 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 23:48 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 20:54 (GMT-6)</p></div>",
+        "tracking_status": "Arrived at line-haul office",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Delivery update</p><p class=\"tracking-line\">Arrived at line-haul office</p><p class=\"tracking-line\">Aug 29, 06:00 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region</p><p class=\"tracking-line\">Aug 23, 01:25 (GMT-6)</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 23, 01:25 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641046397491/img_0.png"
         ],
@@ -114,37 +285,18 @@
         "product_sku": "8 IN 2"
     },
     {
-        "order_id": "8191641046377491",
-        "order_date": "Aug 14, 2024",
-        "shop_name": "MiCODUS Official Store",
-        "product_name": "MiCODUS Rastreador Veiculo GPS Para Auto MV710G 9- - MV710G Lifetime APP, CHINA",
-        "product_price": "$28.60",
-        "product_quantity": "1",
-        "total_price": "$30.52",
-        "status": "Awaiting delivery",
-        "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641046377491",
-        "tracking_number": "420331729212490362719153543181",
-        "tracking_status": "Leaving from departure country/region",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 19, 20:29 (GMT-6)</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 19, 07:00 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 19, 06:49 (GMT-6)</p></div>",
-        "image_references": [
-            "./img/8191641046377491/img_0.png"
-        ],
-        "property": "",
-        "product_sku": "MV710G Lifetime APP, CHINA"
-    },
-    {
         "order_id": "8191641046357491",
         "order_date": "Aug 14, 2024",
         "shop_name": "Morning Chan Store",
         "product_name": "Nintendo Switch Power Adapter and Switch Lite Plug - black",
-        "product_price": "$9.04",
+        "product_price": "US $9.04",
         "product_quantity": "1",
-        "total_price": "$9.55",
+        "total_price": "US $9.55",
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641046357491",
         "tracking_number": "LQ835416399CN",
-        "tracking_status": "Accepted for transportation by postal service",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Accepted for transportation by postal service</p><p class=\"tracking-line\">Aug 19, 23:48 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 23:48 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 20:54 (GMT-6)</p></div>",
+        "tracking_status": "Arrived at line-haul office",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Delivery update</p><p class=\"tracking-line\">Arrived at line-haul office</p><p class=\"tracking-line\">Aug 29, 06:00 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region</p><p class=\"tracking-line\">Aug 23, 01:25 (GMT-6)</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 23, 01:25 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641046357491/img_0.png"
         ],
@@ -152,37 +304,18 @@
         "product_sku": "black"
     },
     {
-        "order_id": "8191641046337491",
-        "order_date": "Aug 14, 2024",
-        "shop_name": "GEAK 3C Store",
-        "product_name": "For Xiaomi Watch S2/S1 Pro/S1 Active HD Screen Pro - 10pcs, For Watch S1",
-        "product_price": "$2.28",
-        "product_quantity": "1",
-        "total_price": "$2.43",
-        "status": "Awaiting delivery",
-        "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641046337491",
-        "tracking_number": "LP00671472073489",
-        "tracking_status": "Leaving from departure country/region",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 20, 08:44 (GMT-6)</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 20, 06:14 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 20, 02:35 (GMT-6)</p></div>",
-        "image_references": [
-            "./img/8191641046337491/img_0.png"
-        ],
-        "property": "",
-        "product_sku": "10pcs, For Watch S1"
-    },
-    {
         "order_id": "8191641046317491",
         "order_date": "Aug 14, 2024",
         "shop_name": "KVM And HDMI 5 Store",
         "product_name": "Wireless HDMI Transmitter and Receiver 30 Meter Pl - 1TX -1RX-30M-1080P",
-        "product_price": "$49.02",
+        "product_price": "US $49.02",
         "product_quantity": "1",
-        "total_price": "$52.29",
+        "total_price": "US $52.29",
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641046317491",
         "tracking_number": "LQ835416399CN",
-        "tracking_status": "Accepted for transportation by postal service",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Accepted for transportation by postal service</p><p class=\"tracking-line\">Aug 19, 23:48 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 23:48 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 20:54 (GMT-6)</p></div>",
+        "tracking_status": "Arrived at line-haul office",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Delivery update</p><p class=\"tracking-line\">Arrived at line-haul office</p><p class=\"tracking-line\">Aug 29, 06:00 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region</p><p class=\"tracking-line\">Aug 23, 01:25 (GMT-6)</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 23, 01:25 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641046317491/img_0.png"
         ],
@@ -194,14 +327,14 @@
         "order_date": "Aug 14, 2024",
         "shop_name": "Newshark Store",
         "product_name": "Dustproof Cover Impact Drill Dustproof Household E - dust cover",
-        "product_price": "$1.79",
+        "product_price": "US $1.79",
         "product_quantity": "1",
-        "total_price": "$1.90",
+        "total_price": "US $1.90",
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641046297491",
         "tracking_number": "LQ835416399CN",
-        "tracking_status": "Accepted for transportation by postal service",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Accepted for transportation by postal service</p><p class=\"tracking-line\">Aug 19, 23:48 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 23:48 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 20:54 (GMT-6)</p></div>",
+        "tracking_status": "Arrived at line-haul office",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Delivery update</p><p class=\"tracking-line\">Arrived at line-haul office</p><p class=\"tracking-line\">Aug 29, 06:00 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region</p><p class=\"tracking-line\">Aug 23, 01:25 (GMT-6)</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 23, 01:25 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641046297491/img_0.png"
         ],
@@ -213,14 +346,14 @@
         "order_date": "Aug 14, 2024",
         "shop_name": "HDmatters Official Store",
         "product_name": "HDMI 2.0 Switch 4K 60Hz HDR Switch HDMI box HDMI 3 - 5X1, Check Note",
-        "product_price": "$16.11",
+        "product_price": "US $16.11",
         "product_quantity": "1",
-        "total_price": "$17.02",
+        "total_price": "US $17.02",
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641046277491",
         "tracking_number": "LQ835416399CN",
-        "tracking_status": "Accepted for transportation by postal service",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Accepted for transportation by postal service</p><p class=\"tracking-line\">Aug 19, 23:48 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 23:48 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 20:54 (GMT-6)</p></div>",
+        "tracking_status": "Arrived at line-haul office",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Delivery update</p><p class=\"tracking-line\">Arrived at line-haul office</p><p class=\"tracking-line\">Aug 29, 06:00 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region</p><p class=\"tracking-line\">Aug 23, 01:25 (GMT-6)</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 23, 01:25 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641046277491/img_0.png"
         ],
@@ -232,14 +365,14 @@
         "order_date": "Aug 14, 2024",
         "shop_name": "HIPICOK Official Store",
         "product_name": "HiPiCok Water Pump 19 Liters Water Dispenser for B - Black Pump and Base",
-        "product_price": "$13.44",
+        "product_price": "US $13.44",
         "product_quantity": "1",
-        "total_price": "$14.20",
+        "total_price": "US $14.20",
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641046257491",
         "tracking_number": "LQ835416399CN",
-        "tracking_status": "Accepted for transportation by postal service",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Accepted for transportation by postal service</p><p class=\"tracking-line\">Aug 19, 23:48 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 23:48 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 20:54 (GMT-6)</p></div>",
+        "tracking_status": "Arrived at line-haul office",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Delivery update</p><p class=\"tracking-line\">Arrived at line-haul office</p><p class=\"tracking-line\">Aug 29, 06:00 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region</p><p class=\"tracking-line\">Aug 23, 01:25 (GMT-6)</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 23, 01:25 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641046257491/img_0.png"
         ],
@@ -247,37 +380,18 @@
         "product_sku": "Black Pump and Base"
     },
     {
-        "order_id": "8191641046237491",
-        "order_date": "Aug 14, 2024",
-        "shop_name": "Smiling 2022 3C Store",
-        "product_name": "2023 Polishing Cloth For Apple iPhone iPad Air Mac - 1 Piece",
-        "product_price": "$1.84",
-        "product_quantity": "1",
-        "total_price": "$1.96",
-        "status": "Awaiting delivery",
-        "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641046237491",
-        "tracking_number": "LP00671472073489",
-        "tracking_status": "Leaving from departure country/region",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 20, 08:44 (GMT-6)</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 20, 06:14 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 20, 02:35 (GMT-6)</p></div>",
-        "image_references": [
-            "./img/8191641046237491/img_0.png"
-        ],
-        "property": "",
-        "product_sku": "1 Piece"
-    },
-    {
         "order_id": "8191641046217491",
         "order_date": "Aug 14, 2024",
         "shop_name": "Jayz Car Dropshipping Store",
         "product_name": "2pcs Non-slip Car Water Cup Pad Diamond Rhinestone - 4PCS, China",
-        "product_price": "$2.50",
+        "product_price": "US $2.50",
         "product_quantity": "1",
-        "total_price": "$2.58",
+        "total_price": "US $2.58",
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641046217491",
         "tracking_number": "LQ835416399CN",
-        "tracking_status": "Accepted for transportation by postal service",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Accepted for transportation by postal service</p><p class=\"tracking-line\">Aug 19, 23:48 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 23:48 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 20:54 (GMT-6)</p></div>",
+        "tracking_status": "Arrived at line-haul office",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Delivery update</p><p class=\"tracking-line\">Arrived at line-haul office</p><p class=\"tracking-line\">Aug 29, 06:00 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region</p><p class=\"tracking-line\">Aug 23, 01:25 (GMT-6)</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 23, 01:25 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641046217491/img_0.png"
         ],
@@ -289,14 +403,14 @@
         "order_date": "Aug 14, 2024",
         "shop_name": "ALANGDUO 3C TECH Store",
         "product_name": "3-5PCS Hydrogel Film For Redmi Watch 4 watch4 HD S - 5PCS, For Redmi Watch4",
-        "product_price": "$1.69",
+        "product_price": "US $1.69",
         "product_quantity": "2",
-        "total_price": "$3.60",
+        "total_price": "US $3.60",
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641046197491",
         "tracking_number": "420331729212490362719153543181",
-        "tracking_status": "Leaving from departure country/region",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 19, 20:29 (GMT-6)</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 19, 07:00 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 19, 06:49 (GMT-6)</p></div>",
+        "tracking_status": "Package delivered",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Delivery update</p><p class=\"tracking-line\">Package delivered</p><p class=\"tracking-line\">Aug 26, 14:45 (GMT-6)</p><p class=\"tracking-line\">Package delivered</p><p class=\"tracking-line\">Aug 26, 13:45 (GMT-6)</p><p class=\"tracking-line\">New delivery attempt is ongoing</p><p class=\"tracking-line\">Aug 24, 11:58 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641046197491/img_0.png"
         ],
@@ -304,75 +418,18 @@
         "product_sku": "5PCS, For Redmi Watch4"
     },
     {
-        "order_id": "8191641046177491",
-        "order_date": "Aug 14, 2024",
-        "shop_name": "Shop1102738548 Store",
-        "product_name": "No Inner Ring Diving Material Fashion Color Matchi - Purple",
-        "product_price": "$2.62",
-        "product_quantity": "1",
-        "total_price": "$2.79",
-        "status": "Awaiting delivery",
-        "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641046177491",
-        "tracking_number": "LP00671472073489",
-        "tracking_status": "Leaving from departure country/region",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 20, 08:44 (GMT-6)</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 20, 06:14 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 20, 02:35 (GMT-6)</p></div>",
-        "image_references": [
-            "./img/8191641046177491/img_0.png"
-        ],
-        "property": "",
-        "product_sku": "Purple"
-    },
-    {
-        "order_id": "8191641046157491",
-        "order_date": "Aug 14, 2024",
-        "shop_name": "PreciousAcc Store",
-        "product_name": "Womens Heart O-Ring Slip Chain Necklace Punk Rock  - A1",
-        "product_price": "$3.73",
-        "product_quantity": "1",
-        "total_price": "$3.94",
-        "status": "Awaiting delivery",
-        "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641046157491",
-        "tracking_number": "LP00671472073489",
-        "tracking_status": "Leaving from departure country/region",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 20, 08:44 (GMT-6)</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 20, 06:14 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 20, 02:35 (GMT-6)</p></div>",
-        "image_references": [
-            "./img/8191641046157491/img_0.png"
-        ],
-        "property": "",
-        "product_sku": "A1"
-    },
-    {
-        "order_id": "8191641046137491",
-        "order_date": "Aug 14, 2024",
-        "shop_name": "PHENVEL Online Store",
-        "product_name": "2Pc Safety Cover Screen Protector Protective Glass - For Pixel 8",
-        "product_price": "$3.64",
-        "product_quantity": "1",
-        "total_price": "$3.85",
-        "status": "Awaiting delivery",
-        "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641046137491",
-        "tracking_number": "420331729212490362719153543181",
-        "tracking_status": "Leaving from departure country/region",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 19, 20:29 (GMT-6)</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 19, 07:00 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 19, 06:49 (GMT-6)</p></div>",
-        "image_references": [
-            "./img/8191641046137491/img_0.png"
-        ],
-        "property": "",
-        "product_sku": "For Pixel 8"
-    },
-    {
         "order_id": "8191641046117491",
         "order_date": "Aug 14, 2024",
         "shop_name": "Ugreen Official Store",
         "product_name": "UGREEN USB C to USB Type C 100W Fast Charging For  - 2M 2PCS, 0.5 to 3m, CHINA",
-        "product_price": "$11.45",
+        "product_price": "US $11.45",
         "product_quantity": "1",
-        "total_price": "$11.96",
+        "total_price": "US $11.96",
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641046117491",
         "tracking_number": "LR152035762CN",
-        "tracking_status": "Accepted for transportation by postal service",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Accepted for transportation by postal service</p><p class=\"tracking-line\">Aug 19, 20:16 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 19:46 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 00:56 (GMT-6)</p></div>",
+        "tracking_status": "Leaving from departure country/region",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 31, 02:30 (GMT-6)</p><p class=\"tracking-line\">Accepted for transportation by postal service</p><p class=\"tracking-line\">Aug 19, 20:16 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 19:46 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641046117491/img_0.png"
         ],
@@ -380,37 +437,18 @@
         "product_sku": "2M 2PCS, 0.5 to 3m, CHINA"
     },
     {
-        "order_id": "8191641046077491",
-        "order_date": "Aug 14, 2024",
-        "shop_name": "Her Anni Store",
-        "product_name": "Portable Mini Hard Shell Digital Gadgets Storage B - A-Square-Gray-L",
-        "product_price": "$4.72",
-        "product_quantity": "1",
-        "total_price": "$4.78",
-        "status": "Awaiting delivery",
-        "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641046077491",
-        "tracking_number": "LP00671472073489",
-        "tracking_status": "Leaving from departure country/region",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 20, 08:44 (GMT-6)</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 20, 06:14 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 20, 02:35 (GMT-6)</p></div>",
-        "image_references": [
-            "./img/8191641046077491/img_0.png"
-        ],
-        "property": "",
-        "product_sku": "A-Square-Gray-L"
-    },
-    {
         "order_id": "8191641046057491",
         "order_date": "Aug 14, 2024",
         "shop_name": "Trig Rain Official Store",
         "product_name": "Earphone Ear Pads For Logitech G733 G 733 Earpads  - Grey black-1pcs",
-        "product_price": "$1.94",
+        "product_price": "US $1.94",
         "product_quantity": "1",
-        "total_price": "$1.96",
+        "total_price": "US $1.96",
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641046057491",
         "tracking_number": "LR152035762CN",
-        "tracking_status": "Accepted for transportation by postal service",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Accepted for transportation by postal service</p><p class=\"tracking-line\">Aug 19, 20:16 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 19:46 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 00:56 (GMT-6)</p></div>",
+        "tracking_status": "Leaving from departure country/region",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 31, 02:30 (GMT-6)</p><p class=\"tracking-line\">Accepted for transportation by postal service</p><p class=\"tracking-line\">Aug 19, 20:16 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 19:46 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641046057491/img_0.png"
         ],
@@ -424,12 +462,12 @@
         "product_name": "Multiple Products",
         "product_price": "",
         "product_quantity": "3",
-        "total_price": "$3.85",
+        "total_price": "US $3.85",
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641046017491",
         "tracking_number": "420331729212490362719153543181",
-        "tracking_status": "Leaving from departure country/region",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 19, 20:29 (GMT-6)</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 19, 07:00 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 19, 06:49 (GMT-6)</p></div>",
+        "tracking_status": "Package delivered",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Delivery update</p><p class=\"tracking-line\">Package delivered</p><p class=\"tracking-line\">Aug 26, 14:45 (GMT-6)</p><p class=\"tracking-line\">Package delivered</p><p class=\"tracking-line\">Aug 26, 13:45 (GMT-6)</p><p class=\"tracking-line\">New delivery attempt is ongoing</p><p class=\"tracking-line\">Aug 24, 11:58 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641046017491/img_0.png",
             "./img/8191641046017491/img_1.png",
@@ -444,12 +482,12 @@
         "product_name": "Multiple Products",
         "product_price": "",
         "product_quantity": "3",
-        "total_price": "$3.27",
+        "total_price": "US $3.27",
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641045977491",
         "tracking_number": "LR152035762CN",
-        "tracking_status": "Accepted for transportation by postal service",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Accepted for transportation by postal service</p><p class=\"tracking-line\">Aug 19, 20:16 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 19:46 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 00:56 (GMT-6)</p></div>",
+        "tracking_status": "Leaving from departure country/region",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 31, 02:30 (GMT-6)</p><p class=\"tracking-line\">Accepted for transportation by postal service</p><p class=\"tracking-line\">Aug 19, 20:16 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 19:46 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641045977491/img_0.png",
             "./img/8191641045977491/img_1.png",
@@ -458,56 +496,18 @@
         "property": ""
     },
     {
-        "order_id": "8191641045957491",
-        "order_date": "Aug 14, 2024",
-        "shop_name": "Forever Beautiful Store",
-        "product_name": "3-in-1 Dog Hair Brush Cat Hair Brush Electric Pet  - Khaki",
-        "product_price": "$3.72",
-        "product_quantity": "1",
-        "total_price": "$3.93",
-        "status": "Awaiting delivery",
-        "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641045957491",
-        "tracking_number": "420331729212490362719153543181",
-        "tracking_status": "Leaving from departure country/region",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 19, 20:29 (GMT-6)</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 19, 07:00 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 19, 06:49 (GMT-6)</p></div>",
-        "image_references": [
-            "./img/8191641045957491/img_0.png"
-        ],
-        "property": "",
-        "product_sku": "Khaki"
-    },
-    {
-        "order_id": "8191641045937491",
-        "order_date": "Aug 14, 2024",
-        "shop_name": "NLpearl Official Store",
-        "product_name": "NLpearl LED Bar Work Light 12V 24V Offroad Spot Fl - 1pc 240W led bar",
-        "product_price": "$16.65",
-        "product_quantity": "1",
-        "total_price": "$17.59",
-        "status": "Awaiting delivery",
-        "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641045937491",
-        "tracking_number": "420331729212490362719153543181",
-        "tracking_status": "Leaving from departure country/region",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 19, 20:29 (GMT-6)</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 19, 07:00 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 19, 06:49 (GMT-6)</p></div>",
-        "image_references": [
-            "./img/8191641045937491/img_0.png"
-        ],
-        "property": "",
-        "product_sku": "1pc 240W led bar"
-    },
-    {
         "order_id": "8191641045917491",
         "order_date": "Aug 14, 2024",
         "shop_name": "Ramulus Store",
         "product_name": "Cute Alien Enamel Pin Sunflowers Brooch Pines Lape - 1",
-        "product_price": "$1.22",
+        "product_price": "US $1.22",
         "product_quantity": "1",
-        "total_price": "$1.30",
+        "total_price": "US $1.30",
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641045917491",
         "tracking_number": "LR152035762CN",
-        "tracking_status": "Accepted for transportation by postal service",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Accepted for transportation by postal service</p><p class=\"tracking-line\">Aug 19, 20:16 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 19:46 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 00:56 (GMT-6)</p></div>",
+        "tracking_status": "Leaving from departure country/region",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 31, 02:30 (GMT-6)</p><p class=\"tracking-line\">Accepted for transportation by postal service</p><p class=\"tracking-line\">Aug 19, 20:16 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 19:46 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641045917491/img_0.png"
         ],
@@ -515,94 +515,18 @@
         "product_sku": "1"
     },
     {
-        "order_id": "8191641045897491",
-        "order_date": "Aug 14, 2024",
-        "shop_name": "Ocean Loop Store",
-        "product_name": "Silicone+Leather Strap For Samsung Galaxy Watch 6  - Black Brown, Watch 4 Classic 46mm",
-        "product_price": "$3.11",
-        "product_quantity": "1",
-        "total_price": "$3.29",
-        "status": "Awaiting delivery",
-        "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641045897491",
-        "tracking_number": "420331729212490362719153543181",
-        "tracking_status": "Leaving from departure country/region",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 19, 20:29 (GMT-6)</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 19, 07:00 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 19, 06:49 (GMT-6)</p></div>",
-        "image_references": [
-            "./img/8191641045897491/img_0.png"
-        ],
-        "property": "",
-        "product_sku": "Black Brown, Watch 4 Classic 46mm"
-    },
-    {
-        "order_id": "8191641045877491",
-        "order_date": "Aug 14, 2024",
-        "shop_name": "ONM Official Store",
-        "product_name": "Glass + Case for Xiaomi Redmi Watch 4 Accessory PC - Black, For Redmi Watch 4",
-        "product_price": "$1.57",
-        "product_quantity": "2",
-        "total_price": "$3.28",
-        "status": "Awaiting delivery",
-        "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641045877491",
-        "tracking_number": "420331729212490362719153543181",
-        "tracking_status": "Leaving from departure country/region",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 19, 20:29 (GMT-6)</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 19, 07:00 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 19, 06:49 (GMT-6)</p></div>",
-        "image_references": [
-            "./img/8191641045877491/img_0.png"
-        ],
-        "property": "",
-        "product_sku": "Black, For Redmi Watch 4"
-    },
-    {
-        "order_id": "8191641045857491",
-        "order_date": "Aug 14, 2024",
-        "shop_name": "Miss Zoe Official Store",
-        "product_name": "Childhood Arcade Pixel Game Peripheral Enamel Pins - TKP549-2",
-        "product_price": "$1.82",
-        "product_quantity": "1",
-        "total_price": "$1.92",
-        "status": "Awaiting delivery",
-        "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641045857491",
-        "tracking_number": "LP00671472073489",
-        "tracking_status": "Leaving from departure country/region",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 20, 08:44 (GMT-6)</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 20, 06:14 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 20, 02:35 (GMT-6)</p></div>",
-        "image_references": [
-            "./img/8191641045857491/img_0.png"
-        ],
-        "property": "",
-        "product_sku": "TKP549-2"
-    },
-    {
-        "order_id": "8191641045837491",
-        "order_date": "Aug 14, 2024",
-        "shop_name": "AUTO Man",
-        "product_name": "SEAMETAL Car Dashboard Phone Bracket Universal Aut - Textured Type",
-        "product_price": "$4.95",
-        "product_quantity": "1",
-        "total_price": "$5.22",
-        "status": "Awaiting delivery",
-        "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641045837491",
-        "tracking_number": "420331729212490362719153543181",
-        "tracking_status": "Leaving from departure country/region",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 19, 20:29 (GMT-6)</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 19, 07:00 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 19, 06:49 (GMT-6)</p></div>",
-        "image_references": [
-            "./img/8191641045837491/img_0.png"
-        ],
-        "property": "",
-        "product_sku": "Textured Type"
-    },
-    {
         "order_id": "8191641045817491",
         "order_date": "Aug 14, 2024",
         "shop_name": "GAFASTWO Official Store",
         "product_name": "Anti-sunburn Sleeve Summer New Loose Breathable UV - White, One Size",
-        "product_price": "$3.55",
+        "product_price": "US $3.55",
         "product_quantity": "1",
-        "total_price": "$3.59",
+        "total_price": "US $3.59",
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641045817491",
         "tracking_number": "LP00671472073489",
-        "tracking_status": "Leaving from departure country/region",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 20, 08:44 (GMT-6)</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 20, 06:14 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 20, 02:35 (GMT-6)</p></div>",
+        "tracking_status": "Package delivered",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Delivery update</p><p class=\"tracking-line\">Package delivered</p><p class=\"tracking-line\">Aug 23, 12:30 (GMT-6)</p><p class=\"tracking-line\">Arrived in transit country/region</p><p class=\"tracking-line\">Aug 23, 09:23 (GMT-6)</p><p class=\"tracking-line\">Left from customs</p><p class=\"tracking-line\">Aug 23, 07:53 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641045817491/img_0.png"
         ],
@@ -610,94 +534,18 @@
         "product_sku": "White, One Size"
     },
     {
-        "order_id": "8191641045787491",
-        "order_date": "Aug 14, 2024",
-        "shop_name": "Gorillasfigure Dropshipping Factory Store",
-        "product_name": "Multiple Products",
-        "product_price": "",
-        "product_quantity": "2",
-        "total_price": "$9.77",
-        "status": "Awaiting delivery",
-        "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641045787491",
-        "tracking_number": "420331729212490362719153543181",
-        "tracking_status": "Leaving from departure country/region",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 19, 20:29 (GMT-6)</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 19, 07:00 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 19, 06:49 (GMT-6)</p></div>",
-        "image_references": [
-            "./img/8191641045787491/img_0.png",
-            "./img/8191641045787491/img_1.png"
-        ],
-        "property": ""
-    },
-    {
-        "order_id": "8191641045767491",
-        "order_date": "Aug 14, 2024",
-        "shop_name": "Factory Auto Upholstery Store",
-        "product_name": "5 Pin HD Car Rear View Camera Reverse 4LED Night V - 1 set, China",
-        "product_price": "$3.82",
-        "product_quantity": "1",
-        "total_price": "$4.08",
-        "status": "Awaiting delivery",
-        "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641045767491",
-        "tracking_number": "420331729212490362719153543181",
-        "tracking_status": "Leaving from departure country/region",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 19, 20:29 (GMT-6)</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 19, 07:00 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 19, 06:49 (GMT-6)</p></div>",
-        "image_references": [
-            "./img/8191641045767491/img_0.png"
-        ],
-        "property": "",
-        "product_sku": "1 set, China"
-    },
-    {
-        "order_id": "8191641045747491",
-        "order_date": "Aug 14, 2024",
-        "shop_name": "Online Shopping Malls",
-        "product_name": "2024 Men's Messenger Bag Crossbody Shoulder Bags M - black",
-        "product_price": "$5.77",
-        "product_quantity": "1",
-        "total_price": "$6.03",
-        "status": "Awaiting delivery",
-        "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641045747491",
-        "tracking_number": "LP00671472073489",
-        "tracking_status": "Leaving from departure country/region",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 20, 08:44 (GMT-6)</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 20, 06:14 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 20, 02:35 (GMT-6)</p></div>",
-        "image_references": [
-            "./img/8191641045747491/img_0.png"
-        ],
-        "property": "",
-        "product_sku": "black"
-    },
-    {
-        "order_id": "8191641045727491",
-        "order_date": "Aug 14, 2024",
-        "shop_name": "Gold New 3C Store",
-        "product_name": "45W For Samsung Charger USB-C Super Fast Charger T - US, black",
-        "product_price": "$4.63",
-        "product_quantity": "1",
-        "total_price": "$4.70",
-        "status": "Awaiting delivery",
-        "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641045727491",
-        "tracking_number": "420331729212490362719153543181",
-        "tracking_status": "Leaving from departure country/region",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 19, 20:29 (GMT-6)</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 19, 07:00 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 19, 06:49 (GMT-6)</p></div>",
-        "image_references": [
-            "./img/8191641045727491/img_0.png"
-        ],
-        "property": "",
-        "product_sku": "US, black"
-    },
-    {
         "order_id": "8191641045707491",
         "order_date": "Aug 14, 2024",
         "shop_name": "Cohai Store",
         "product_name": "2M/1M Flexible Spiral Cable Wire Protector Cable O - 16mmx1m Black",
-        "product_price": "$1.94",
+        "product_price": "US $1.94",
         "product_quantity": "1",
-        "total_price": "$2.04",
+        "total_price": "US $2.04",
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641045707491",
         "tracking_number": "LQ835416399CN",
-        "tracking_status": "Accepted for transportation by postal service",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Accepted for transportation by postal service</p><p class=\"tracking-line\">Aug 19, 23:48 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 23:48 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 20:54 (GMT-6)</p></div>",
+        "tracking_status": "Arrived at line-haul office",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Delivery update</p><p class=\"tracking-line\">Arrived at line-haul office</p><p class=\"tracking-line\">Aug 29, 06:00 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region</p><p class=\"tracking-line\">Aug 23, 01:25 (GMT-6)</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 23, 01:25 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641045707491/img_0.png"
         ],
@@ -705,37 +553,18 @@
         "product_sku": "16mmx1m Black"
     },
     {
-        "order_id": "8191641045687491",
-        "order_date": "Aug 14, 2024",
-        "shop_name": "Vencirart Store",
-        "product_name": "Cartoon Programming Stickers IT Developers Usage L - 50pcs, CHINA",
-        "product_price": "$2.52",
-        "product_quantity": "1",
-        "total_price": "$2.69",
-        "status": "Awaiting delivery",
-        "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641045687491",
-        "tracking_number": "LP00671472073489",
-        "tracking_status": "Leaving from departure country/region",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 20, 08:44 (GMT-6)</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 20, 06:14 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 20, 02:35 (GMT-6)</p></div>",
-        "image_references": [
-            "./img/8191641045687491/img_0.png"
-        ],
-        "property": "",
-        "product_sku": "50pcs, CHINA"
-    },
-    {
         "order_id": "8191641045667491",
         "order_date": "Aug 14, 2024",
         "shop_name": "Motolight Store",
         "product_name": "Newest Motorcycle hand Helmet bag Motocross Racing",
-        "product_price": "$16.10",
+        "product_price": "US $16.10",
         "product_quantity": "1",
-        "total_price": "$16.84",
+        "total_price": "US $16.84",
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641045667491",
         "tracking_number": "LR152035762CN",
-        "tracking_status": "Accepted for transportation by postal service",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Accepted for transportation by postal service</p><p class=\"tracking-line\">Aug 19, 20:16 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 19:46 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 00:56 (GMT-6)</p></div>",
+        "tracking_status": "Leaving from departure country/region",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 31, 02:30 (GMT-6)</p><p class=\"tracking-line\">Accepted for transportation by postal service</p><p class=\"tracking-line\">Aug 19, 20:16 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 19:46 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641045667491/img_0.png"
         ],
@@ -746,35 +575,16 @@
         "order_date": "Aug 14, 2024",
         "shop_name": "Star-ACE Store",
         "product_name": "Magnesium Powder Bag Waterproof Polyester Chalk Ba - Black",
-        "product_price": "$4.34",
+        "product_price": "US $4.34",
         "product_quantity": "1",
-        "total_price": "$4.59",
+        "total_price": "US $4.59",
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641045647491",
         "tracking_number": "LR152035762CN",
-        "tracking_status": "Accepted for transportation by postal service",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Accepted for transportation by postal service</p><p class=\"tracking-line\">Aug 19, 20:16 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 19:46 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 00:56 (GMT-6)</p></div>",
+        "tracking_status": "Leaving from departure country/region",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 31, 02:30 (GMT-6)</p><p class=\"tracking-line\">Accepted for transportation by postal service</p><p class=\"tracking-line\">Aug 19, 20:16 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 19:46 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641045647491/img_0.png"
-        ],
-        "property": "",
-        "product_sku": "Black"
-    },
-    {
-        "order_id": "8191641045627491",
-        "order_date": "Aug 14, 2024",
-        "shop_name": "Shop1103846736 Store",
-        "product_name": "Thin Credit Card Holder PU Leather Black Carbon Fi - Black",
-        "product_price": "$3.33",
-        "product_quantity": "1",
-        "total_price": "$3.52",
-        "status": "Awaiting delivery",
-        "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641045627491",
-        "tracking_number": "LP00671472073489",
-        "tracking_status": "Leaving from departure country/region",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 20, 08:44 (GMT-6)</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 20, 06:14 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 20, 02:35 (GMT-6)</p></div>",
-        "image_references": [
-            "./img/8191641045627491/img_0.png"
         ],
         "property": "",
         "product_sku": "Black"
@@ -784,14 +594,14 @@
         "order_date": "Aug 14, 2024",
         "shop_name": "QIHE JEWELRY Boholand Store",
         "product_name": "Interesting Goose Enamel Pin Cartoon Animal Rose H - XZ9159",
-        "product_price": "$1.36",
+        "product_price": "US $1.36",
         "product_quantity": "2",
-        "total_price": "$2.68",
+        "total_price": "US $2.68",
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641045607491",
         "tracking_number": "LR152035762CN",
-        "tracking_status": "Accepted for transportation by postal service",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Accepted for transportation by postal service</p><p class=\"tracking-line\">Aug 19, 20:16 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 19:46 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 00:56 (GMT-6)</p></div>",
+        "tracking_status": "Leaving from departure country/region",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 31, 02:30 (GMT-6)</p><p class=\"tracking-line\">Accepted for transportation by postal service</p><p class=\"tracking-line\">Aug 19, 20:16 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 19:46 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641045607491/img_0.png"
         ],
@@ -799,37 +609,18 @@
         "product_sku": "XZ9159"
     },
     {
-        "order_id": "8191641045587491",
-        "order_date": "Aug 14, 2024",
-        "shop_name": "Shop1103311340 Store",
-        "product_name": "Car Accessorie Car Fragrance Gypsum Cute Anime Swi - Duck 1",
-        "product_price": "$2.48",
-        "product_quantity": "1",
-        "total_price": "$2.61",
-        "status": "Awaiting delivery",
-        "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641045587491",
-        "tracking_number": "LP00671472073489",
-        "tracking_status": "Leaving from departure country/region",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 20, 08:44 (GMT-6)</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 20, 06:14 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 20, 02:35 (GMT-6)</p></div>",
-        "image_references": [
-            "./img/8191641045587491/img_0.png"
-        ],
-        "property": "",
-        "product_sku": "Duck 1"
-    },
-    {
         "order_id": "8191641045567491",
         "order_date": "Aug 14, 2024",
         "shop_name": "10Seven Store",
         "product_name": "Tire Valve Dust Caps Stem Covers Plastic Car Wheel - 100Pcs Black",
-        "product_price": "$1.95",
+        "product_price": "US $1.95",
         "product_quantity": "1",
-        "total_price": "$2.06",
+        "total_price": "US $2.06",
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641045567491",
         "tracking_number": "LR152035762CN",
-        "tracking_status": "Accepted for transportation by postal service",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Accepted for transportation by postal service</p><p class=\"tracking-line\">Aug 19, 20:16 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 19:46 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 00:56 (GMT-6)</p></div>",
+        "tracking_status": "Leaving from departure country/region",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 31, 02:30 (GMT-6)</p><p class=\"tracking-line\">Accepted for transportation by postal service</p><p class=\"tracking-line\">Aug 19, 20:16 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 19:46 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641045567491/img_0.png"
         ],
@@ -837,37 +628,18 @@
         "product_sku": "100Pcs Black"
     },
     {
-        "order_id": "8191641045547491",
-        "order_date": "Aug 14, 2024",
-        "shop_name": "Shop1102822769 Store",
-        "product_name": "Stainless Steel rotating Bead Rings Anti Anxiety R - Silver",
-        "product_price": "$1.18",
-        "product_quantity": "1",
-        "total_price": "$1.25",
-        "status": "Awaiting delivery",
-        "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641045547491",
-        "tracking_number": "LP00671472073489",
-        "tracking_status": "Leaving from departure country/region",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 20, 08:44 (GMT-6)</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 20, 06:14 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 20, 02:35 (GMT-6)</p></div>",
-        "image_references": [
-            "./img/8191641045547491/img_0.png"
-        ],
-        "property": "",
-        "product_sku": "Silver"
-    },
-    {
         "order_id": "8191641045527491",
         "order_date": "Aug 14, 2024",
         "shop_name": "Speeding and Running Digital Store",
         "product_name": "90 Degree Left Right Up Down Angled USB 3.0 A Male - black 1",
-        "product_price": "$1.23",
+        "product_price": "US $1.23",
         "product_quantity": "1",
-        "total_price": "$1.31",
+        "total_price": "US $1.31",
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641045527491",
         "tracking_number": "LR152035762CN",
-        "tracking_status": "Accepted for transportation by postal service",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Accepted for transportation by postal service</p><p class=\"tracking-line\">Aug 19, 20:16 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 19:46 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 00:56 (GMT-6)</p></div>",
+        "tracking_status": "Leaving from departure country/region",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 31, 02:30 (GMT-6)</p><p class=\"tracking-line\">Accepted for transportation by postal service</p><p class=\"tracking-line\">Aug 19, 20:16 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 19:46 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641045527491/img_0.png"
         ],
@@ -881,12 +653,12 @@
         "product_name": "Multiple Products",
         "product_price": "",
         "product_quantity": "2",
-        "total_price": "$4.87",
+        "total_price": "US $4.87",
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641045497491",
         "tracking_number": "LR152035762CN",
-        "tracking_status": "Accepted for transportation by postal service",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Accepted for transportation by postal service</p><p class=\"tracking-line\">Aug 19, 20:16 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 19:46 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 00:56 (GMT-6)</p></div>",
+        "tracking_status": "Leaving from departure country/region",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 31, 02:30 (GMT-6)</p><p class=\"tracking-line\">Accepted for transportation by postal service</p><p class=\"tracking-line\">Aug 19, 20:16 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 19:46 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641045497491/img_0.png",
             "./img/8191641045497491/img_1.png"
@@ -898,37 +670,18 @@
         "order_date": "Aug 14, 2024",
         "shop_name": "M-B-S Go Up Store",
         "product_name": "Strap for Mi Band 5 6 7 8 9 Metal Milanese Bracele - Milanese CS Black, for mi band 6, CHINA",
-        "product_price": "$3.55",
+        "product_price": "US $3.55",
         "product_quantity": "1",
-        "total_price": "$3.79",
+        "total_price": "US $3.79",
         "status": "Awaiting delivery",
         "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641045477491",
         "tracking_number": "LR152035762CN",
-        "tracking_status": "Accepted for transportation by postal service",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Accepted for transportation by postal service</p><p class=\"tracking-line\">Aug 19, 20:16 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 19:46 (GMT-6)</p><p class=\"tracking-line\">Left from departure country/region sorting center</p><p class=\"tracking-line\">Aug 18, 00:56 (GMT-6)</p></div>",
+        "tracking_status": "Leaving from departure country/region",
+        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 31, 02:30 (GMT-6)</p><p class=\"tracking-line\">Accepted for transportation by postal service</p><p class=\"tracking-line\">Aug 19, 20:16 (GMT-6)</p><p class=\"tracking-line\">Handed over to line-haul</p><p class=\"tracking-line\">Aug 19, 19:46 (GMT-6)</p></div>",
         "image_references": [
             "./img/8191641045477491/img_0.png"
         ],
         "property": "",
         "product_sku": "Milanese CS Black, for mi band 6, CHINA"
-    },
-    {
-        "order_id": "8191641045457491",
-        "order_date": "Aug 14, 2024",
-        "shop_name": "GTWIN Phone Accessories Store",
-        "product_name": "20 in 1/10 in 1 Digital Camera Headset Mobile Phon - 7 in 1 Grak Gray",
-        "product_price": "$3.51",
-        "product_quantity": "1",
-        "total_price": "$3.70",
-        "status": "Awaiting delivery",
-        "tracking_link": "https://www.aliexpress.com/p/tracking/index.html?_addShare=no&_login=yes&tradeOrderId=8191641045457491",
-        "tracking_number": "420331729212490362719153543181",
-        "tracking_status": "Leaving from departure country/region",
-        "tracking_process": "<div class=\"tracking-process\"><p class=\"tracking-line\">Shipping update</p><p class=\"tracking-line\">Leaving from departure country/region</p><p class=\"tracking-line\">Aug 19, 20:29 (GMT-6)</p><p class=\"tracking-line\">Customs clearance complete</p><p class=\"tracking-line\">Aug 19, 07:00 (GMT-6)</p><p class=\"tracking-line\">Customs clearance started</p><p class=\"tracking-line\">Aug 19, 06:49 (GMT-6)</p></div>",
-        "image_references": [
-            "./img/8191641045457491/img_0.png"
-        ],
-        "property": "",
-        "product_sku": "7 in 1 Grak Gray"
     }
 ]

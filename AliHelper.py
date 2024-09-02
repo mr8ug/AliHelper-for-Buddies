@@ -79,6 +79,7 @@ class AliHelper:
         print(f"User data dir: {self.user_data_dir}")
         
         self.orders = []
+        self.items=[]
         
         load_dotenv()
         
@@ -136,7 +137,7 @@ class AliHelper:
             self.driver = webdriver.Edge(
                 options=self.driver_options
             )
-        
+
     def getOrders(self, category:str="Shipped", max_orders:int=-1, asJson:bool=False, requireToLogin:bool=False, page_zoom:int=75)->list:
         """Get orders from Aliexpress and store them in a list based on the category provided (Shipped, To Pay, Processed, View All) and the max_orders to get
         In case of requireToLogin, the user will need to login to Aliexpress and press Enter to continue
@@ -281,8 +282,8 @@ class AliHelper:
                 os.makedirs(order_detail_save_path)
                 
             detail_path = order_detail_save_path + str(orden['order_id'])+"_detail.png"
-            if not os.path.exists(detail_path):
-                self.saveOrderScreenshot(url=order_url, save_path=detail_path,zoom=page_zoom)
+            # if not os.path.exists(detail_path):
+            self.saveOrderScreenshot(url=order_url, save_path=detail_path,zoom=page_zoom)
             
             if len(orden["image_references"]) == 1:
                 #obtener el nombre ya que si aparece
@@ -363,6 +364,7 @@ class AliHelper:
                 self.driver.switch_to.window(self.driver.window_handles[0])
                 
         self.driver.execute_script("window.open('');")
+        
         self.driver.switch_to.window(self.driver.window_handles[1])
         self.driver.get(tracking_link)
         
@@ -608,6 +610,61 @@ class AliHelper:
         print("----------------------")
         
         return True
+    
+    def printTrackingStatusByTrackingNumber(self, trackingList:list=[], fromFile:bool=False, filePath:str="orders.json", export:bool=True)->bool:
+        """Return the tracking status of the orders in the orderList provided, the status will be printed and saved in a txt file if export is True
+
+        Args:
+            orderList (list, optional): Order string lists. Defaults to [].
+            fromFile (bool, optional): In case you need to use a file instead self program. Defaults to False.
+            filePath (str, optional): In case you use fromFile a filePath will be required by default it uses sames as last generated. Defaults to "orders.json".
+            export (bool, optional): In cases export needed, will be saved on root directory. Defaults to True.
+
+        Returns: True if tracking status were printed
+        """
+        print("Printing tracking status...")
+        if len(trackingList) == 0:
+            print("No orders to print")
+            return False
+        
+        data = []
+        fileData = []
+        if fromFile:
+            if filePath != "":
+                with open(filePath, "r") as file:
+                    data = json.load(file) 
+                
+        else:
+            data = self.orders
+            if len(data) == 0:
+                print("No orders to print")
+                return False
+            
+            
+        if len(data) == 0:
+            print("No orders to print")
+            return False
+        
+        counter = -1
+        for o in trackingList:
+            counter += 1
+            for d in data:
+                if d["tracking_number"] == str(o):
+                    # data.remove(d)
+                    print(f"{d["tracking_number"]+"\t"+d['tracking_status']}")
+                    fileData.append(d['tracking_status'])
+                    break
+        if export:
+            with open("tracking_status.txt", "w") as file:
+                date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                file.write(f"Generated on: {date}\n")
+                for d in fileData:
+                    file.write(f"{d}\n")
+                # json.dump(fileData, file, indent=4)
+                file.write("----------------------")
+        print("----------------------")
+        
+        return True
         
     def pushOrdersToServer(self, fromFile:bool=False, filePath:str="orders.json")->bool:
         """If you need to push orders to a server, you can use this method to push the orders to a server, modify the url from .env file on root directory
@@ -784,23 +841,27 @@ class AliHelper:
             print("Excel Order Status file generated")
         return True
     
+    
+    
             
         
 ali = AliHelper(showAlerts=False)
-# #PARA ACTUALIZAR INFO
+# # #PARA ACTUALIZAR INFO
 ali.setEnviroment(headless=False)
 # ali.getOrders(category="To ship", max_orders=1, page_zoom=85)
-ali.getOrders(category="Shipped", max_orders=49, page_zoom=85)
+ali.getOrders(category="Shipped", max_orders=36, page_zoom=85)
 ali.exportOrders("orders.json")
 
 #pedido 4
-orderList =[8191641045457491,8191641046297491,8191641046057491,8191641045477491,8191641046457491,8191641045977491,8191641045977491,8191641045977491,8191641045857491,8191641045707491,8191641045957491,8191641046137491,8191641045527491,8191641045607491,8191641045897491,8191641045627491,8191641046357491,8191641045667491,8191641046397491,8191641046197491,8191641045877491,8191641046277491,8191641045937491,8191641046257491,8191641046117491,8191641045727491,8191641045497491,8191641045497491,8191641046237491,8191641046337491,8191641046477491,8191641046377491,8191641046177491,8191641045647491,8191641046217491,8191641045837491,8191641046497491,8191641046437491,8191641045587491,8191641045817491,8191641046157491,8191641045547491,8191641046077491,8191641046317491,8191641045917491,8191641045767491,8191641045567491,8191641045787491,8191641045747491,8191641045607491,8191641045687491,8191641046017491,8191641046017491,8191641046017491,8191641046417491,8191641045787491,8191641045787491,8191641045787491]
+orderList =[8192146329897491,8192146329877491,8192146329857491,8192146329757491,8192146329737491,8192146329717491,8192146329777491,8192146329797491,8192146329817491,8192146329837491,8192146329697491]
 
 ali.printTrackByOrderList(orderList=orderList, fromFile=True)
-ali.printTrackingStatusByOrderList(orderList=orderList, fromFile=True)
 ali.generateOrderDetailPDF(orderList=orderList, fromFile=True, filePath="orders.json")
 ali.pushOrdersToServer(fromFile=True)
 ali.generateExcelData(fromFile=True)
 ali.generateExcelByOrder(orderList=orderList, fromFile=True)
+
+tracking_numbers=["420331729212490362719153543181","LQ835416399CN","LP00671472073489","LR152035762CN","CNUSUP00003994120","CNUSUP00004010899"]
+ali.printTrackingStatusByTrackingNumber(trackingList=tracking_numbers, fromFile=True)
 # #PARA IMPRIMIR TRACKING
 # # input("Press Enter to continue...")
