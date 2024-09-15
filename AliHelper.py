@@ -151,6 +151,9 @@ class AliHelper:
         Returns:
             list: return a list of orders
         """
+        if self.driver == None:
+            print("Driver not set, please set enviroment first")
+            return []
         if requireToLogin:
             print("Please login to Aliexpress and press Enter to continue...")
             input()
@@ -200,7 +203,7 @@ class AliHelper:
         #wait for the page to load
         
         order_items = self.driver.find_elements(By.CLASS_NAME, "order-item")
-        print(f"Orders detected: {len(order_items)}")
+        print(f"Orders detected at {category} : {len(order_items)}")
         
         
         for order_item in order_items[:max_orders]:
@@ -780,9 +783,11 @@ class AliHelper:
                 if groups[key]["captures"].index(img) % 2 == 0 and groups[key]["captures"].index(img) != 0:
                     pdf.add_page()
                 #two per page
-                pdf.cell(40, 10, img.split("_")[0], 1, 0, "C")
+                pdf.cell(60, 10, "Traking: " + key, 1, 0, "C")
+                pdf.cell(60, 10,"Orden: " + img.split("_")[0], 1, 1, "C")
+                
                 # pdf.cell(40, 10, img, 1, 1, "C")
-                pdf.ln(10)
+                # pdf.ln(10)
                 pdf.image(f"./detail/{img}", x=10, w=190)
                 pdf.ln(10)
                 
@@ -848,20 +853,21 @@ class AliHelper:
 ali = AliHelper(showAlerts=False)
 # # #PARA ACTUALIZAR INFO
 ali.setEnviroment(headless=False)
-# ali.getOrders(category="To ship", max_orders=1, page_zoom=85)
+ali.getOrders(category="To ship", max_orders=1, page_zoom=85)
 ali.getOrders(category="Shipped", max_orders=36, page_zoom=85)
 ali.exportOrders("orders.json")
 
-#pedido 4
-orderList =[8192146329897491,8192146329877491,8192146329857491,8192146329757491,8192146329737491,8192146329717491,8192146329777491,8192146329797491,8192146329817491,8192146329837491,8192146329697491]
+#pedido 5
+orderList =[8192700828977491,8192700829017491,8192700829237491,8192700829477491,8192700829197491,8192700829317491,8192700829297491,8192700829217491,8192700829117491,8192700829037491,8192700829277491,8192700829077491,8192700829457491,8192700829157491,8192700828997491,8192700829497491,8192700828847491,8192700829437491,8192700828927491,8192700828927491,8192700829397491,8192700828957491,8192700829517491,8192700829057491,8192700829177491,8192700829417491,8192700828807491,8192700829337491,8192700828887491,8192700829377491,8192700829377491,8192700829137491,8192700829357491,8192700828867491,8192700829097491,8192700829537491,8192700829257491,8192700828907491,8192700828827491]
 
 ali.printTrackByOrderList(orderList=orderList, fromFile=True)
-ali.generateOrderDetailPDF(orderList=orderList, fromFile=True, filePath="orders.json")
+ali.printTrackingStatusByOrderList(orderList=orderList, fromFile=True)
+# ali.generateOrderDetailPDF(orderList=orderList, fromFile=True, filePath="orders.json")
 ali.pushOrdersToServer(fromFile=True)
 ali.generateExcelData(fromFile=True)
 ali.generateExcelByOrder(orderList=orderList, fromFile=True)
 
-tracking_numbers=["420331729212490362719153543181","LQ835416399CN","LP00671472073489","LR152035762CN","CNUSUP00003994120","CNUSUP00004010899"]
-ali.printTrackingStatusByTrackingNumber(trackingList=tracking_numbers, fromFile=True)
-# #PARA IMPRIMIR TRACKING
+# tracking_numbers=["420331729212490362719153543181","LQ835416399CN","LP00671472073489","LR152035762CN","CNUSUP00003994120","CNUSUP00004010899"]
+# ali.printTrackingStatusByTrackingNumber(trackingList=tracking_numbers, fromFile=True)
+#PARA IMPRIMIR TRACKING
 # # input("Press Enter to continue...")
