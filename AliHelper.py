@@ -154,11 +154,14 @@ class AliHelper:
         if self.driver == None:
             print("Driver not set, please set enviroment first")
             return []
+        
+        self.driver.get(self.url_orders)
+        
         if requireToLogin:
             print("Please login to Aliexpress and press Enter to continue...")
             input()
             
-        self.driver.get(self.url_orders)
+            self.driver.get(self.url_orders)
         
         #categorias (View All, To Pay, Shipped, Processed)
         div_categorias = WebDriverWait(self.driver, timeout=10, poll_frequency=1).until(
@@ -202,15 +205,15 @@ class AliHelper:
             
         #wait for the page to load
         
-        order_items = self.driver.find_elements(By.CLASS_NAME, "order-item")
-        print(f"Orders detected at {category} : {len(order_items)}")
+        order_container = self.driver.find_elements(By.CLASS_NAME, "order-item")
+        print(f"Orders detected at {category} : {len(order_container)}")
         
         #print bar progress
         
-        for order_item in order_items[:max_orders]:
+        for order_item in order_container[:max_orders]:
             #print progress bar for each order with percentage
-            # print(f"Fetching Orders: {order_items.index(order_item)+1}/{len(order_items)}", end="\r")
-            print(f"Fetching Orders: {round(((order_items.index(order_item)+1)/len(order_items))*100,2)}%", end="\r")
+            # print(f"Fetching Orders: {order_container.index(order_item)+1}/{len(order_container)}", end="\r")
+            print(f"Fetching Orders: {round(((order_container.index(order_item)+1)/len(order_container))*100,2)}%", end="\r")
             orden ={
                 "order_id": "",
                 "order_date": "",
@@ -349,7 +352,178 @@ class AliHelper:
     
         return self.orders
     
-    def getTrackingNumber(self, tracking_link:str)->dict:
+    def getOrdersNew(self, category:str="Shipped", max_orders:int=-1, asJson:bool=False, requireToLogin:bool=False, page_zoom:int=75)->list:
+        """Get orders from Aliexpress and store them in a list based on the category provided (Shipped, To Pay, Processed, View All) and the max_orders to get
+        In case of requireToLogin, the user will need to login to Aliexpress and press Enter to continue
+
+        Args:
+            category (str, optional): On english can be (Shipped, To Pay, Processed, View All). Defaults to "Shipped".
+            max_orders (int, optional): Define the number of orders to bring back or load. Defaults to -1.
+            asJson (bool, optional): In case json structure needed to be returned. Defaults to False.
+            requireToLogin (bool, optional): In case no userdata where loaded you will need to login first. Defaults to False.
+
+        Returns:
+            list: return a list of orders
+        """
+        if self.driver == None:
+            print("Driver not set, please set enviroment first")
+            return []
+        
+        self.driver.get(self.url_orders)
+        
+        if requireToLogin:
+            print("Please login to Aliexpress and press Enter to continue...")
+            input()
+            
+            self.driver.get(self.url_orders)
+        
+        #categorias (View All, To Pay, Shipped, Processed)
+        div_categorias = WebDriverWait(self.driver, timeout=10, poll_frequency=1).until(
+            lambda d: d.find_element(By.CLASS_NAME, "comet-tabs-nav")
+        )
+        
+        lista_categorias = div_categorias.find_elements(By.CLASS_NAME, "comet-tabs-nav-item")
+        for categoria in lista_categorias:
+            if str(categoria.text).startswith(category):
+                categoria.click()
+                sleep(2)
+                break
+        
+        element_count = 0
+        
+        ##load orders till max_orders
+        while True:
+            items_loaded = self.driver.find_elements(By.CLASS_NAME, "order-item")
+            element_count = len(items_loaded)
+            if element_count >= max_orders and max_orders != -1:
+                break
+            
+            div_more = None
+            try:
+                div_more = WebDriverWait(self.driver, timeout=5, poll_frequency=1).until(
+                    lambda d: d.find_element(By.CLASS_NAME, "order-more")
+                )
+            except:
+                print("No more orders to load")
+                break
+            
+            if div_more == None:
+                print("No more orders to load")
+                break
+            
+            button_viewOrders = div_more.find_element(By.CLASS_NAME, "comet-btn")
+            
+            if button_viewOrders != None:
+                self.driver.execute_script("arguments[0].scrollIntoView();", button_viewOrders)
+                self.driver.execute_script("arguments[0].click();", button_viewOrders)
+                # button_viewOrders.click()
+                sleep(4)
+            
+        #wait for the page to load
+        
+        order_container = self.driver.find_elements(By.CLASS_NAME, "order-item")
+        print(f"Orders detected at {category} : {len(order_container)}")
+        
+        #print bar progress
+        
+        for order_item in order_container[:max_orders]:
+            order_items = []
+            #orders has same order date, order id, and track_link
+            #print progress bar for each order with percentage
+            # print(f"Fetching Orders: {order_container.index(order_item)+1}/{len(order_container)}", end="\r")
+            print(f"Fetching Orders: {round(((order_container.index(order_item)+1)/len(order_container))*100,2)}%", end="\r")
+            
+            orden ={
+                "order_id": "",
+                "order_date": "",
+                "shop_name": "",
+                "product_name": "",
+                "product_price": "",
+                "product_quantity": "",
+                "total_price": "",
+                "status": "",
+                "tracking_link": "",
+                "tracking_number": "",
+                "tracking_status": "",
+                "tracking_process": "",
+                "image_references": [], #almacenara urls de imagenes
+                "property":""
+            }   
+            
+            #informacion de fecha y id de orden
+            order_item_header = order_item.find_element(By.CSS_SELECTOR,"div[data-pl='order_item_header_info']")
+            if order_item_header != None:
+                elements = order_item_header.find_elements(By.TAG_NAME, "div")
+                for e in elements:
+                    if str(e.text).startswith("Order ID"):
+                        orden["order_id"] = e.text.split(":")[1].strip().replace("\nCopy", "")
+                    if str(e.text).startswith("Order date"):
+                        orden["order_date"] = e.text.split(":")[1].strip()
+            
+            #order status text
+            order_status = order_item.find_element(By.CSS_SELECTOR, "span[class='order-item-header-status-text']")
+            if order_status != None:
+                orden["status"] = order_status.text
+                
+            #order shop text
+            order_shop = order_item.find_element(By.CSS_SELECTOR, "span[class='order-item-store-name']")
+            if order_shop != None:
+                orden["shop_name"] = order_shop.text
+            
+            #order total price
+            order_total_price = order_item.find_element(By.CSS_SELECTOR, "span[class='order-item-content-opt-price-total']")
+            if order_total_price != None:
+                price = order_total_price.text
+                if price.startswith("Total:US $"):
+                    orden["total_price"] = price.split("$")[1].strip()
+                                
+            #find order detail link
+            order_detail = order_item.find_element(By.CSS_SELECTOR, "a[data-pl='order_item_header_detail'")
+            order_url = order_detail.get_attribute("href")
+            
+            detail_path = f"./detail/{orden['order_id']}_detail.png"
+            
+            
+            # if not os.path.exists(detail_path):
+            screenshot = self.saveOrderScreenshot(url=order_url, save_path=detail_path,zoom=page_zoom)
+            
+            order_subtotal = 0
+            for s in screenshot["products"]:
+                order_subtotal += float(s["product_price"]) * int(s["product_quantity"])
+        
+            
+            
+            for s in screenshot["products"]:
+                orden["product_name"] = s["product_name"]
+                orden["product_price"] = s["product_price"]
+                orden["product_quantity"] = s["product_quantity"]
+                orden["product_sku"] = s["product_sku"]
+                orden["product_final_price"] = s["product_final_price"]
+                orden["product_delivery_date"] = s["product_delivery_date"]
+                orden["product_tracking_info"] = s["product_tracking_info"]
+                orden["image_references"] = s["image_references"]
+                #para calcular el total de la orden
+                
+                # (product_price * product_quantity / subtotal ) * total_price ) 
+                orden["product_final_price"] = round((float(s["product_price"]) * int(s["product_quantity"]) / order_subtotal) * float(orden["total_price"]),2)
+                
+                if orden["product_tracking_info"] != "No tracking info":
+                    orden["tracking_number"] = s["product_tracking_info"]["tracking_number"]
+                    orden["tracking_status"] = s["product_tracking_info"]["tracking_status"]
+                    orden["tracking_process"] = s["product_tracking_info"]["tracking_process"]
+                else:
+                    orden["tracking_number"] = "No tracking number"
+                    orden["tracking_status"] = "No tracking status"
+                    orden["tracking_process"] = "No tracking process"
+                
+                self.orders.append(orden)
+        
+        if asJson:
+            return json.dumps(self.orders, indent=4)    
+    
+        return self.orders
+    
+    def getTrackingNumber(self, tracking_link:str, expectedItem:str, expectedSku:str)->dict:
         """Receive a tracking link and return the tracking number, status and process
 
         Args:
@@ -364,30 +538,68 @@ class AliHelper:
             "tracking_date": ""
         }
         #abrir nueva pestaña
-        if self.driver.window_handles:
-            if len(self.driver.window_handles) > 1:
-                self.driver.switch_to.window(self.driver.window_handles[1])
-                self.driver.close()
-                self.driver.switch_to.window(self.driver.window_handles[0])
-                
+        # if self.driver.window_handles:
+        #     if len(self.driver.window_handles) > 1:
+        #         self.driver.switch_to.window(self.driver.window_handles[2])
+        #         self.driver.close()
+        #         self.driver.switch_to.window(self.driver.window_handles[1])
+        return_window =self.driver.current_window_handle
         self.driver.execute_script("window.open('');")
-        
-        self.driver.switch_to.window(self.driver.window_handles[1])
+        actual_window = self.driver.window_handles.pop()
+        self.driver.switch_to.window(actual_window)
         self.driver.get(tracking_link)
+        
+        #find if page has various packages
+        try:
+            tab_packages = WebDriverWait(self.driver, timeout=5, poll_frequency=1).until(
+                lambda d: d.find_elements(By.CLASS_NAME, "tab-list-v2--tab--1o2e9r7")
+            )
+            for tp in tab_packages:
+                if str(tp.text).lower().startswith("package"):
+                    tp.click()
+                    
+                    #compare names
+                    packaged_product = WebDriverWait(self.driver, timeout=5, poll_frequency=1).until(
+                        lambda d: d.find_element(By.CLASS_NAME, "package-items-v2--productTitle--6090gOp")
+                    ).text
+                    
+                    packaged_sku = ""
+                    try:
+                        packaged_sku = WebDriverWait(self.driver, timeout=5, poll_frequency=1).until(
+                            lambda d: d.find_element(By.CLASS_NAME, "package-items-v2--skuText--2UwaJJO")
+                        ).text
+                        if packaged_product == expectedItem and str(packaged_sku).endswith(expectedSku):
+                            #package number
+                            print("Packaged and SKU match", tab_packages.index(tp))
+                            break
+                    except:
+                        if packaged_product == expectedItem :
+                        #package number
+                            print("Only Packaged match", tab_packages.index(tp))
+                            break     
+        except:
+            # packaged_product = WebDriverWait(self.driver, timeout=10, poll_frequency=1).until(
+            #             lambda d: d.find_element(By.CLASS_NAME, "package-items-v2--productTitle--6090gOp")
+            #         ).text
+            # if packaged_product == expectedItem:
+            #             #package number
+            #     print("Packaged item found" )
+                        
+            pass
         
         
         number = WebDriverWait(self.driver, timeout=10, poll_frequency=1).until(
-            lambda d: d.find_element(By.CLASS_NAME, "logistic-info--mailNo-pc--3cTqcXe")
+            lambda d: d.find_element(By.CLASS_NAME, "logistic-info-v2--mailNo--3TCkYIM")
         )
-        tracker_info["tracking_number"] = str(number.text).replace("Tracking number", "").replace("\nCopy","").strip()
+        tracker_info["tracking_number"] = str(number.text).replace("Tracking number:", "").replace("\nCopy","").strip()
         
         status = WebDriverWait(self.driver, timeout=10, poll_frequency=1).until(
-            lambda d: d.find_element(By.CLASS_NAME, "logistic-info--nodeDesc--Pa3Wnop")
+            lambda d: d.find_element(By.CLASS_NAME, "logistic-info-v2--nodeDesc--2U3A3Yt")
         )
         tracker_info["tracking_status"] = str(status.text).strip()
         
         process = WebDriverWait(self.driver, timeout=10, poll_frequency=1).until(
-            lambda d: d.find_element(By.CLASS_NAME, "logistic-info--track--WBcFzsd")
+            lambda d: d.find_element(By.CLASS_NAME, "logistic-info-v2--track--1nqL7Vl")
         )
         #save html
         process_txt = str(process.text).split("\n")
@@ -400,8 +612,8 @@ class AliHelper:
         
         
         tracker_info["tracking_process"] = process_html
-    
-        self.driver.switch_to.window(self.driver.window_handles[0])
+        self.driver.close()
+        self.driver.switch_to.window(return_window)
 
         return tracker_info
     
@@ -416,21 +628,22 @@ class AliHelper:
             str: return the save_path
         """
          #abrir nueva pestaña
-        if self.driver.window_handles:
-            if len(self.driver.window_handles) > 1:
-                self.driver.switch_to.window(self.driver.window_handles[1])
-                self.driver.close()
-                self.driver.switch_to.window(self.driver.window_handles[0])
-                
+        # if self.driver.window_handles:
+        #     if len(self.driver.window_handles) > 1:
+        #         self.driver.switch_to.window(self.driver.window_handles[2])
+        #         self.driver.close()
+        #         self.driver.switch_to.window(self.driver.window_handles[1])
+        return_window = self.driver.current_window_handle
         self.driver.execute_script("window.open('');")
-        self.driver.switch_to.window(self.driver.window_handles[1])
+        actual_window = self.driver.window_handles.pop()
+        self.driver.switch_to.window(actual_window)
         self.driver.get(url)
         
         #take screenshot of body
         body = self.driver.find_element(By.TAG_NAME, "img")
         body.screenshot(save_path)
-        
-        self.driver.switch_to.window(self.driver.window_handles[0])
+        self.driver.close()
+        self.driver.switch_to.window(return_window)
         
         return save_path
     
@@ -446,14 +659,22 @@ class AliHelper:
             str: return the save_path
         """
         #abrir nueva pestaña
-        if self.driver.window_handles:
-            if len(self.driver.window_handles) > 1:
-                self.driver.switch_to.window(self.driver.window_handles[1])
-                self.driver.close()
-                self.driver.switch_to.window(self.driver.window_handles[0])
         
+        obtainedInfo = {
+            "save_path": save_path,
+            "products": [],
+            "order_total": "",
+        }
+        
+        # if self.driver.window_handles:
+        #     if len(self.driver.window_handles) > 1:
+        #         self.driver.switch_to.window(self.driver.window_handles[1])
+        #         self.driver.close()
+        #         self.driver.switch_to.window(self.driver.window_handles[0])
+        return_window = self.driver.current_window_handle
         self.driver.execute_script("window.open('');")
-        self.driver.switch_to.window(self.driver.window_handles[1])
+        actual_window = self.driver.window_handles.pop()
+        self.driver.switch_to.window(actual_window)
         self.driver.get(url)
         self.driver.execute_script(f"document.body.style.zoom = '{zoom}%'")
         
@@ -483,8 +704,103 @@ class AliHelper:
         #save screenshot
         order.screenshot(save_path)
         
-        self.driver.switch_to.window(self.driver.window_handles[0])
-        return save_path
+        
+        store_name_container = WebDriverWait(self.driver, timeout=10, poll_frequency=1).until(
+            lambda d: d.find_element(By.CSS_SELECTOR, "span[class='store-name']")
+        )
+        store_name = store_name_container.text
+        
+        order_products = WebDriverWait(self.driver, timeout=10, poll_frequency=1).until(
+            lambda d: d.find_elements(By.CSS_SELECTOR, "div[class='order-detail-item-content-wrap']")
+        )
+        
+        order_info = WebDriverWait(self.driver, timeout=10, poll_frequency=1).until(
+            lambda d: d.find_elements(By.CSS_SELECTOR, "div[class='info-row']")
+        )
+        order_id = ""
+        for info in order_info:
+            if info.text.startswith("Order ID"):
+                order_id = info.text.split(":")[1].replace("Copy","").strip()
+                break
+            
+        
+        
+        
+        
+        order_total_price = ""
+        for op in order_products:
+            # print("Product found ", order_products.index(op))  
+            product = {
+                "product_name": "",
+                "product_price": "",
+                "product_quantity": "",
+                "product_sku": "",
+                "product_final_price": "",
+                "product_delivery_date": ""
+                
+            }
+            
+            product_name = op.find_element(By.CSS_SELECTOR, "div[class='item-title']").text
+            product["product_name"] = product_name
+            
+            
+            
+            product_quantity = op.find_element(By.CSS_SELECTOR, "span[class='item-price-quantity']").text
+            product["product_quantity"] = product_quantity.replace("x", "").strip()
+            
+            product_price = op.find_element(By.CSS_SELECTOR, "div[class='item-price']").text
+            product["product_price"] = product_price.replace("$","").replace("US","").replace(product_quantity, "").strip()
+            try:
+                
+                product_sku = op.find_element(By.CSS_SELECTOR, "div[class='item-sku-attr']").text
+                product["product_sku"] = product_sku
+            except:
+                product["product_sku"] = ""
+                
+            try:
+                product_delivery_date = op.find_element(By.CSS_SELECTOR, "div[class='order-detail-item-track-eta-text']").text
+                product["product_delivery_date"] = product_delivery_date.replace("Estimated delivery date: ", "").strip()
+            except:
+                product["product_delivery_date"] = ""
+            
+            
+            #image
+            ##buscar imagenes de referencia
+            order_item_images = op.find_elements(By.CSS_SELECTOR, "a[class='order-detail-item-content-img']")
+            #url se encuentra dentro del style
+            img = order_item_images[0]
+            style = img.get_attribute("style")
+            url = style.split("(")[1].split(")")[0].replace("\"", "")
+            
+            # orden["image_references"].append(url.replace("\"", ""))
+            
+            img_save_path = f"./img/{order_id}/"
+            if not os.path.exists(img_save_path):
+                os.makedirs(img_save_path)
+            
+            index_img = order_item_images.index(img)
+            img_path = img_save_path + f"img_{index_img}.png"
+
+            #check if exists
+            if not os.path.exists(img_path):
+                product["image_references"]= self.downloadImage(url, img_path)
+            else:
+                product["image_references"] = img_path
+            #scrap tracking info
+            try:
+                tracking_link = op.find_element(By.CSS_SELECTOR, "a[class='order-detail-item-track-info track-detail']").get_attribute("href")
+                product["product_tracking_info"] = self.getTrackingNumber(tracking_link, product_name, product["product_sku"])
+            except:
+                product["product_tracking_info"] = "No tracking info"
+            
+            obtainedInfo["products"].append(product)
+            
+            
+            
+                
+        self.driver.close()
+        self.driver.switch_to.window(return_window)
+        return obtainedInfo
         
     # except:
     #     self.driver.switch_to.window(self.driver.window_handles[0])
@@ -658,7 +974,7 @@ class AliHelper:
             for d in data:
                 if d["tracking_number"] == str(o):
                     # data.remove(d)
-                    print(f"{d["tracking_number"]+"\t"+d['tracking_status']}")
+                    print(f"{d['tracking_status']}")
                     fileData.append(d['tracking_status'])
                     break
         if export:
@@ -709,6 +1025,9 @@ class AliHelper:
             return False
         print("Status: "+str(post_response.status_code))
         return True
+    
+
+    
     
     def generateOrderDetailPDF(self, orderList:list=[], fromFile:bool=False, filePath:str="orders.json")->bool:
         #will group orders by tracking number and generate a pdf for each tracking number with png images
@@ -776,7 +1095,7 @@ class AliHelper:
             pdf.cell(70, 10, f"Generated on: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}", 1, 1, "C")
             pdf.set_font("Arial", "", 8)
             pdf.cell(70, 10, f"Last Status: {groups[key]['last_status']}", 0, 1, "T")
-            pdf.ln(10)
+            pdf.cell(70, 10, "Nota: Los articulos que se encuentran en este documento pertenecen al mismo numero de tracking. ", 0, 1, "T")
             pdf.set_font("Arial", "B", 10)
             pdf.set_fill_color(200, 220, 255)
             # pdf.cell(50, 10, "Order", 1, 0, "C", 1)
@@ -787,7 +1106,7 @@ class AliHelper:
                 if groups[key]["captures"].index(img) % 2 == 0 and groups[key]["captures"].index(img) != 0:
                     pdf.add_page()
                 #two per page
-                pdf.cell(60, 10, "Traking: " + key, 1, 0, "C")
+                pdf.cell(100, 10, "Tracking: " + key, 1, 0, "C")
                 pdf.cell(60, 10,"Orden: " + img.split("_")[0], 1, 1, "C")
                 
                 # pdf.cell(40, 10, img, 1, 1, "C")
@@ -841,7 +1160,7 @@ class AliHelper:
             for d in data:
                 if d["order_id"] == str(o):
                     # data.remove(d)
-                    data_set.append({"tracking_number":d["tracking_number"],"order_id":d["order_id"], "tracking_status":d["tracking_status"]})
+                    data_set.append({"order_id":d["order_id"],"tracking_number":d["tracking_number"], "tracking_status":d["tracking_status"]})
                     break
                 
         df = pd.DataFrame(data_set)
@@ -854,24 +1173,28 @@ class AliHelper:
     
             
         
-ali = AliHelper(showAlerts=False)
-# # #PARA ACTUALIZAR INFO
+ali = AliHelper(showAlerts=False) 
+# #PARA ACTUALIZAR INFO
 ali.setEnviroment(headless=False)
-# ali.getOrders(category="To ship", max_orders=1, page_zoom=85)
-ali.getOrders(category="Shipped", max_orders=36, page_zoom=85)
+ali.getOrdersNew(category="Shipped", max_orders=11, page_zoom=75)
 ali.exportOrders("orders.json")
 
-#pedido 5
-orderList =[8192700828977491,8192700829017491,8192700829237491,8192700829477491,8192700829197491,8192700829317491,8192700829297491,8192700829217491,8192700829117491,8192700829037491,8192700829277491,8192700829077491,8192700829457491,8192700829157491,8192700828997491,8192700829497491,8192700828847491,8192700829437491,8192700828927491,8192700828927491,8192700829397491,8192700828957491,8192700829517491,8192700829057491,8192700829177491,8192700829417491,8192700828807491,8192700829337491,8192700829377491,8192700829377491,8192700829137491,8192700829357491,8192700828867491,8192700829097491,8192700829537491,8192700829257491,8192700828907491,8192700828827491]
+
+# orderList =[8197887115647491,8197887115667491,8197887115687491,8197887115547491,8197887115707491,8197887115727491,8197887115567491,8197887115747491,8197887115607491,8197887115767491,8197887115587491,8197472202557491,8197472202577491,8197472202597491,8197472202617491,8197472202637491,8197472202657491,8197887115627491,8197472202677491,8196809692487491]
+orderList = [8198008051977491,8198008051997491,8198008052017491,8198008052037491,8198008052057491,8198008052077491,8198008051937491,8198008052097491,8198008051957491,8197254807227491,8198008052117491]
+# trackingList = []
+
 
 ali.printTrackByOrderList(orderList=orderList, fromFile=True)
 ali.printTrackingStatusByOrderList(orderList=orderList, fromFile=True)
-# ali.generateOrderDetailPDF(orderList=orderList, fromFile=True, filePath="orders.json")
-ali.pushOrdersToServer(fromFile=True)
+# ali.printTrackingStatusByTrackingNumber(trackingList=trackingList, fromFile=True)
+ali.generateOrderDetailPDF(orderList=orderList, fromFile=True, filePath="orders.json")
+# ali.pushOrdersToServer(fromFile=True)
 ali.generateExcelData(fromFile=True)
 ali.generateExcelByOrder(orderList=orderList, fromFile=True)
 
 # tracking_numbers=["420331729212490362719153543181","LQ835416399CN","LP00671472073489","LR152035762CN","CNUSUP00003994120","CNUSUP00004010899"]
 # ali.printTrackingStatusByTrackingNumber(trackingList=tracking_numbers, fromFile=True)
-#PARA IMPRIMIR TRACKING
-# # input("Press Enter to continue...")
+# #PARA IMPRIMIR TRACKING
+# # # input("Press Enter to continue...")
+
